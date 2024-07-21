@@ -64,7 +64,7 @@ chmod +x install.sh
 Install through package manager
 
 ```
-figlet htop lm_sensors vim dmidecode docker
+figlet htop lm_sensors vim dmidecode docker lf nmcli
 ```
 
 Curl lazy docker binary
