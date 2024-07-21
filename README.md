@@ -71,4 +71,8 @@ Curl lazy docker binary
 ```
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
-Need to have metasploit, recon-ng, aircrack-ng installed 
+Need to have htese tools installed:
+[metasploit](https://docs.metasploit.com/docs/using-metasploit/getting-started/nightly-installers.html)
+[recon-ng](https://github.com/lanmaster53/recon-ng/wiki/Getting-Started)
+[aircrack-ng](https://github.com/aircrack-ng/aircrack-ng)
+
