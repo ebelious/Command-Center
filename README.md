@@ -56,7 +56,6 @@ chmod +x install.sh
 ./install.sh
 ```
 
-Need to have recon-ng installed
 
 ### Manual Install
 
@@ -72,4 +71,4 @@ Curl lazy docker binary
 ```
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
-
+Need to have metasploit, recon-ng, aircrack-ng installed 
