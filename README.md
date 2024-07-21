@@ -73,6 +73,11 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 ```
 Need to have htese tools installed:
 [metasploit](https://docs.metasploit.com/docs/using-metasploit/getting-started/nightly-installers.html)
+```
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+  chmod 755 msfinstall && \
+  ./msfinstall
+```
 [recon-ng](https://github.com/lanmaster53/recon-ng/wiki/Getting-Started)
 [aircrack-ng](https://github.com/aircrack-ng/aircrack-ng)
 
