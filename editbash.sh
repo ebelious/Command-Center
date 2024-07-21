@@ -17,21 +17,21 @@ printf '=%.0s' {1..30} ; printf '=\n'
 echo -e "\e[1;32m[\e[1;36m0\e[1;32m]\e[0m .bashrc"
 echo -e "\e[1;32m[\e[1;36m1\e[1;32m]\e[0m .bash_profile"
 echo -e "\e[1;32m[\e[1;36m2\e[1;32m]\e[0m .inputrc"
-echo ''
+echo
 echo -e "\e[1;32mZsh Files\e[0m"
 printf '=%.0s' {1..30} ; printf '=\n'
 echo -e "\e[1;32m[\e[1;36m3\e[1;32m]\e[0m .zshrc"
 echo -e "\e[1;32m[\e[1;36m4\e[1;32m]\e[0m .zsh_profile"
-echo''
+echo
 echo -e "\e[1;32mMisc Files\e[0m"
 printf '=%.0s' {1..30} ; printf '=\n'
 echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m conky"
 echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m kitty"
 echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m alacritty"
 echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m fastfetch"
-echo''
+echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
-echo ""
+printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONBASH
 
 # Making the selectoionas open certain files

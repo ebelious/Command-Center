@@ -7,9 +7,10 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Network - Netstat
-# This is used for running netstat to identify open ports
+# Network - banwidth
 #
+
 clear
-netstat | less
+sudo iftop
 ./network.sh
+exit 0

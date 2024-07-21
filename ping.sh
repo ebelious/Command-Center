@@ -18,18 +18,20 @@ echo -e "\e[1;32mRunning Ping Test\e[0m"
 echo
 for x in $TARGET
 do
-    if ping -q -c 2 -W 1 $x > /dev/null
+    if ping -q -c 2 -W 1 $x
     then
+        echo
         echo -e "\e[1;36m$x is recahable\e[0m"
     else
+        echo
         echo -e "\e[1;31m$x is not reachable\e[0m"
     fi
 done
-# Ootions
+# Options
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
-echo
+printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONPING
 
 if [[ $OPTIONPING = r ]] || [[ $OPTIONPING = R ]]

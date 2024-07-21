@@ -1,4 +1,15 @@
-
+#!/bin/bash
+#       _          _ _
+#   ___| |__   ___| (_) ___  _   _ ___
+#  / _ \ '_ \ / _ \ | |/ _ \| | | / __|
+# |  __/ |_) |  __/ | | (_) | |_| \__ \
+#  \___|_.__/ \___|_|_|\___/ \__,_|___/
+#
+# https://github.com/ebelious/Command-Center
+#
+# Comand center is a collection of tools and utilities packaged into a single platform
+# Some of te options are only configure for basic functionality as others are direct contact with the tool interface
+#
 
 # This is the selection menu
 cd ~/Documents/Projects/Command-Center/
@@ -12,8 +23,9 @@ echo -e "Found at: \e[3;33mhttps://github.com/ebelious/Command-Center\e[0m"
 #printf '%s \____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|\____\___|_| |_|\__\___|_| '
 printf '=%.0s' {1..30} ; printf '=\n'
 echo -e "Hello \e[1;36m${USERNAME}\e[0m,"
-echo
 echo -e "\e[1;mWelcome to the Command Center\e[0m"
+echo
+printf '=%.0s' {1..30} ; printf '=\n'
 echo -e "\e[3;32m-- What is our task?\e[0m"
 printf '=%.0s' {1..30} ; printf '=\n'
 echo -e "\e[1;32m[\e[1;36m0\e[1;32m]\e[0m Update System"

@@ -7,9 +7,9 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Network - Netstat
-# This is used for running netstat to identify open ports
+# Security - recon-ng
 #
+
 clear
-netstat | less
-./network.sh
+recon-ng 2>/dev/null
+./security.sh

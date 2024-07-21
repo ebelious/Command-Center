@@ -29,15 +29,14 @@ printf '=%.0s' {1..30} ; printf '=\n'
 echo -e "\e[1;32mUsers and Groups on the System\e[0m"
 echo -e "Users: $USERS"
 echo -e "Groups: $GROUPS1"
-
+echo
 printf '=%.0s' {1..30} ; printf '=\n'
 echo
 echo -e "\e[1;32m[\e[1;36m0\e[1;32m]\e[0m Create User"
 echo -e "\e[1;32m[\e[1;36m1\e[1;32m]\e[0m Create Group"
 echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
-echo
-
+printf '=%.0s' {1..30} ; printf '=\n'
 # This is creating the account
 read -p ': ' OPTIONUSER
 if [[ $OPTIONUSER = 0 ]]

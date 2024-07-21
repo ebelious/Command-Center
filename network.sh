@@ -35,6 +35,8 @@ echo -e "\e[1;32m[\e[1;36m2\e[1;32m]\e[0m Ping"
 echo -e "\e[1;32m[\e[1;36m3\e[1;32m]\e[0m Traceroute"
 echo -e "\e[1;32m[\e[1;36m4\e[1;32m]\e[0m Netstat"
 echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m Nslookup"
+echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m Bandwidth"
+echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m Host Detection"
 echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
@@ -63,6 +65,13 @@ elif [[ $OPTIONNET = 5 ]]
 then
     ./nslookup.sh
     exit 0
+elif [[ $OPTIONNET = 6 ]]
+then
+    ./iftop.sh
+    exit 0
+elif [[ $OPTIONNET = 7 ]]
+then
+    ./host_detection.sh
 elif [[ $OPTIONNET = q ]] || [[ $OPTIONNET = Q ]]
 then
     ./command-center.sh
