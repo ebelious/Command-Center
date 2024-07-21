@@ -7,9 +7,10 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# [3] Show Disk Information
+#  Enviroment - Show Disk Information
 # This Script is made to display disk information and mount points
 #
+
 # Variables
 # This wil disp[lay info from df -h and lsblk
 clear

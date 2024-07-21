@@ -7,33 +7,30 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Network - speedtest
-# This is used for speedtest option in network
+# Network - nslookup
+# This is nslookup utility
 #
 
-# Speedtest option menu
-#
 clear
-echo -e "\e[1;32mRunning Speed Test\e[0m"
+read -p 'What would you like to lookup: ' TARGET
+clear
+echo -e "\e[1;32mRunning NSLookup\e[0m"
 echo
-speedtest-cli
+nslookup $TARGET
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
-echo
-read -p ': ' OPTIONSPEED
-
-if [[ $OPTIONSPEED = r ]] || [[ $OPTIONSPEED = R ]]
+printf '=%.0s' {1..30} ; printf '=\n'
+read -p ': ' OPTIONMEN
+if [[ $OPTIONMEN = R ]] || [[ $OPTIONMEN = r ]]
 then
-    ./speedtest.sh
+    ./nslookup.sh
     exit 0
-elif [[ $OPTIONSPEED = q ]] || [[ $OPTIONSPEED = Q ]]
+elif [[ $OPTIONMEN = q ]] || [[ $OPTIONMEN = Q ]]
 then
     ./network.sh
     exit 0
 else
-    echo -e "\e[1;31mInvalid Option\e[0m"
-    sleep 1
     ./network.sh
     exit 0
 fi

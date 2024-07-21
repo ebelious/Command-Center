@@ -21,8 +21,10 @@ echo -e "\e[1;32m[\e[1;36m1\e[1;32m]\e[0m Hardware Information"
 echo -e "\e[1;32m[\e[1;36m2\e[1;32m]\e[0m Processes & Utilization"
 echo -e "\e[1;32m[\e[1;36m3\e[1;32m]\e[0m Users and Groups"
 echo -e "\e[1;32m[\e[1;36m4\e[1;32m]\e[0m Network"
-echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m (.) files"
-echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m Docker"
+echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m Security"
+echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m (.) Files"
+echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m Docker"
+echo -e "\e[1;32m[\e[1;36m8\e[1;32m]\e[0m Browse Files"
 echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
@@ -56,12 +58,21 @@ then
 fi
 if [[ $OPTION = 5 ]]
 then
-    ./editbash.sh
-    exit 0
+    ./security.sh
 fi
 if [[ $OPTION = 6 ]]
 then
+    ./editbash.sh
+    exit 0
+fi
+if [[ $OPTION = 7 ]]
+then
     ./dockercli.sh
+    exit 0
+fi
+if [[ $OPTION = 8 ]]
+then
+    ./file_browser.sh
     exit 0
 fi
 if [[ $OPTION = Q ]] || [[ $OPTION = q ]]

@@ -7,7 +7,7 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# [0] Update System
+# Update System
 # This script will look for what OS is being used and use that package manager to update and updarade with user permission
 #
 

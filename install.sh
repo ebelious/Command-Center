@@ -9,7 +9,7 @@
 #
 # This installs the Preqs for this to run
 # This installs the the script into binaries
-# Prereqs: figlet htop lm_sensors htop vim lazydocker(git repo) dmidecode
+# Prereqs: figlet htop lm_sensors htop vim dmidecode lazydocker(git repo)
 #
 
 chmod +x ./*.sh
@@ -19,13 +19,13 @@ OS=$(head -1 /etc/os-release | sed 's/NAME="//'| awk '{print $1}')
 # Fedora / Redhat
 if [[ $OS = Fedora || RedHat ]]
 then
-    sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git
-    clear
-    echo -e "\e[1;32mUpdating Flatpak...\e[0m"
-# Install lazydocker from Github
-    echo -e "\e[1;32mPress 'q' to continue installation after you see lazydocker screen\e[0m"
-    sleep 3
+    sudo dnf copr enable pennbauman/ports # for lf terminal file manager
+    sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git lf
+# Getting lazy docer git repo
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+    clear
+    sleep 3
+
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 #Debian/Ubuntu

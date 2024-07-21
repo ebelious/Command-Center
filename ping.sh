@@ -7,10 +7,7 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Prereqs: figlet htop lm_sensors htop vim dmidecode lazydocker(git repo)
-#
-# This is Command Center. This is simple softweare to automate Administrative # tasks. This is all writtent in bash.
-# Works with: Debian/Ubuntu, RedHat/Ferdora, OpenSUSE, Arch
+# Network - ping
 #
 
 # Asking for the ping target and then running scan
@@ -21,7 +18,7 @@ echo -e "\e[1;32mRunning Ping Test\e[0m"
 echo
 for x in $TARGET
 do
-    if ping -q -c 4 -W 1 $x q> /dev/null
+    if ping -q -c 2 -W 1 $x > /dev/null
     then
         echo -e "\e[1;36m$x is recahable\e[0m"
     else

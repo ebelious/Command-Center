@@ -7,33 +7,26 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Network - speedtest
-# This is used for speedtest option in network
-#
-
-# Speedtest option menu
+# Network - nmcli info
+# This is nmcli utility
 #
 clear
-echo -e "\e[1;32mRunning Speed Test\e[0m"
 echo
-speedtest-cli
+nmcli 2> /dev/null
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
-echo
-read -p ': ' OPTIONSPEED
-
-if [[ $OPTIONSPEED = r ]] || [[ $OPTIONSPEED = R ]]
+printf '=%.0s' {1..30} ; printf '=\n'
+read -p ': ' OPTIONMEN
+if [[ $OPTIONMEN = R ]] || [[ $OPTIONMEN = r ]]
 then
-    ./speedtest.sh
+    ./net_info.sh
     exit 0
-elif [[ $OPTIONSPEED = q ]] || [[ $OPTIONSPEED = Q ]]
+elif [[ $OPTIONMEN = q ]] || [[ $OPTIONMEN = Q ]]
 then
     ./network.sh
     exit 0
 else
-    echo -e "\e[1;31mInvalid Option\e[0m"
-    sleep 1
     ./network.sh
     exit 0
 fi

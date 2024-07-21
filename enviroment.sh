@@ -7,7 +7,7 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# [1] Gather Enviroment Information
+# Enviroment Information Menu
 # This is for printing out enviromant information such as networking info, sensors
 #
 

@@ -7,33 +7,24 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Network - speedtest
-# This is used for speedtest option in network
-#
-
-# Speedtest option menu
+# Network - Netstat
+# This is used for running netstat to identify open ports
 #
 clear
-echo -e "\e[1;32mRunning Speed Test\e[0m"
-echo
-speedtest-cli
+netstat | less
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
-echo
-read -p ': ' OPTIONSPEED
-
-if [[ $OPTIONSPEED = r ]] || [[ $OPTIONSPEED = R ]]
+printf '=%.0s' {1..30} ; printf '=\n'
+read -p ': ' OPTIONSTAT
+if [[ $OPTIONSTAT = R ]] || [[ $OPTIONSTAT = r ]]
 then
-    ./speedtest.sh
+    ./netstat.sh
     exit 0
-elif [[ $OPTIONSPEED = q ]] || [[ $OPTIONSPEED = Q ]]
+elif [[ $OPTIONSTAT = q ]] || [[ $OPTIONSTAT = Q ]]
 then
     ./network.sh
     exit 0
 else
-    echo -e "\e[1;31mInvalid Option\e[0m"
-    sleep 1
     ./network.sh
-    exit 0
 fi

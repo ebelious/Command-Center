@@ -4,12 +4,12 @@
 #  / _ \ '_ \ / _ \ | |/ _ \| | | / __|
 # |  __/ |_) |  __/ | | (_) | |_| \__ \
 #  \___|_.__/ \___|_|_|\___/ \__,_|___/
+#
 # https://github.com/ebelious/Command-Center
 #
-# Docker
-# This is lazydocker
-
-# Run lazydocker
-sudo ~/.local/bin/lazydocker
+# Browse Files
+# This if a terminal file manager lf
+#
+clear
+lf /home
 ./command-center.sh
-exit 0
