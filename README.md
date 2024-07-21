@@ -47,6 +47,9 @@ These will need to be installaed in order for this to function properly
 cd Command-Center
 ```
 ```
+chmod +x install.sh
+```
+```
 ./install.sh
 ```
 **Note: You need to hit `q` after lazydocker screen opens to continue installation
