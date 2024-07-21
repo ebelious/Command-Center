@@ -56,6 +56,8 @@ chmod +x install.sh
 ./install.sh
 ```
 
+Need to have recon-ng installed
+
 ### Manual Install
 
 Install through package manager
