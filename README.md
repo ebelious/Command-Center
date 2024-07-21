@@ -61,7 +61,7 @@ chmod +x install.sh
 Install through package manager
 
 ```
-figlet htop lm_sensors vim dmidecode docker lf nmcli
+figlet htop lm_sensors vim dmidecode docker lf nmcli nmap
 ```
 *Note: Fedora needs to add copr repo for lf* 
 
