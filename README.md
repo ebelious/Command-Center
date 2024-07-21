@@ -54,20 +54,9 @@ chmod +x install.sh
 ```
 ### Manual Install
 ```
-git clone https://github.com/jesseduffield/lazydocker.git
+curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
-```
-cd lazydocker
-```
-```
-sudo docker run --rm -it -v \
-/var/run/docker.sock:/var/run/docker.sock \
--v /yourpath:/.config/jesseduffield/lazydocker \
-lazyteam/lazydocker
-```
-```
-echo "alias lzd='sudo docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /yourpath/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'" >> ~/.zshrc
-echo "alias lzd='sudo docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /yourpath/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'" >> ~/.bashrc
+
 ```
 Install through package manager
 ```
