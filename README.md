@@ -67,6 +67,7 @@ Install through package manager
 figlet htop lm_sensors vim dmidecode docker
 ```
 
+Curl lazy docker binary
 ```
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
