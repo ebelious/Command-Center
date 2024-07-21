@@ -66,6 +66,8 @@ Install through package manager
 ```
 figlet htop lm_sensors vim dmidecode docker lf nmcli
 ```
+*Note: Fedora needs to add copr repo for lf* 
+
 
 Curl lazy docker binary
 ```
