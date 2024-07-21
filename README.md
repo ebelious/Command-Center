@@ -52,8 +52,6 @@ chmod +x install.sh
 ```
 ./install.sh
 ```
-**Note: You need to hit `q` after lazydocker screen opens to continue installation
-
 ### Manual Install
 ```
 git clone https://github.com/jesseduffield/lazydocker.git
