@@ -64,7 +64,10 @@ Install through package manager
 ```
 figlet htop lm_sensors vim dmidecode docker lf nmcli nmap hash-id hashcat john
 ```
-*Note: Fedora needs to add copr repo for lf* 
+*Note: Fedora needs to add copr repo for lf*
+```
+sudo dnf copr enable pennbauman/ports # for lf terminal file manager
+```
 
 
 Curl lazy docker binary
