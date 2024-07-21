@@ -75,7 +75,7 @@ Curl lazy docker binary
 ```
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
-Need to have htese tools installed: <br />
+These will need to be installed <br />
 [metasploit](https://docs.metasploit.com/docs/using-metasploit/getting-started/nightly-installers.html)
 ```
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
