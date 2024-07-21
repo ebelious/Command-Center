@@ -23,9 +23,6 @@ Use the arrow keys to navigte or:
 
 ### less
 
-```
-git clone https://github.com/jesseduffield/lazydocker.git
-```
 This is a pager that allows searching and other functionality
 | Command | Action |
 |--------|--------|
