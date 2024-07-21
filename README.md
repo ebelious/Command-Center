@@ -3,7 +3,7 @@
 This is a collection of bash scripts that consolidate some administrative tasks with a simple interface. <br />
 ** Note This is still a work in progress
 
-![cc](https://github.com/ebelious/Command-Center/blob/main/Screenshot%20from%202024-07-21%2014-20-49.png)
+![cc](https://github.com/ebelious/Command-Center/blob/main/Screenshot%20from%202024-07-21%2016-16-39.png)
 
 ## Usage
 Just launch `command-center.sh` and easily navigate using numbers and letters that are listed next to the options. This uses `vim` and `less`, there are basic instructions below.
@@ -23,9 +23,6 @@ Use the arrow keys to navigte or:
 
 ### less
 
-```
-git clone https://github.com/jesseduffield/lazydocker.git
-```
 This is a pager that allows searching and other functionality
 | Command | Action |
 |--------|--------|
@@ -59,16 +56,23 @@ chmod +x install.sh
 ./install.sh
 ```
 
+
 ### Manual Install
 
 Install through package manager
 
 ```
-figlet htop lm_sensors vim dmidecode docker
+figlet htop lm_sensors vim dmidecode docker lf nmcli nmap hash-id hashcat john
 ```
+*Note: Fedora needs to add copr repo for lf* 
+
 
 Curl lazy docker binary
 ```
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
+Need to have htese tools installed:
+[metasploit](https://docs.metasploit.com/docs/using-metasploit/getting-started/nightly-installers.html)
+[recon-ng](https://github.com/lanmaster53/recon-ng/wiki/Getting-Started)
+[aircrack-ng](https://github.com/aircrack-ng/aircrack-ng)
 
