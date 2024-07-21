@@ -21,7 +21,9 @@ Use the arrow keys to navigte or:
 - `k` - up
 - `j` - down
 
-### less```
+### less
+
+```
 git clone https://github.com/jesseduffield/lazydocker.git
 ```
 This is a pager that allows searching and other functionality
@@ -44,7 +46,9 @@ This is a pager that allows searching and other functionality
 | q |	Exit less. |
 
 ## Prereqs:
+
 These will need to be installaed in order for this to function properly
+
 ```
 cd Command-Center
 ```
@@ -54,12 +58,15 @@ chmod +x install.sh
 ```
 ./install.sh
 ```
+
 ### Manual Install
 
 Install through package manager
+
 ```
 figlet htop lm_sensors vim dmidecode docker
 ```
+
 ```
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
