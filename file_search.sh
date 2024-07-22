@@ -11,7 +11,7 @@
 #
 clear
 cd ~/
-vim $(fzf -i --ansi --border rounded --preview='bat -f {}')
+vim $(fzf -i -x --ansi --border rounded --preview='bat -f {}')
 cd ~/Command-Center/
 ./command-center.sh
 exit 0
