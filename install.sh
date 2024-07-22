@@ -20,7 +20,7 @@ OS=$(head -1 /etc/os-release | sed 's/NAME="//'| awk '{print $1}')
 if [[ $OS = Fedora || RedHat ]]
 then
     sudo dnf copr enable pennbauman/ports # for lf terminal file manager
-    sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat
+    sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat curl
 # Getting lazy docer git repo
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     clear
@@ -34,7 +34,7 @@ then
 #Debian/Ubuntu
 elif [[ $OS = Pretty-Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]] || [[ $OS = Debian ]]
 then
-    sudo apt install figlet htop lm_sensors htop vim dmidecode docker git
+    sudo apt install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat curl
     clear
     echo -e "\e[1;32mUpdating Flatpak...\e[0m"
 # Install lazydocker from Github
@@ -50,7 +50,7 @@ then
 # Arch
 elif [[ $OS = Arch ]] || [[ $OS = Manjaro ]]
 then
-    sudo pcaman -S figlet htop lm_sensors htop vim dmidecode docker git
+    sudo pcaman -S install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat curl
     clear
     echo -e "\e[1;32mUpdating Flatpak...\e[0m"
 # Install lazydocker from Github
@@ -66,7 +66,7 @@ then
 # Open Suse
 elif [[ $OPTION = ff ]]
 then
-    sudo zypper install figlet htop lm_sensors htop vim dmidecode docker git
+    sudo zypper install install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat curl
     clear
     echo -e "\e[1;32mUpdating Flatpak...\e[0m"
 # Install lazydocker from Github
@@ -82,7 +82,7 @@ then
 # Alpine
 elif [[ $OPION = alpine ]]
 then
-    doas apk add figlet htop lm_sensors htop vim dmidecode
+    doas apk add install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat curl
     clear
     echo -e "\e[1;32mUpdating Flatpak...\e[0m"
 # Install lazydocker from Github
