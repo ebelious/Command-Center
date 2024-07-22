@@ -21,12 +21,17 @@ if [[ $OS = Fedora ]] || [[ $OS = RedHat ]]
 then
     sudo dnf copr enable pennbauman/ports # for lf terminal file manager
     sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat curl
-# Getting lazy docer git repo
+# Getting lazy docker git repo
+    echo -e "\e[1;32mInstalling lazydocker...\e[0m"
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     clear
+    echo -e "\e[1;32mInstalling metasploit...\e[0m"
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
       chmod 755 msfinstall && \
       ./msfinstall
+    echo -e "\e[1;32mInstalling sqlmap...\e[0m"
+    git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+    echo "alias sqlmap='python ~/Command-Center/sqlmap' "
     sleep 3
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
@@ -40,7 +45,7 @@ then
     sleep 3
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     clear
-    echo -e "\e[1;32mInstalling Metasploit...\e[0m"
+    echo -e "\e[1;32mInstalling metasploit...\e[0m"
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
       chmod 755 msfinstall && \
       ./msfinstall
