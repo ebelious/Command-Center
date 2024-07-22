@@ -7,33 +7,33 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Network - host detection
+# Network - speedtest
+# This is used for speedtest option in network
+#
+
+# Speedtest option menu
 #
 clear
-echo -e "\e[3;33mex: 192.168.1.0/24\e[0m"
-read -p 'Select the network: ' TARGET
+echo -e "\e[1;32mRunning Speed Test\e[0m"
 echo
-clear
-echo -e "\e[1;32mDetected Hosts\e[0m"
-echo
-nmap -sn -T5 $TARGET | grep report | awk '{print $5}'
+speedtest-cli | grep Mbit/s
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
-read -p ': ' OPTIONSCAN
+read -p ': ' OPTIONSPEED
 
-if [[ $OPTIONSCAN = r ]] || [[ $OPTIONSCAN = R ]]
+if [[ $OPTIONSPEED = r ]] || [[ $OPTIONSPEED = R ]]
 then
-    ./host_detection.sh
+    ./network_scripts/speedtest.sh
     exit 0
-elif [[ $OPTIONSCAN = q ]] || [[ $OPTIONSCAN = Q ]]
+elif [[ $OPTIONSPEED = q ]] || [[ $OPTIONSPEED = Q ]]
 then
-    ./network.sh
+    ./network_scripts/network.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./network.sh
+    ./network_scripts/network.sh
     exit 0
 fi

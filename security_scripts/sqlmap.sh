@@ -7,9 +7,9 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Security - recon-ng
-#
+# Security - SQLmap
+# This is sql map utility
 
 clear
-recon-ng 2>/dev/null
-./security.sh
+sqlmap --wizard
+./security/security.sh

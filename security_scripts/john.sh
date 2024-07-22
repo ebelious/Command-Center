@@ -7,23 +7,19 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Security - Hashcat - wordlist crack
-# This is will automate the command generation process
+# Security - John
+# This is will automate the command process for john
 #
-
 clear
 echo -e "\e[3;33muse the full filepath\e[0m"
-read -p 'What is the hash filename: ' HASHFILE
+read -p 'What is the password filename: ' HASHFILE
 clear
 echo -e "\e[3;33muse the full filepath\e[0m"
-read -p 'What is the hash mode: ' HASHMODE
-clear
-echo -e "\e[3;33muse the full filepath\e[0m"
-read -p 'What is the dictonary: ' DICTIONARY
+read -p 'What is the wordlist: ' WORDLIST
 clear
 echo -e "\e[1;32mCracking in progress\e[0m"
 echo
-hashcat -a 0 -m $HASHMODE $HASHFILE $DICTIONARY
+john --wordlist=WORDLIST --rules $HASHFILE
 echo
 echo
 echo
@@ -33,19 +29,19 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONHASH
 if [[ $OPTIONHASH = 0 ]]
 then
-    ./hashcat-mode.sh
+    ./security/hashcat-mode.sh
     exit 0
 elif [[ $OPTIONHASH = r ]] || [[ $OPTIONHASH = R ]]
 then
-    ./hashcat-wordlist.sh
+    ./security/hashcat-wordlist.sh
     exit 0
 elif [[ $OPTIONHASH = q ]] || [[ $OPTIONHASH = Q ]]
 then
-    ./hashcat.sh
+    ./security/hashcat.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./hashcat.sh
+    ./security/hashcat.sh
     exit 0
 fi

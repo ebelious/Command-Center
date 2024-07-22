@@ -37,33 +37,33 @@ echo ''
 if [[ $OPTIONENV = 0 ]]
 then
     sensors | less
-    ./enviroment.sh
+    ./enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 1 ]]
 then
     lscpu | less
-    ./enviroment.sh
+    ./enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 2 ]]
 then
     sudo dmidecode -t bios | less
-    ./enviroment.sh
+    ./enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 3 ]]
 then
     sudo dmidecode -t memory | less
-    ./enviroment.sh
+    ./enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 4 ]]
 then
     sudo dmidecode -t system | less
-    ./enviroment.sh
+    ./enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 5 ]]
 then
     sudo lspci | less
-    ./enviroment.sh
+    ./enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 6 ]]
 then
-    ./disk_info.sh
+    ./enviroment_scripts/disk_info.sh
 elif [[ $OPTIONENV = 7 ]]
 then
-    ./disk_dev.sh
+    ./enviroment_scripts/disk_dev.sh
     exit 0
 elif [[ $OPTIONENV = q ]] || [[ $OPTIONENV = Q ]]
 then

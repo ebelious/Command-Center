@@ -7,9 +7,9 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Network - Netstat
-# This is used for running netstat to identify open ports
+# Security - Metasploit
+# This is the Metasploit framework
 #
 clear
-netstat | less
-./network.sh
+/opt/metasploit-framework//bin/msfconsole -q
+./security/security.sh

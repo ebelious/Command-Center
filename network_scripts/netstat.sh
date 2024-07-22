@@ -7,9 +7,9 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Security - SQLmap
-# This is sql map utility
-
+# Network - Netstat
+# This is used for running netstat to identify open ports
+#
 clear
-sqlmap --wizard
-./security.sh
+netstat | less
+./network_scripts/network.sh

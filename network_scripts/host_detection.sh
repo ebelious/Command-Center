@@ -7,29 +7,33 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Security - hash -dentifier
-# This is used for testing, and changing networking information
+# Network - host detection
 #
 clear
-echo -e "\e[1;32mEnter Hash here\e[0m     \e[3;33mctl+x to exit\e[0m"
-read -p ': ' HASHID
-hashid $HASHID
+echo -e "\e[3;33mex: 192.168.1.0/24\e[0m"
+read -p 'Select the network: ' TARGET
+echo
+clear
+echo -e "\e[1;32mDetected Hosts\e[0m"
+echo
+nmap -sn -T5 $TARGET | grep report | awk '{print $5}'
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
-read -p ': ' OPTIONHASH
-if [[ $OPTIONHASH = r ]] || [[ $OPTIONHASH = R ]]
+read -p ': ' OPTIONSCAN
+
+if [[ $OPTIONSCAN = r ]] || [[ $OPTIONSCAN = R ]]
 then
-    ./hash_id.sh
+    ./network_scripts/host_detection.sh
     exit 0
-elif [[ $OPTIONHASH = q ]] || [[ $OPTIONHASH = Q ]]
+elif [[ $OPTIONSCAN = q ]] || [[ $OPTIONSCAN = Q ]]
 then
-    ./security.sh
+    ./network_scripts/network.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./security.sh
+    ./network_scripts/network.sh
     exit 0
 fi

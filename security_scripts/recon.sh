@@ -7,9 +7,9 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Security - Metasploit
-# This is the Metasploit framework
+# Security - recon-ng
 #
+
 clear
-/opt/metasploit-framework//bin/msfconsole -q
-./security.sh
+recon-ng 2>/dev/null
+./security/security.sh

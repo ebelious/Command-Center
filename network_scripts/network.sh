@@ -43,35 +43,35 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONNET
 if [[ $OPTIONNET = 0 ]]
 then
-    ./speedtest.sh
+    ./network_scripts/speedtest.sh
     exit 0
 elif [[ $OPTIONNET = 1 ]]
 then
-    ./net_info.sh
+    ./network_scripts/net_info.sh
     exit 0
 elif [[ $OPTIONNET = 2 ]]
 then
-    ./ping.sh
+    ./network_scripts/ping.sh
     exit 0
 elif [[ $OPTIONNET = 3 ]]
 then
-    ./traceroute.sh
+    ./network_scripts/traceroute.sh
     exit 0
 elif [[ $OPTIONNET = 4 ]]
 then
-    ./netstat.sh
+    ./network_scripts/netstat.sh
     exit 0
 elif [[ $OPTIONNET = 5 ]]
 then
-    ./nslookup.sh
+    ./network_scripts/nslookup.sh
     exit 0
 elif [[ $OPTIONNET = 6 ]]
 then
-    ./iftop.sh
+    ./network_scripts/iftop.sh
     exit 0
 elif [[ $OPTIONNET = 7 ]]
 then
-    ./host_detection.sh
+    ./network_scripts/host_detection.sh
 elif [[ $OPTIONNET = q ]] || [[ $OPTIONNET = Q ]]
 then
     ./command-center.sh

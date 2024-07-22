@@ -58,7 +58,7 @@ then
 fi
 if [[ $OPTION = 1 ]]
 then
-    ./enviroment.sh
+    ./enviroment_scripts/enviroment.sh
     exit 0
 fi
 if [[ $OPTION = 2 ]]
@@ -73,12 +73,12 @@ then
 fi
 if [[ $OPTION = 4 ]]
 then
-    ./network.sh
+    ./network_scripts/network.sh
     exit 0
 fi
 if [[ $OPTION = 5 ]]
 then
-    ./security.sh
+    ./security_scripts/security.sh
 fi
 if [[ $OPTION = 6 ]]
 then

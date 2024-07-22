@@ -24,15 +24,15 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONMEN
 if [[ $OPTIONMEN = R ]] || [[ $OPTIONMEN = r ]]
 then
-    ./nslookup.sh
+    ./network_scripts/nslookup.sh
     exit 0
 elif [[ $OPTIONMEN = q ]] || [[ $OPTIONMEN = Q ]]
 then
-    ./network.sh
+    ./network_scripts/network.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./network.sh
+    ./network_scripts/network.sh
     exit 0
 fi

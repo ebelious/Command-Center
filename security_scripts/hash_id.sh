@@ -7,33 +7,29 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Network - speedtest
-# This is used for speedtest option in network
-#
-
-# Speedtest option menu
+# Security - hash -dentifier
+# This is used for testing, and changing networking information
 #
 clear
-echo -e "\e[1;32mRunning Speed Test\e[0m"
-echo
-speedtest-cli | grep Mbit/s
+echo -e "\e[1;32mEnter Hash here\e[0m     \e[3;33mctl+x to exit\e[0m"
+read -p ': ' HASHID
+hashid $HASHID
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
-read -p ': ' OPTIONSPEED
-
-if [[ $OPTIONSPEED = r ]] || [[ $OPTIONSPEED = R ]]
+read -p ': ' OPTIONHASH
+if [[ $OPTIONHASH = r ]] || [[ $OPTIONHASH = R ]]
 then
-    ./speedtest.sh
+    ./security/hash_id.sh
     exit 0
-elif [[ $OPTIONSPEED = q ]] || [[ $OPTIONSPEED = Q ]]
+elif [[ $OPTIONHASH = q ]] || [[ $OPTIONHASH = Q ]]
 then
-    ./network.sh
+    ./security/security.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./network.sh
+    ./security/security.sh
     exit 0
 fi

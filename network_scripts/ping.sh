@@ -36,15 +36,15 @@ read -p ': ' OPTIONPING
 
 if [[ $OPTIONPING = r ]] || [[ $OPTIONPING = R ]]
 then
-    ./ping.sh
+    ./network_scripts/ping.sh
     exit 0
 elif [[ $OPTIONPING = q ]] || [[ $OPTIONPING = Q ]]
 then
-    ./network.sh
+    ./network_scripts/network.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./network.sh
+    ./network_scripts/network.sh
     exit 0
 fi
