@@ -37,7 +37,6 @@ then
     clear
     echo -e "\e[1;32mInstalling lazydocker...\e[0m"
 # Install lazydocker from Github
-    echo -e "\e[1;32mPress 'q' to continue installation after you see lazydocker screen\e[0m"
     sleep 3
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     clear
