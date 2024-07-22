@@ -11,16 +11,17 @@
 # Some of te options are only configure for basic functionality as others are direct contact with the tool interface
 #
 # git remote add origin git@github.com:ebelious/Command-Center.git
- # git push -u origin main
- # git branch -M main
- # git add .
- # git commit -m "Added additionsal functionality"
- # git push -u origin main
+# git push -u origin main
+# git branch -M main
+# git add .
+# git commit -m "Added additional functionality"
+# git push -u origin main
 
 # This is the selection menu
 cd ~/Documents/Projects/Command-Center/
 clear
 figlet CommandCenter
+echo 'Terminal-based multi-tool for administration taks, with a few extras'
 echo -e "Found at: \e[3;33mhttps://github.com/ebelious/Command-Center\e[0m"
 #printf '%s  ____                                          _  ____           _ '
 #printf '%s / ___|___  _ __ ___  _ __ ___   __ _ _ __   __| |/ ___|___ _ __ | |_ ___ _ __ '
@@ -43,6 +44,7 @@ echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m Security"
 echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m (.) Files"
 echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m Docker"
 echo -e "\e[1;32m[\e[1;36m8\e[1;32m]\e[0m Browse Files"
+echo -e "\e[1;32m[\e[1;36m9\e[1;32m]\e[0m File Search"
 echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
@@ -91,6 +93,11 @@ fi
 if [[ $OPTION = 8 ]]
 then
     ./file_browser.sh
+    exit 0
+fi
+if [[ $OPTION = 9 ]]
+then
+    ./file_search.sh
     exit 0
 fi
 if [[ $OPTION = Q ]] || [[ $OPTION = q ]]

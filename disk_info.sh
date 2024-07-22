@@ -14,25 +14,23 @@
 # Variables
 # This wil disp[lay info from df -h and lsblk
 clear
-echo ''
+echo
 echo -e '\e[1;32mDisk Space\e[0m'
 printf '=%.0s' {1..30} ; printf '=\n'
-echo ''
 df -h
-echo ''
-echo ''
+echo
+echo
 echo -e '\e[1;32mMount Points\e[0m'
 printf '=%.0s' {1..30} ; printf '=\n'
-echo ''
 lsblk
-echo ''
-echo ''
+echo
+echo
 echo -e '\e[1;32mUSB Devices\e[0m'
 printf '=%.0s' {1..30} ; printf '=\n'
 lsusb
-echo ''
+echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
-echo''
+echo
 read -p ': ' OPTIONDISK
 
 # This sill alow the user to output info to a file oe exit back to command-center menu

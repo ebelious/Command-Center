@@ -20,16 +20,19 @@ OS=$(head -1 /etc/os-release | sed 's/NAME="//'| awk '{print $1}')
 if [[ $OS = Fedora || RedHat ]]
 then
     sudo dnf copr enable pennbauman/ports # for lf terminal file manager
-    sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git lf
+    sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat
 # Getting lazy docer git repo
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     clear
+    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+      chmod 755 msfinstall && \
+      ./msfinstall
     sleep 3
 
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 #Debian/Ubuntu
-elif [[ $OS = Pretty-Ubuntu || PRETTY_Debian ]]
+elif [[ $OS = Pretty-Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]] || [[ $OS = Debian ]]
 then
     sudo apt install figlet htop lm_sensors htop vim dmidecode docker git
     clear
@@ -38,6 +41,10 @@ then
     echo -e "\e[1;32mPress 'q' to continue installation after you see lazydocker screen\e[0m"
     sleep 3
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+    clear
+    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+      chmod 755 msfinstall && \
+      ./msfinstall
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 # Arch
@@ -50,6 +57,10 @@ then
     echo -e "\e[1;32mPress 'q' to continue installation after you see lazydocker screen\e[0m"
     sleep 3
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+    clear
+    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+      chmod 755 msfinstall && \
+      ./msfinstall
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 # Open Suse
@@ -62,6 +73,10 @@ then
     echo -e "\e[1;32mPress 'q' to continue installation after you see lazydocker screen\e[0m"
     sleep 3
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+   clear
+   curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+     chmod 755 msfinstall && \
+     ./msfinstall
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 # Alpine
@@ -74,6 +89,10 @@ then
     echo -e "\e[1;32mPress 'q' to continue installation after you see lazydocker screen\e[0m"
     sleep 3
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+    clear
+    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+      chmod 755 msfinstall && \
+      ./msfinstall
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 else

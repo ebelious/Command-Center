@@ -26,6 +26,7 @@ echo -e "\e[1;32m[\e[1;36m3\e[1;32m]\e[0m RAM"
 echo -e "\e[1;32m[\e[1;36m4\e[1;32m]\e[0m System"
 echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m PCI"
 echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m Disks"
+echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m Disks Dev By"
 echo ''
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 echo''
@@ -60,6 +61,10 @@ then
 elif [[ $OPTIONENV = 6 ]]
 then
     ./disk_info.sh
+elif [[ $OPTIONENV = 7 ]]
+then
+    ./disk_dev.sh
+    exit 0
 elif [[ $OPTIONENV = q ]] || [[ $OPTIONENV = Q ]]
 then
     ./command-center.sh
