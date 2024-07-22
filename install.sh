@@ -32,7 +32,7 @@ then
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 #Debian/Ubuntu
-elif [[ $OS = Pretty-Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]] || [[ $OS = Debian ]]
+elif [[ $OS = PRETTY-Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]] || [[ $OS = Debian ]]
 then
     sudo apt install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat curl
     clear
