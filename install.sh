@@ -17,7 +17,7 @@ chmod 755 ./*.sh
 #identifiying the OS to use proper package manager and installing prereqs
 OS=$(head -1 /etc/os-release | sed 's/NAME="//'| awk '{print $1}')
 # Fedora / Redhat
-if [[ $OS = Fedora || RedHat ]]
+if [[ $OS = Fedora ]] || [[ $OS = RedHat ]]
 then
     sudo dnf copr enable pennbauman/ports # for lf terminal file manager
     sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat curl
@@ -28,7 +28,6 @@ then
       chmod 755 msfinstall && \
       ./msfinstall
     sleep 3
-
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 #Debian/Ubuntu
