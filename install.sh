@@ -36,12 +36,13 @@ elif [[ $OS = PRETTY-Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]]
 then
     sudo apt install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat curl
     clear
-    echo -e "\e[1;32mUpdating Flatpak...\e[0m"
+    echo -e "\e[1;32mUpdating lazydocker...\e[0m"
 # Install lazydocker from Github
     echo -e "\e[1;32mPress 'q' to continue installation after you see lazydocker screen\e[0m"
     sleep 3
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     clear
+    echo -e "\e[1;32mUpdating lazydocker...\e[0m"
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
       chmod 755 msfinstall && \
       ./msfinstall
