@@ -102,6 +102,11 @@ then
 fi
 if [[ $OPTION = Q ]] || [[ $OPTION = q ]]
 then
+    clear
+    echo -e "\e[1;32mThanks for using the Command Center\e[0m"
+    echo -e "\e[1;35m         * * * * * *\e[0m"
+    echo -e "\e[1;33m         > \e[1;32mbye bye\e[0m"
+    sleep 2
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"

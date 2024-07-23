@@ -12,10 +12,12 @@
 #
 clear
 echo
-echo -e "\e[1;32mNetwork Center\e[0m"
-ip -c a
+echo -e "\e[1;32mPublic IP\e[0m"
+dig +short myip.opendns.com @resolver1.opendns.com
+echo -e "\e[1;32mPrivate IP\e[0m"
+hostname -I | awk '{print $1}'
 echo -e "\e[1;32mGateway\e[0m"
-ip -c neighbor
+route -n | grep 'UG[ \t]' | awk '{print $2}'
 echo -e "\e[1;32mInternet\e[0m"
 for x in 8.8.8.8
 do
