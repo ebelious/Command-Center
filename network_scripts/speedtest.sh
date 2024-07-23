@@ -25,15 +25,15 @@ read -p ': ' OPTIONSPEED
 
 if [[ $OPTIONSPEED = r ]] || [[ $OPTIONSPEED = R ]]
 then
-    ./network_scripts/speedtest.sh
+    ~/Command-Center/network_scripts/speedtest.sh
     exit 0
 elif [[ $OPTIONSPEED = q ]] || [[ $OPTIONSPEED = Q ]]
 then
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 fi
