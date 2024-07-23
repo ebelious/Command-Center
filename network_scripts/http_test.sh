@@ -26,7 +26,7 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONNMAP
 if [[ $OPTIONNMAP = r ]] || [[ $OPTIONNMAP = R ]]
 then
-    ./network_scripts/http_test.sh
+    ~/Command-Center/network_scripts/http_test.sh
     exit 0
 elif [[ $OPTIONNMAP = q ]] || [[ $OPTIONNMAP = Q ]]
 then
