@@ -47,45 +47,45 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONNET
 if [[ $OPTIONNET = 0 ]]
 then
-    ./network_scripts/speedtest.sh
+    ~/Command-Center/network_scripts/speedtest.sh
     exit 0
 elif [[ $OPTIONNET = 1 ]]
 then
-    ./network_scripts/net_info.sh
+    ~/Command-Center/network_scripts/net_info.sh
     exit 0
 elif [[ $OPTIONNET = 2 ]]
 then
-    ./network_scripts/ping.sh
+    ~/Command-Center/network_scripts/ping.sh
     exit 0
 elif [[ $OPTIONNET = 3 ]]
 then
-    ./network_scripts/traceroute.sh
+    ~/Command-Center/network_scripts/traceroute.sh
     exit 0
 elif [[ $OPTIONNET = 4 ]]
 then
-    ./network_scripts/netstat.sh
+    ~/Command-Center/network_scripts/netstat.sh
     exit 0
 elif [[ $OPTIONNET = 5 ]]
 then
-    ./network_scripts/nslookup.sh
+    ~/Command-Center/network_scripts/nslookup.sh
     exit 0
 elif [[ $OPTIONNET = 6 ]]
 then
-    ./network_scripts/iftop.sh
+    ~/Command-Center/network_scripts/iftop.sh
     exit 0
 elif [[ $OPTIONNET = 7 ]]
 then
-    ./network_scripts/host_detection.sh
+    ~/Command-Center/network_scripts/host_detection.sh
 elif [[ $OPTIONNET = 8 ]]
 then
-    ./network_scripts/tcp_dump.sh
+    ~/Command-Center/network_scripts/tcp_dump.sh
     exit 0
 elif [[ $OPTIONNET = 9 ]]
 then
-    ./network_scripts/http_test.sh
+    ~/Command-Center/network_scripts/http_test.sh
     exit 0
 elif [[ $OPTIONNET = q ]] || [[ $OPTIONNET = Q ]]
 then
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
     exit 0
 fi
