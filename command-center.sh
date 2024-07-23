@@ -90,7 +90,7 @@ then
     ./dockercli.sh
     exit 0
 fi
-if [[ $OPTION = 8 ]]
+if [[ $OPTION =2 8 ]]
 then
     ./file_browser.sh
     exit 0
