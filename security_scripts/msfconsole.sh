@@ -12,4 +12,4 @@
 #
 clear
 /opt/metasploit-framework//bin/msfconsole -q
-./security_scripts/security.sh
+~/Command-Center/security_scripts/security.sh
