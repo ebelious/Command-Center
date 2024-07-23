@@ -96,7 +96,7 @@ then
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 # Open Suse
-elif [[ $OPTION = ff ]]
+elif [[ $OPTION = Opensuse ]]
 then
     sudo zypper install install figlet htop grc lm_sensors htop vim dmidecode docker git lf fzf bat curl nmap
     clear
@@ -112,7 +112,7 @@ then
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 # Alpine
-elif [[ $OPION = alpine ]]
+elif [[ $OPION = Alpine ]]
 then
     doas apk add install figlet htop lm_sensors htop vim dmidecode docker git lf fzf bat curl nmap grc john hashid hashcat
     clear
