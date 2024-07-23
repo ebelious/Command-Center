@@ -11,7 +11,7 @@
 # Some of te options are only configure for basic functionality as others are direct contact with the tool interface
 #
 # git remote add origin git@github.com:ebelious/Command-Center.git
-# git push -u origin main
+# git pull origin main
 # git branch -M main
 # git add .
 # git commit -m "Added additional functionality"

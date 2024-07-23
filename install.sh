@@ -48,15 +48,25 @@ elif [[ $OS = PRETTY_Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]]
 then
     sudo apt install figlet htop lm-sensors htop vim grc dmidecode docker.io git lf fzf bat curl hashid hashcat john nmap
     clear
+# Getting lazy docker git repo
     echo -e "\e[1;32mInstalling lazydocker...\e[0m"
-# Install lazydocker from Github
-    sleep 3
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     clear
+# Getting metasploit
     echo -e "\e[1;32mInstalling metasploit...\e[0m"
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
-      chmod 755 msfinstall && \
-      ./msfinstall
+        chmod 755 msfinstall && \
+        ./msfinstall
+# Getting sqlmap
+    echo -e "\e[1;32mInstalling sqlmap...\e[0m"
+    git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+    echo "alias sqlmap='python ~/Command-Center/sqlmap' "
+# Getting recon-ng
+     git clone https://github.com/lanmaster53/recon-ng.git
+    cd recon-ng
+    sudo docker build --rm -t recon-ng .
+    cd ~/Comand-Center/
+     sleep 3
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 # Arch
@@ -64,15 +74,25 @@ elif [[ $OS = Arch ]] || [[ $OS = Manjaro ]]
 then
     sudo pcaman -S install figlet htop lm_sensors grc htop vim dmidecode docker git lf fzf bat curl hashid hashcat john nmap
     clear
-    echo -e "\e[1;32mUpdating Flatpak...\e[0m"
-# Install lazydocker from Github
-    echo -e "\e[1;32mPress 'q' to continue installation after you see lazydocker screen\e[0m"
-    sleep 3
+# Getting lazy docker git repo
+    echo -e "\e[1;32mInstalling lazydocker...\e[0m"
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     clear
+# Getting metasploit
+    echo -e "\e[1;32mInstalling metasploit...\e[0m"
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
-      chmod 755 msfinstall && \
-      ./msfinstall
+        chmod 755 msfinstall && \
+        ./msfinstall
+# Getting sqlmap
+    echo -e "\e[1;32mInstalling sqlmap...\e[0m"
+    git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+    echo "alias sqlmap='python ~/Command-Center/sqlmap' "
+# Getting recon-ng
+    git clone https://github.com/lanmaster53/recon-ng.git
+    cd recon-ng
+    sudo docker build --rm -t recon-ng .
+    cd ~/Comand-Center/
+    sleep 3
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 # Open Suse
