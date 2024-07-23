@@ -98,6 +98,5 @@ cd recon-ng
 sudo docker build --rm -t recon-ng .
 ```
     
-[recon-ng](https://github.com/lanmaster53/recon-ng/wiki/Getting-Started)
 [aircrack-ng](https://github.com/aircrack-ng/aircrack-ng)
 
