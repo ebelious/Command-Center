@@ -53,51 +53,51 @@ read -p ': ' OPTION
 
 if [[ $OPTION = 0 ]]
 then
-    ./update.sh
+    ~/Command-Center/update.sh
     exit 0
 fi
 if [[ $OPTION = 1 ]]
 then
-    ./enviroment_scripts/enviroment.sh
+    ~/Command-Center/enviroment_scripts/enviroment.sh
     exit 0
 fi
 if [[ $OPTION = 2 ]]
 then
-    ./processes.sh
+    ~/Command-Center/processes.sh
     exit 0
 fi
 if [[ $OPTION = 3 ]]
 then
-    ./users-groups.sh
+    ~/Command-Center/users-groups.sh
     exit 0
 fi
 if [[ $OPTION = 4 ]]
 then
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 fi
 if [[ $OPTION = 5 ]]
 then
-    ./security_scripts/security.sh
+    ~/Command-Center/security_scripts/security.sh
 fi
 if [[ $OPTION = 6 ]]
 then
-    ./editbash.sh
+    ~/Command-Center/editbash.sh
     exit 0
 fi
 if [[ $OPTION = 7 ]]
 then
-    ./dockercli.sh
+    ~/Command-Center/dockercli.sh
     exit 0
 fi
 if [[ $OPTION = 8 ]]
 then
-    ./file_browser.sh
+    ~/Command-Center/file_browser.sh
     exit 0
 fi
 if [[ $OPTION = 9 ]]
 then
-    ./file_search.sh
+    ~/Command-Center/file_search.sh
     exit 0
 fi
 if [[ $OPTION = Q ]] || [[ $OPTION = q ]]
@@ -111,6 +111,6 @@ then
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep .5
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
     exit 0
 fi
