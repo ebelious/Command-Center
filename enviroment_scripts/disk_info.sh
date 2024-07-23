@@ -17,17 +17,17 @@ clear
 echo
 echo -e '\e[1;32mDisk Space\e[0m'
 printf '=%.0s' {1..30} ; printf '=\n'
-df -h
+grc df -h
 echo
 echo
 echo -e '\e[1;32mMount Points\e[0m'
 printf '=%.0s' {1..30} ; printf '=\n'
-lsblk
+grc lsblk
 echo
 echo
 echo -e '\e[1;32mUSB Devices\e[0m'
 printf '=%.0s' {1..30} ; printf '=\n'
-lsusb
+grc lsusb
 echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 echo
