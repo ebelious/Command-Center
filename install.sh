@@ -22,6 +22,7 @@ if [[ $OS = Fedora ]] || [[ $OS = RedHat ]]
 then
     sudo dnf copr enable pennbauman/ports # for lf terminal file manager
     sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf bat curl hashid john hashcat nmap
+    clear
 # Getting lazy docker git repo
     echo -e "\e[1;32mInstalling lazydocker...\e[0m"
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
