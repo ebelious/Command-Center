@@ -21,6 +21,14 @@ echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
+# time stamp
+rightprompt()
+{
+    printf "%*s" $COLUMNS "[$(date +%r)]"
+}
+tput sc; rightprompt; tput rc
+# Allows the user to exit thes screen and go back to the command-center menu
+# Output info into a file with timestamp
 read -p ': ' OPTIONHASH
 if [[ $OPTIONHASH = 0 ]]
 then
