@@ -82,6 +82,21 @@ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/t
   chmod 755 msfinstall && \
   ./msfinstall
 ```
+
+sqlmap
+```
+git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+echo "alias sqlmap='python ~/Command-Center/sqlmap' "
+Getting recon-ng
+```
+
+Get recon-ng
+```
+git clone https://github.com/lanmaster53/recon-ng.git
+cd recon-ng
+sudo docker build --rm -t recon-ng .
+```
+    
 [recon-ng](https://github.com/lanmaster53/recon-ng/wiki/Getting-Started)
 [aircrack-ng](https://github.com/aircrack-ng/aircrack-ng)
 
