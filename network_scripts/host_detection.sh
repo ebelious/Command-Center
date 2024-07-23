@@ -25,15 +25,15 @@ read -p ': ' OPTIONSCAN
 
 if [[ $OPTIONSCAN = r ]] || [[ $OPTIONSCAN = R ]]
 then
-    ./network_scripts/host_detection.sh
+    ~/Command-Center/network_scripts/host_detection.sh
     exit 0
 elif [[ $OPTIONSCAN = q ]] || [[ $OPTIONSCAN = Q ]]
 then
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 fi
