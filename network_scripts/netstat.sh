@@ -12,4 +12,4 @@
 #
 clear
 netstat | less
-./network_scripts/network.sh
+~/Command-Center/network_scripts/network.sh
