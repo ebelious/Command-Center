@@ -36,19 +36,19 @@ then
     echo
     read -p 'What is the interface: ' INTERFACE
     sudo grc tcpdump -A -i $INTERFACE
-    ./network_scripts/tcp_dump.sh
+    ~/Command-Center/network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = 1 ]]
 then
     read -p 'What is the port: ' PORT
     sudo grc tcpdump -A port $PORT
-    ./network_scripts/tcp_dump.sh
+    ~/Command-Center/network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = 2 ]]
 then
     read -p 'What is the destination: ' TARGET
     sudo grc tcpdump -A dst $TARGET
-    ./network_scripts/tcp_dump.sh
+    ~/Command-Center/network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = 3 ]]
 then
@@ -56,7 +56,7 @@ then
     echo
     read -p 'What is the destination: ' SOURCE
     sudo grc tcpdump -A src $SOURCE
-    ./network_scripts/tcp_dump.sh
+    ~/Command-Center/network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = 4 ]]
 then
@@ -65,7 +65,7 @@ then
     read -p 'What interface: ' INTERFACE
     read -p 'What is the port: ' PORT
     sudo grc tcpdump -A -i $INTERFACE and port $PORT
-    ./network_scripts/tcp_dump.sh
+    ~/Command-Center/network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = 5 ]]
 then
@@ -75,19 +75,19 @@ then
     read -p 'What is the destination: ' TARGET
     read -p 'What is the port: ' PORT
     sudo grc tcpdump -A src $SOURCE and dst $TARGET and port $PORT
-    ./network_scripts/tcp_dump.sh
+    ~/Command-Center/network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = q ]] || [[ $OPTION = Q ]]
 then
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 fi
 if [[ $OPTIONNMAP = r ]] || [[ $OPTIONNMAP = R ]]
 then
-    ./network_scripts/tcp_dump.sh
+    ~/Command-Center/network_scripts/tcp_dump.sh
     exit 0
 else
-./network_scripts/network.sh
+~/Command-Center/network_scripts/network.sh
 exit 0
 fi
 echo
@@ -97,15 +97,15 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONNMAP
 if [[ $OPTIONNMAP = r ]] || [[ $OPTIONNMAP = R ]]
 then
-    ./network_scripts/tcp_dump.sh
+    ~/Command-Center/network_scripts/tcp_dump.sh
     exit 0
 elif [[ $OPTIONNMAP = q ]] || [[ $OPTIONNMAP = Q ]]
 then
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 fi
