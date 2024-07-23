@@ -6,7 +6,7 @@ This is a collection of bash scripts that consolidate some administrative tasks 
 ![cc](https://github.com/ebelious/Command-Center/blob/main/Screenshot%20from%202024-07-22%2020-56-26.png)
 
 ## Usage
-Just launch `command-center.sh` and easily navigate using numbers and letters that are listed next to the options. This uses `vim` and `less`, there are basic instructions below.
+Just use `ccenter`(alias) and easily navigate using numbers and letters that are listed next to the options. This uses `vim` and `less`, there are basic instructions below.
 
 
 ### vim
