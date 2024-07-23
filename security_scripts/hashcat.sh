@@ -24,23 +24,23 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONHASH
 if [[ $OPTIONHASH = 0 ]]
 then
-    ./security_scripts/hashcat-mode.sh
+    ~/Command-Center/security_scripts/hashcat-mode.sh
     exit 0
 elif [[ $OPTIONHASH = 1 ]]
 then
-    ./security_scripts/hashcat-wordlist.sh
+    ~/Command-Center/security_scripts/hashcat-wordlist.sh
     exit 0
 elif [[ $OPTIONHASH = r ]] || [[ $OPTIONHASH = R ]]
 then
-    ./security_scripts/hash_id.sh
+    ~/Command-Center/security_scripts/hash_id.sh
     exit 0
 elif [[ $OPTIONHASH = q ]] || [[ $OPTIONHASH = Q ]]
 then
-    ./security_scripts/security.sh
+    ~/Command-Center/security_scripts/security.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./security_scripts/security.sh
+    ~/Command-Center/security_scripts/security.sh
     exit 0
 fi
