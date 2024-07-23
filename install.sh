@@ -41,7 +41,7 @@ then
     git clone https://github.com/lanmaster53/recon-ng.git
     cd recon-ng
     sudo docker build --rm -t recon-ng .
-    ~/Comand-Center/command-center.sh
+    ~/Command-Center/command-center.sh
 #
 #Debian/Ubuntu
 elif [[ $OS = PRETTY_Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]] || [[ $OS = Debian ]]
@@ -67,7 +67,7 @@ then
     git clone https://github.com/lanmaster53/recon-ng.git
     cd recon-ng
     sudo docker build --rm -t recon-ng .
-    ~/Comand-Center/command-center.sh
+    ~/Command-Center/command-center.sh
 #
 #
 # Arch
@@ -94,7 +94,7 @@ then
     git clone https://github.com/lanmaster53/recon-ng.git
     cd recon-ng
     sudo docker build --rm -t recon-ng .
-    ~/Comand-Center/command-center.sh
+    ~/Command-Center/command-center.sh
 #
 #
 # Open Suse
@@ -121,7 +121,7 @@ then
     git clone https://github.com/lanmaster53/recon-ng.git
     cd recon-ng
     sudo docker build --rm -t recon-ng .
-    ~/Comand-Center/command-center.sh
+    ~/Command-Center/command-center.sh
 #
 #
 # Alpine
@@ -148,7 +148,7 @@ then
     git clone https://github.com/lanmaster53/recon-ng.git
     cd recon-ng
     sudo docker build --rm -t recon-ng .
-    ~/Comand-Center/command-center.sh
+    ~/Command-Center/command-center.sh
 #
 
 else
