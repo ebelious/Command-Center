@@ -42,8 +42,8 @@ then
     git clone https://github.com/lanmaster53/recon-ng.git
     cd recon-ng
     sudo docker build --rm -t recon-ng .
-    echo "alias commandc='~/Command-Center/command-center.sh'" >> ~/.bashrc
-    echo "alias commandc='~/Command-Center/command-center.sh'" >> ~/.zshrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> ~/.bashrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> ~/.zshrc
     ~/Command-Center/command-center.sh
 #
 #Debian/Ubuntu
@@ -70,8 +70,8 @@ then
     git clone https://github.com/lanmaster53/recon-ng.git
     cd recon-ng
     sudo docker build --rm -t recon-ng .
-    echo "alias commandc='~/Command-Center/command-center.sh'" >> ~/.bashrc
-    echo "alias commandc='~/Command-Center/command-center.sh'" >> ~/.zshrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> ~/.bashrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> ~/.zshrc
     ~/Command-Center/command-center.sh
 #
 #
@@ -99,8 +99,8 @@ then
     git clone https://github.com/lanmaster53/recon-ng.git
     cd recon-ng
     sudo docker build --rm -t recon-ng .
-    echo "alias commandc='~/Command-Center/command-center.sh'" >> ~/.bashrc
-    echo "alias commandc='~/Command-Center/command-center.sh'" >> ~/.zshrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> ~/.bashrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> ~/.zshrc
     ~/Command-Center/command-center.sh
 #
 #
@@ -128,8 +128,8 @@ then
     git clone https://github.com/lanmaster53/recon-ng.git
     cd recon-ng
     sudo docker build --rm -t recon-ng .
-    echo "alias commandc='~/Command-Center/command-center.sh'" >> ~/.bashrc
-    echo "alias commandc='~/Command-Center/command-center.sh'" >> ~/.zshrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> ~/.bashrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> ~/.zshrc
     ~/Command-Center/command-center.sh
 #
 #
@@ -157,8 +157,8 @@ then
     git clone https://github.com/lanmaster53/recon-ng.git
     cd recon-ng
     sudo docker build --rm -t recon-ng .
-    echo "alias commandc='~/Command-Center/command-center.sh'" >> ~/.bashrc
-    echo "alias commandc='~/Command-Center/command-center.sh'" >> ~/.zshrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> ~/.bashrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> ~/.zshrc
     ~/Command-Center/command-center.sh
 #
 
