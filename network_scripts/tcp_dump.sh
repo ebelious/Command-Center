@@ -64,7 +64,7 @@ then
     echo
     read -p 'What interface: ' INTERFACE
     read -p 'What is the port: ' PORT
-    sudo grc tcpdump -A -i $INTERFACE port $PORT
+    sudo grc tcpdump -A -i $INTERFACE and port $PORT
     ./network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = 5 ]]
@@ -74,7 +74,7 @@ then
     read -p 'What is the source: ' SOURCE
     read -p 'What is the destination: ' TARGET
     read -p 'What is the port: ' PORT
-    sudo grc tcpdump -A src $SOURCE dst $TARGET port $PORT
+    sudo grc tcpdump -A src $SOURCE and dst $TARGET and port $PORT
     ./network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = q ]] || [[ $OPTION = Q ]]
