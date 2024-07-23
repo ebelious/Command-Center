@@ -23,7 +23,7 @@ for x in 8.8.8.8
 do
     if ping -q -c 1 -W 1 $x &> /dev/null
     then
-        echo -e "\e[1;36m     Good\e[0m"
+        echo -e "\e[1;36mGood\e[0m"
     else
         echo -e "\e[1;31mNo Connection\e[0m"
     fi
