@@ -12,5 +12,5 @@
 
 clear
 sudo iftop
-./network_scripts/network.sh
+~/Command-Center/network_scripts/network.sh
 exit 0
