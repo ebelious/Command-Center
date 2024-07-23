@@ -96,7 +96,7 @@ then
     ~/home/Documents/Projects/Command-center
     ./command-center.sh
 # Open Suse
-elif [[ $OPTION = Opensuse ]]
+elif [[ $OPTION = OpenSUSE ]]
 then
     sudo zypper install install figlet htop grc lm_sensors htop vim dmidecode docker git lf fzf bat curl nmap
     clear
