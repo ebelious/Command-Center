@@ -20,13 +20,13 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONMEN
 if [[ $OPTIONMEN = R ]] || [[ $OPTIONMEN = r ]]
 then
-    ./network_scripts/net_info.sh
+    ~/Command-Center/network_scripts/net_info.sh
     exit 0
 elif [[ $OPTIONMEN = q ]] || [[ $OPTIONMEN = Q ]]
 then
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 else
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 fi
