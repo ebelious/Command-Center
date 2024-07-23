@@ -37,40 +37,40 @@ echo ''
 if [[ $OPTIONENV = 0 ]]
 then
     sensors | less
-    ./enviroment_scripts/enviroment.sh
+    ~/Command-Center/enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 1 ]]
 then
     lscpu | less
-    ./enviroment_scripts/enviroment.sh
+    ~/Command-Center/enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 2 ]]
 then
     sudo dmidecode -t bios | less
-    ./enviroment_scripts/enviroment.sh
+    ~/Command-Center/enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 3 ]]
 then
     sudo dmidecode -t memory | less
-    ./enviroment_scripts/enviroment.sh
+    ~/Command-Center/enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 4 ]]
 then
     sudo dmidecode -t system | less
-    ./enviroment_scripts/enviroment.sh
+    ~/Command-Center/enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 5 ]]
 then
     sudo lspci | less
-    ./enviroment_scripts/enviroment.sh
+    ~/Command-Center/enviroment_scripts/enviroment.sh
 elif [[ $OPTIONENV = 6 ]]
 then
-    ./enviroment_scripts/disk_info.sh
+    ~/Command-Center/enviroment_scripts/disk_info.sh
 elif [[ $OPTIONENV = 7 ]]
 then
-    ./enviroment_scripts/disk_dev.sh
+    ~/Command-Center/enviroment_scripts/disk_dev.sh
     exit 0
 elif [[ $OPTIONENV = q ]] || [[ $OPTIONENV = Q ]]
 then
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep .5
-    ./enviroment.sh
+    ~/Command-Center/enviroment.sh
 fi
