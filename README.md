@@ -60,15 +60,16 @@ chmod +x install.sh
 ### Manual Install
 
 Install through package manager
-
-```
-figlet htop lm_sensors vim dmidecode docker lf nmcli nmap hash-id hashcat john
-```
-
 *Note: Fedora needs to add copr repo for lf*
 ```
 sudo dnf copr enable pennbauman/ports
 ```
+
+```
+figlet htop lm_sensors(lm-sensors) htop vim dmidecode docker git grc lf fzf bat curl hashid john hashcat nmap
+```
+
+
 
 
 Curl lazy docker binary
