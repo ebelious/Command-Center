@@ -27,15 +27,15 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONNMAP
 if [[ $OPTIONNMAP = r ]] || [[ $OPTIONNMAP = R ]]
 then
-    ./security_scripts/nmap.sh
+    ~/Command-Center/security_scripts/nmap.sh
     exit 0
 elif [[ $OPTIONNMAP = q ]] || [[ $OPTIONNMAP = Q ]]
 then
-    ./security_scripts/security.sh
+    ~/Command-Center/security_scripts/security.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./security_scripts/security.sh
+    ~/Command-Center/security_scripts/security.sh
     exit 0
 fi
