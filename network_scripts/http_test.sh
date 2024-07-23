@@ -30,11 +30,11 @@ then
     exit 0
 elif [[ $OPTIONNMAP = q ]] || [[ $OPTIONNMAP = Q ]]
 then
-    ./network_scripts/network.sh
+        ~/Command-Center/network_scripts/network.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./network_scripts/network.sh
+    ~/Command-Center/network_scripts/network.sh
     exit 0
 fi
