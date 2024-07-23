@@ -21,7 +21,7 @@
 cd ~/Documents/Projects/Command-Center/
 clear
 figlet CommandCenter
-echo 'Terminal-based multi-tool for administration taks, with a few extras'
+echo 'Terminal-based multi-tool for administration tasks, with a few extras'
 echo -e "Found at: \e[3;33mhttps://github.com/ebelious/Command-Center\e[0m"
 #printf '%s  ____                                          _  ____           _ '
 #printf '%s / ___|___  _ __ ___  _ __ ___   __ _ _ __   __| |/ ___|___ _ __ | |_ ___ _ __ '

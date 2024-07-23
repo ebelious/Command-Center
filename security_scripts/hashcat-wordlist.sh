@@ -33,19 +33,19 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONHASH
 if [[ $OPTIONHASH = 0 ]]
 then
-    ./security/hashcat-mode.sh
+    ./security_scripts/hashcat-mode.sh
     exit 0
 elif [[ $OPTIONHASH = r ]] || [[ $OPTIONHASH = R ]]
 then
-    ./security/hashcat-wordlist.sh
+    ./security_scripts/hashcat-wordlist.sh
     exit 0
 elif [[ $OPTIONHASH = q ]] || [[ $OPTIONHASH = Q ]]
 then
-    ./security/hashcat.sh
+    ./security_scripts/hashcat.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./security/hashcat.sh
+    ./security_scripts/hashcat.sh
     exit 0
 fi

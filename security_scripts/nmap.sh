@@ -7,23 +7,29 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Security - hash -dentifier
-# This is used for testing, and changing networking information
+# Security - nmap
+# This is a script that runs basic Nmap scan
 #
+
+# Gathering variable for nmap scanning
 clear
-echo -e "\e[1;32mEnter Hash here\e[0m     \e[3;33mctl+x to exit\e[0m"
-read -p ': ' HASHID
-hashid $HASHID
+echo -e "\e[1;32mNmap\e[0m"
+echo
+read -p 'What is the target? ' TARGET
+clear
+echo -e "\e[1;32mScanning...\e[0m"
+echo
+sudo grc nmap -T4 -A -sS -v $TARGET
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
-read -p ': ' OPTIONHASH
-if [[ $OPTIONHASH = r ]] || [[ $OPTIONHASH = R ]]
+read -p ': ' OPTIONNMAP
+if [[ $OPTIONNMAP = r ]] || [[ $OPTIONNMAP = R ]]
 then
-    ./security/hash_id.sh
+    ./security_scripts/nmap.sh
     exit 0
-elif [[ $OPTIONHASH = q ]] || [[ $OPTIONHASH = Q ]]
+elif [[ $OPTIONNMAP = q ]] || [[ $OPTIONNMAP = Q ]]
 then
     ./security_scripts/security.sh
     exit 0

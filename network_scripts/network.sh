@@ -13,10 +13,9 @@
 clear
 echo
 echo -e "\e[1;32mNetwork Center\e[0m"
-NETUSED=$(nmcli |  grep connected | head -1)
-echo -e "     Network: $NETUSED"
-networkctl status 2> /dev/null | grep Address | tail -n 1
-networkctl status 2> /dev/null | grep Gateway | tail -n 1
+ip -c a
+echo -e "\e[1;32mGateway\e[0m"
+ip -c neighbor
 echo -e "\e[1;32mInternet\e[0m"
 for x in 8.8.8.8
 do
@@ -37,6 +36,9 @@ echo -e "\e[1;32m[\e[1;36m4\e[1;32m]\e[0m Netstat"
 echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m Nslookup"
 echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m Bandwidth"
 echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m Host Detection"
+echo -e "\e[1;32m[\e[1;36m8\e[1;32m]\e[0m TCP Dump"
+echo -e "\e[1;32m[\e[1;36m9\e[1;32m]\e[0m HTTP Test"
+
 echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
@@ -72,6 +74,14 @@ then
 elif [[ $OPTIONNET = 7 ]]
 then
     ./network_scripts/host_detection.sh
+elif [[ $OPTIONNET = 8 ]]
+then
+    ./network_scripts/tcp_dump.sh
+    exit 0
+elif [[ $OPTIONNET = 9 ]]
+then
+    ./network_scripts/http_test.sh
+    exit 0
 elif [[ $OPTIONNET = q ]] || [[ $OPTIONNET = Q ]]
 then
     ./command-center.sh

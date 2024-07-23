@@ -23,15 +23,15 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTION
 if [[ $OPTION = r ]] || [[ $OPTION = R ]]
 then
-    ./security/hashcat-mode.sh
+    ./security_scripts/hashcat-mode.sh
     exit 0
 elif [[ $OPTION = q ]] || [[ $OPTION = Q ]]
 then
-    ./security/hashcat.sh
+    ./security_scripts/hashcat.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep 1
-    ./security/hashcat.sh
+    ./security_scripts/hashcat.sh
     exit 0
 fi

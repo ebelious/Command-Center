@@ -7,38 +7,28 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Network - ping
+# Network - Curl Test
+# This is used for testing, http connection using curl
 #
-
-# Asking for the ping target and then running scan
 clear
-read -p 'What would you like to ping: ' TARGET
-clear
-echo -e "\e[1;32mRunning Ping Test\e[0m"
+echo -e "\e[1;32mHTTP Test\e[0m"
 echo
-for x in $TARGET
-do
-    if ping -c 10 -W 1 $x
-    then
-        echo
-        echo -e "\e[1;36m$x is recahable\e[0m"
-    else
-        echo
-        echo -e "\e[1;31m$x is not reachable\e[0m"
-    fi
-done
-# Options
+read -p 'Enter a destination: ' TARGET
+clear
+echo -e "\e[1;32mResults...\e[0m"
+echo
+grc curl -v $TARGET
+
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
-read -p ': ' OPTIONPING
-
-if [[ $OPTIONPING = r ]] || [[ $OPTIONPING = R ]]
+read -p ': ' OPTIONNMAP
+if [[ $OPTIONNMAP = r ]] || [[ $OPTIONNMAP = R ]]
 then
-    ./network_scripts/ping.sh
+    ./network_scripts/http_test.sh
     exit 0
-elif [[ $OPTIONPING = q ]] || [[ $OPTIONPING = Q ]]
+elif [[ $OPTIONNMAP = q ]] || [[ $OPTIONNMAP = Q ]]
 then
     ./network_scripts/network.sh
     exit 0

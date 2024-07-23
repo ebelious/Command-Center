@@ -28,7 +28,7 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONNET
 if [[ $OPTIONNET = 0 ]]
 then
-    ./security/speedtest.sh
+    ./security_scripts/nmap.sh
     exit 0
 elif [[ $OPTIONNET = 1 ]]
 then
@@ -60,6 +60,6 @@ then
     exit 0
 elif [[ $OPTIONNET = q ]] || [[ $OPTIONNET = Q ]]
 then
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
     exit 0
 fi
