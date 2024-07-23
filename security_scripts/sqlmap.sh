@@ -12,4 +12,4 @@
 
 clear
 sqlmap --wizard
-./security_scripts/security.sh
+~/Command-Center/security_scripts/security.sh
