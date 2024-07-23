@@ -28,35 +28,35 @@ printf '=%.0s' {1..30} ; printf '=\n'
 read -p ': ' OPTIONNET
 if [[ $OPTIONNET = 0 ]]
 then
-    ./security_scripts/nmap.sh
+    ~/Command-Center/security_scripts/nmap.sh
     exit 0
 elif [[ $OPTIONNET = 1 ]]
 then
-    ./security_scripts/msfconsole.sh
+    ~/Command-Center/security_scripts/msfconsole.sh
     exit 0
 elif [[ $OPTIONNET = 2 ]]
 then
-    ./security_scripts/ping.sh
+    ~/Command-Center/security_scripts/ping.sh
     exit 0
 elif [[ $OPTIONNET = 3 ]]
 then
-    ./security_scripts/recon.sh
+    ~/Command-Center/security_scripts/recon.sh
     exit 0
 elif [[ $OPTIONNET = 4 ]]
 then
-    ./security_scripts/hash_id.sh
+    ~/Command-Center/security_scripts/hash_id.sh
     exit 0
 elif [[ $OPTIONNET = 5 ]]
 then
-    ./security_scripts/hashcat.sh
+    ~/Command-Center/security_scripts/hashcat.sh
     exit 0
 elif [[ $OPTIONNET = 6 ]]
 then
-    ./security_scripts/john.sh
+    ~/Command-Center/security_scripts/john.sh
     exit 0
 elif [[ $OPTIONNET = 7 ]]
 then
-    ./security_scripts/sqlmap.sh
+    ~/Command-Center/security_scripts/sqlmap.sh
     exit 0
 elif [[ $OPTIONNET = q ]] || [[ $OPTIONNET = Q ]]
 then
