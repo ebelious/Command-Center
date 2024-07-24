@@ -18,7 +18,7 @@ echo -e "\e[1;32mRunning Ping Test\e[0m"
 echo
 for x in $TARGET
 do
-    if ping -c 10 -W 1 $x
+    if grc ping -c 10 -W 1 $x
     then
         echo
         echo -e "\e[1;36m$x is recahable\e[0m"
@@ -36,7 +36,7 @@ read -p ': ' OPTIONPING
 
 if [[ $OPTIONPING = r ]] || [[ $OPTIONPING = R ]]
 then
-    ./network_scripts/ping.sh
+    ~/Command-Center/network_scripts/ping.sh
     exit 0
 elif [[ $OPTIONPING = q ]] || [[ $OPTIONPING = Q ]]
 then

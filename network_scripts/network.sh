@@ -11,7 +11,8 @@
 # This is used for testing, and changing networking information
 #
 clear
-echo
+echo -e "\e[1;32mNetwork Center\e[0m"
+printf '=%.0s' {1..30} ; printf '=\n'
 echo -e "\e[1;32mPublic IP\e[0m"
 dig +short myip.opendns.com @resolver1.opendns.com
 echo -e "\e[1;32mPrivate IP\e[0m"
@@ -39,17 +40,85 @@ echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m Nslookup"
 echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m Bandwidth"
 echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m Host Detection"
 echo -e "\e[1;32m[\e[1;36m8\e[1;32m]\e[0m TCP Dump"
-echo -e "\e[1;32m[\e[1;36m9\e[1;32m]\e[0m HTTP Test"
-
+echo -e "\e[1;32m[\e[1;36m9\e[1;32m]\e[0m SSL Test"
 echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
-# time stamp
-rightprompt()
-{
-    printf "%*s" $COLUMNS "[$(date +%r)]"
-}
-tput sc; rightprompt; tput rc
+#Battery / color / time tabs
+PERCENT=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage | awk '{print $2}' | tr -d '%')
+if [[ $PERCENT -le 100 ]]
+then
+    batteryprompt()
+    {
+        printf "%b" "\e[0;32m[\e[0m \e[0;32m󰁹\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
+    }
+        tput sc; batteryprompt; tput rc
+elif [[ $PERCENT -le 95 ]]
+then
+    batteryprompt()
+    {
+        printf "%b" "\e[0;32m[\e[0m \e[0;32m󰂁\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
+    }
+    tput sc; batteryprompt; tput rc
+elif [[ $Percent -le 70 ]]
+then
+    batteryprompt()
+    {
+        printf "%b" "\e[0;32m[\e[0m \e[0;32m󰂀\e[0m $PERCENT% \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
+    }
+    tput sc; batteryprompt; tput rc
+elif [[ $PERCENT -le 60 ]]
+then
+    batteryprompt()
+    {
+        printf "%b" "\e[0;32m[\e[0m \e[0;32m󰁿\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
+    }
+    tput sc; batteryprompt; tput rc
+elif [[ $PERCENT -le 50 ]]
+then
+    batteryprompt()
+    {
+        printf "%b" "\e[0;32m[\e[0m \e[0;32m󰁾 $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
+    }
+    tput sc; batteryprompt; tput rc
+elif [[ $PERCENT -le 40 ]]
+then
+    batteryprompt()
+    {
+        printf "%b" "\e[0;32m[\e[0m \e[0;33m󰁽\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
+    }
+    tput sc; batteryprompt; tput rc
+elif [[ $PERCENT -le 30 ]]
+then
+    batteryprompt()
+    {
+        printf "%b" "\e[0;32m[\e[0m \e[0;33m󰁼\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
+    }
+    tput sc; batteryprompt; tput rc
+elif [[ $PERCENT -le 20 ]]
+then
+    batteryprompt()
+    {
+        printf "%b" "\e[0;32m[\e[0m \e[0;33m󰁻\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
+    }
+    tput sc; batteryprompt; tput rc
+elif [[ $PERCENT -le 10 ]]
+then
+    batteryprompt()
+    {
+        printf "%b" "\e[0;32m[\e[0m \e[0;33m󰁻\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
+    }
+    tput sc; batteryprompt; tput rc
+elif [[ $PERCENT ]]
+then
+    batteryprompt()
+    {
+        printf "%b" "\e[0;32m[\e[0m\e[0;36m󱃍\e[0m $PERCENT\e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
+    }
+    tput sc; batteryprompt; tput rc
+fi
+echo
+
 # Allows the user to exit thes screen and go back to the command-center menu
 # Output info into a file with timestamp
 read -p ': ' OPTIONNET

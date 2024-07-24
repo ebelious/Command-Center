@@ -23,7 +23,7 @@ read -p 'What is the dictonary: ' DICTIONARY
 clear
 echo -e "\e[1;32mCracking in progress\e[0m"
 echo
-hashcat -a 0 -m $HASHMODE $HASHFILE $DICTIONARY
+grc hashcat -a 0 -m $HASHMODE $HASHFILE $DICTIONARY
 echo
 echo
 echo

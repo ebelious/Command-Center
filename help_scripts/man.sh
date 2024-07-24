@@ -7,8 +7,8 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Enviroment Information disk by Dev
-# This is for printing out enviromant information such as networking info, sensors
+# Help - Manuals
+# This is used to search for man pages for selected commands
 #
 
 # Allows Color in 'less'
@@ -27,9 +27,29 @@ export LESS_TERMCAP_ZO=$(tput ssupm)
 export LESS_TERMCAP_ZW=$(tput rsupm)
 export GROFF_NO_SGR=1         # For Konsole and Gnome-terminal
 
+
 clear
-echo -e "\e[1;32mDisks Dev By ...\e[0m"
+echo -e '\e[1;32mManuals\e[0m'
+
+read -p 'What manual would you like to access: ' OPTIONMAN
+clear
+man $OPTIONMAN
 echo
-ls -l --color=auto /dev/disk/by-* | less --use-color
-./enviroment.sh
-exit 0
+echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
+echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
+printf '=%.0s' {1..30} ; printf '=\n'
+read -p ': ' OPTION
+if [[ $OPTION = r ]] || [[ $OPTION = R ]]
+then
+    ~/Command-Center/help_scripts/man.sh
+    exit 0
+elif [[ $OPTION = q ]] || [[ $OPTION = Q ]]
+then
+    ~/Command-Center/help_scripts/help.sh
+    exit 0
+else
+    echo -e "\e[1;31mInvalid Option\e[0m"
+    sleep 1
+    ~/Command-Center/help_scripts/help.sh
+    exit 0
+fi

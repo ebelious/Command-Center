@@ -12,7 +12,7 @@
 #
 clear
 echo
-nmcli 2> /dev/null
+grc nmcli 2> /dev/null
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"

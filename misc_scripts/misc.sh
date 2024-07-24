@@ -7,42 +7,17 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# Comand center is a collection of tools and utilities packaged into a single platform
-# Some of te options are only configure for basic functionality as others are direct contact with the tool interface
+# Misc Menu
+# This is for displaying hte Misc menu options
 #
-# git remote add origin git@github.com:ebelious/Command-Center.git
-# git pull origin main
-# git branch -M main
-# git add .
-# git commit -m "Added additional functionality"
-# git push -u origin main
 
-# This is the selection menu
-cd ~/Documents/Projects/Command-Center/
+# Displays the enviroemnt info
 clear
-figlet CommandCenter
-echo 'Terminal-based multi-tool for administration tasks, with a few extras'
-echo -e "Found at: \e[3;33mhttps://github.com/ebelious/Command-Center\e[0m"
+echo -e "\e[1;32mMisc Center\e[0m"
 printf '=%.0s' {1..30} ; printf '=\n'
-echo -e "Hello \e[1;36m${USERNAME}\e[0m,"
-echo -e "\e[1;mWelcome to the Command Center\e[0m"
-echo
-printf '=%.0s' {1..30} ; printf '=\n'
-echo -e "\e[3;32m   What is our task?\e[0m"
-printf '=%.0s' {1..30} ; printf '=\n'
-echo -e "\e[1;32m[\e[1;36m0\e[1;32m]\e[0m Update System"
-echo -e "\e[1;32m[\e[1;36m1\e[1;32m]\e[0m Hardware"
-echo -e "\e[1;32m[\e[1;36m2\e[1;32m]\e[0m Processes & Utilization"
-echo -e "\e[1;32m[\e[1;36m3\e[1;32m]\e[0m Users and Groups"
-echo -e "\e[1;32m[\e[1;36m4\e[1;32m]\e[0m Network"
-echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m Security"
-echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m (.) Files"
-echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m Docker"
-echo -e "\e[1;32m[\e[1;36m8\e[1;32m]\e[0m Browse Files"
-echo -e "\e[1;32m[\e[1;36m9\e[1;32m]\e[0m File Search"
-echo -e "\e[1;32m[\e[1;36m10\e[1;32m]\e[0m Help"
-echo -e "\e[1;32m[\e[1;36m11\e[1;32m]\e[0m Misc"
-
+echo -e "\e[1;32m[\e[1;36m0\e[1;32m]\e[0m Typing Test"
+echo -e "\e[1;32m[\e[1;36m1\e[1;32m]\e[0m CLI web Browser"
+echo -e "\e[1;32m[\e[1;36m2\e[1;32m]\e[0m Create a Banner"
 echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
@@ -120,60 +95,25 @@ then
     tput sc; batteryprompt; tput rc
 fi
 echo
-read -p ': ' OPTIONMAIN # This is running the script for the selected menu option
-if [[ $OPTIONMAIN = 0 ]]
+# Allows the user to exit thes screen and go back to the command-center menu
+# Output info into a file with timestamp
+read -p ': ' OPTIONMISC
+echo
+if [[ $OPTIONMISC = 0 ]]
 then
-    ~/Command-Center/update.sh
+    ~/Command-Center/misc_scripts/ttyper.sh
     exit 0
-elif [[ $OPTIONMAIN = 1 ]]
+elif [[ $OPTIONMISC = 1 ]]
 then
-    ~/Command-Center/enviroment_scripts/enviroment.sh
+    ~/Command-Center/misc_scripts/web_cli.sh
     exit 0
-elif [[ $OPTIONMAIN = 2 ]]
+elif [[ $OPTIONMISC = 2 ]]
 then
-    ~/Command-Center/processes.sh
+    ~/Command-Center/misc_scripts/figlet.sh
     exit 0
-elif [[ $OPTIONMAIN = 3 ]]
+elif [[ $OPTIONMISC = q ]] || [[ $OPTIONMISC = Q ]]
 then
-    ~/Command-Center/users-groups.sh
-    exit 0
-elif [[ $OPTIONMAIN = 4 ]]
-then
-    ~/Command-Center/network_scripts/network.sh
-    exit 0
-elif [[ $OPTIONMAIN = 5 ]]
-then
-    ~/Command-Center/security_scripts/security.sh
-elif [[ $OPTIONMAIN = 6 ]]
-then
-    ~/Command-Center/editbash.sh
-    exit 0
-elif [[ $OPTIONMAIN = 7 ]]
-then
-    ~/Command-Center/dockercli.sh
-    exit 0
-elif [[ $OPTIONMAIN = 8 ]]
-then
-    ~/Command-Center/file_browser.sh
-    exit 0
-elif [[ $OPTIONMAIN = 9 ]]
-then
-    ~/Command-Center/file_search.sh
-    exit 0
-elif [[ $OPTIONMAIN = 10 ]]
-then
-    ~/Command-Center/help_scripts/help.sh
-    exit 0
-elif [[ $OPTIONMAIN = 11 ]]
-then
-    ~/Command-Center/misc_scripts/misc.sh
-elif [[ $OPTIONMAIN = Q ]] || [[ $OPTIONMAIN = q ]]
-then
-    clear
-    echo -e "\e[1;32mThanks for using the Command Center\e[0m"
-    echo -e "\e[1;35m         * * * * * *\e[0m"
-    echo -e "\e[1;33m         > \e[1;32mbye bye\e[0m"
-    sleep 1.25
+    ~/Command-Center/command-center.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"

@@ -15,7 +15,7 @@ read -p 'What is the hash type: ' TARGET
 clear
 echo -e "\e[1;32mThese are the modes for your search\e[0m"
 echo
-cat ./hashcat-hash-modes.txt | grep $TARGET
+bat -f ~/Command-Center/security_scripts/hashcat-hash-modes.txt | grep $TARGET
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"

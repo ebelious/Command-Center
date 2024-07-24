@@ -24,7 +24,7 @@ echo -e "\e[1;32m[\e[1;36m0\e[1;32m]\e[0m Interface"
 echo -e "\e[1;32m[\e[1;36m1\e[1;32m]\e[0m Port"
 echo -e "\e[1;32m[\e[1;36m2\e[1;32m]\e[0m Destination"
 echo -e "\e[1;32m[\e[1;36m3\e[1;32m]\e[0m Source"
-echo -e "\e[1;32m[\e[1;36m4\e[1;32m]\e[0m Interface and Port"
+echo -e "\e[1;32m[\e[1;36m4\e[1;32m]\e[0m Source and Destination"
 echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m Source, Destination, and Port"
 
 echo
@@ -35,18 +35,21 @@ then
     ip -c a
     echo
     read -p 'What is the interface: ' INTERFACE
+    clear
     sudo grc tcpdump -A -i $INTERFACE
     ~/Command-Center/network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = 1 ]]
 then
     read -p 'What is the port: ' PORT
+    clear
     sudo grc tcpdump -A port $PORT
     ~/Command-Center/network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = 2 ]]
 then
     read -p 'What is the destination: ' TARGET
+    clear
     sudo grc tcpdump -A dst $TARGET
     ~/Command-Center/network_scripts/tcp_dump.sh
 fi
@@ -54,7 +57,8 @@ if [[ $OPTION = 3 ]]
 then
     ip -c a
     echo
-    read -p 'What is the destination: ' SOURCE
+    read -p 'What is the source: ' SOURCE
+    clear
     sudo grc tcpdump -A src $SOURCE
     ~/Command-Center/network_scripts/tcp_dump.sh
 fi
@@ -62,9 +66,10 @@ if [[ $OPTION = 4 ]]
 then
     ip -c a
     echo
-    read -p 'What interface: ' INTERFACE
-    read -p 'What is the port: ' PORT
-    sudo grc tcpdump -A -i $INTERFACE and port $PORT
+    read -p 'What is the source: ' SOURCE
+    read -p 'What is the destination: ' TARGET
+    clear
+    sudo grc tcpdump -A src $SOURCE and dst $TARGET
     ~/Command-Center/network_scripts/tcp_dump.sh
 fi
 if [[ $OPTION = 5 ]]
@@ -74,6 +79,7 @@ then
     read -p 'What is the source: ' SOURCE
     read -p 'What is the destination: ' TARGET
     read -p 'What is the port: ' PORT
+    clear
     sudo grc tcpdump -A src $SOURCE and dst $TARGET and port $PORT
     ~/Command-Center/network_scripts/tcp_dump.sh
 fi
@@ -81,14 +87,6 @@ if [[ $OPTION = q ]] || [[ $OPTION = Q ]]
 then
     ~/Command-Center/network_scripts/network.sh
     exit 0
-fi
-if [[ $OPTIONNMAP = r ]] || [[ $OPTIONNMAP = R ]]
-then
-    ~/Command-Center/network_scripts/tcp_dump.sh
-    exit 0
-else
-~/Command-Center/network_scripts/network.sh
-exit 0
 fi
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"

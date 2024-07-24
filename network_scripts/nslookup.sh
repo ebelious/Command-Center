@@ -14,9 +14,9 @@
 clear
 read -p 'What would you like to lookup: ' TARGET
 clear
-echo -e "\e[1;32mRunning NSLookup\e[0m"
+echo -e "\e[1;32mRunning Nslookup\e[0m"
 echo
-nslookup $TARGET
+grc nslookup $TARGET
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"

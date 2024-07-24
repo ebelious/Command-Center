@@ -36,10 +36,10 @@ read -p ': ' OPTIONDISK
 # This sill alow the user to output info to a file oe exit back to command-center menu
 if [[ $OPTIONDISK = q ]] || [[ $OPTIONDISK = Q ]]
 then
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep .5
-    ./disk_info.sh
+    ~/Command-Center/help_scripts/disk_info.sh
 fi
