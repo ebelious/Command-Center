@@ -65,38 +65,82 @@ Install through package manager
 sudo dnf copr enable pennbauman/ports
 ```
 
+### Fedora
 ```
-figlet htop lm_sensors(lm-sensors) htop vim dmidecode docker git grc lf fzf bat curl hashid john hashcat nmap
-```
-
-
-
-
-Curl lazy docker binary
-```
-curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
-```
-These will need to be installed <br />
-[metasploit](https://docs.metasploit.com/docs/using-metasploit/getting-started/nightly-installers.html)
-```
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
-  chmod 755 msfinstall && \
-  ./msfinstall
+figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf bat curl npm hashid john hashcat nmap wget apropos cargo lsd python2.7 sipcalc shippy
 ```
 
-sqlmap
 ```
-git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-echo "alias sqlmap='python ~/Command-Center/sqlmap' "
-Getting recon-ng
-```
+# Adding comment to bash and zsh for added aliases
+    cd ~/Command-Center/
+    echo "# These are the Command-Center aliases" >> $HOME/.bashrc
+    echo "# These are the Command-Center aliases" >> $HOME/.zshrc
+# Getting lazy docker git repo
+    echo -e "\e[1;32mInstalling lazydocker...\e[0m"
+    curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+    sleep 3
+    clear
+# Getting metasploit
+    echo -e "\e[1;32mInstalling metasploit...\e[0m"
+    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+    chmod 755 msfinstall && \
+    ./msfinstall
+    sleep 3
+    clear
+# Getting sqlmap
+    echo -e "\e[1;32mInstalling sqlmap...\e[0m"
+    git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+    echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py' " >> $HOME/.bashrc
+    echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py' " >> $HOME/.zshrc
+    clear
+# Getting recon-ng
+    echo -e "\e[1;32mInstalling recon-ng...\e[0m"
+    git clone https://github.com/lanmaster53/recon-ng.git
+    cd recon-ng
+    sudo docker build --rm -t recon-ng .
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> $HOME/.bashrc
+    echo "alias ccenter='~/Command-Center/command-center.sh'" >> $HOME/.zshrc
+    clear
+# Installing Seclists
+    echo -e "\e[1;32mInstalling seclists...\e[0m"
+    git clone https://github.com/danielmiessler/SecLists.git
+    clear
+# Installing Zellij
+    echo -e "\e[1;32mInstalling zellij...\e[0m"
+    cd ~/Command-Center/
+    wget https://github.com/zellij-org/zellij/releases/latest/download/zellij-x86_64-unknown-linux-musl.tar.gz
+    tar -xf zellij-x86_64-unknown-linux-musl.tar.gz
+    cp zellij ~/.local/bin/
+    clear
+    # Install Virust Total CLI
+    clear
+    echo -e "\e[1;32mInstalling virustotal-cli...\e[0m"
+    git clone https://github.com/VirusTotal/vt-cli.git
+    cd vt-cli
+    make install
+    export GOBIN=`go env GOPATH`/bin
+    export PATH=$PATH:$GOBIN
+    clear
+    vt init
+    clear
+# Install oui lookup
+    cd ~/Command-Center/
+    echo -e "\e[1;32mInstalling npm oui...\e[0m"
+    sudo npm i -g oui
+    clear
+    # Installing Responder
+    echo -e "\e[1;32mInstalling responder...\e[0m"
+    git clone https://github.com/SpiderLabs/Responder.git
+    echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.bashrc
+    echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.zshrc
+    clear
+# Installing Ttype
+    echo -e "\e[1;32mInstalling ttyper...\e[0m"
+    cd ~/Command-Center/
+    cargo install ttyper
+    echo "alias ttyper='$HOME/.cargo/bin/ttyper'" >> $HOME/.bashrc
+    echo "alias ttyper='$HOME/.cargo/bin/ttyper'" >> $HOME/.zshrc
+    clear
 
-Get recon-ng
-```
-git clone https://github.com/lanmaster53/recon-ng.git
-cd recon-ng
-sudo docker build --rm -t recon-ng .
 ```
     
-[aircrack-ng](https://github.com/aircrack-ng/aircrack-ng)
-
