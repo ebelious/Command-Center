@@ -12,4 +12,4 @@
 #
 clear
 lf /home
-./command-center.sh
+~/Command-Center/command-center.sh

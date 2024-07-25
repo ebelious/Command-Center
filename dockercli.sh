@@ -11,5 +11,5 @@
 
 # Run lazydocker
 sudo ~/.local/bin/lazydocker
-./command-center.sh
+~/Command-Center/command-center.sh
 exit 0

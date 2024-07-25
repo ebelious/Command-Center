@@ -40,78 +40,77 @@ echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m (.) Files"
 echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m Docker"
 echo -e "\e[1;32m[\e[1;36m8\e[1;32m]\e[0m Browse Files"
 echo -e "\e[1;32m[\e[1;36m9\e[1;32m]\e[0m File Search"
-echo -e "\e[1;32m[\e[1;36m10\e[1;32m]\e[0m Help"
-echo -e "\e[1;32m[\e[1;36m11\e[1;32m]\e[0m Misc"
-
+echo -e "\e[1;32m[\e[1;36m10\e[1;32m]\e[0m Miscellaneous"
 echo
+echo -e "\e[1;32m[\e[1;36mH\e[1;32m]\e[0m Help"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
 #Battery / color / time tabs
 PERCENT=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage | awk '{print $2}' | tr -d '%')
-if [[ $PERCENT -le 100 ]]
+if [[ $PERCENT -ge 96 && $PERCENT -le 100 ]]
 then
     batteryprompt()
     {
         printf "%b" "\e[0;32m[\e[0m \e[0;32m󰁹\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
     }
         tput sc; batteryprompt; tput rc
-elif [[ $PERCENT -le 95 ]]
+elif [[ $PERCENT -ge 71 && $PERCENT -le 95 ]]
 then
     batteryprompt()
     {
         printf "%b" "\e[0;32m[\e[0m \e[0;32m󰂁\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
     }
     tput sc; batteryprompt; tput rc
-elif [[ $Percent -le 70 ]]
+elif [[ $Percent -ge 61 && $PERCENT -le 70 ]]
 then
     batteryprompt()
     {
         printf "%b" "\e[0;32m[\e[0m \e[0;32m󰂀\e[0m $PERCENT% \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
     }
     tput sc; batteryprompt; tput rc
-elif [[ $PERCENT -le 60 ]]
+elif [[ $PERCENT -ge 51 && $PERCENT -le 60 ]]
 then
     batteryprompt()
     {
         printf "%b" "\e[0;32m[\e[0m \e[0;32m󰁿\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
     }
     tput sc; batteryprompt; tput rc
-elif [[ $PERCENT -le 50 ]]
+elif [[ $PERCENT -ge 41 && $PERCENT -le 50 ]]
 then
     batteryprompt()
     {
         printf "%b" "\e[0;32m[\e[0m \e[0;32m󰁾 $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
     }
     tput sc; batteryprompt; tput rc
-elif [[ $PERCENT -le 40 ]]
+elif [[ $PERCENT -ge 31 && $PERCENT -le 40 ]]
 then
     batteryprompt()
     {
         printf "%b" "\e[0;32m[\e[0m \e[0;33m󰁽\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
     }
     tput sc; batteryprompt; tput rc
-elif [[ $PERCENT -le 30 ]]
+elif [[ $PERCENT -ge 21 && $PERCENT -le 30 ]]
 then
     batteryprompt()
     {
         printf "%b" "\e[0;32m[\e[0m \e[0;33m󰁼\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
     }
     tput sc; batteryprompt; tput rc
-elif [[ $PERCENT -le 20 ]]
+elif [[ $PERCENT -ge 11 && $PERCENT -le 20 ]]
 then
     batteryprompt()
     {
         printf "%b" "\e[0;32m[\e[0m \e[0;33m󰁻\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
     }
     tput sc; batteryprompt; tput rc
-elif [[ $PERCENT -le 10 ]]
+elif [[ $PERCENT -ge 5 && $PERCENT -le 10 ]]
 then
     batteryprompt()
     {
         printf "%b" "\e[0;32m[\e[0m \e[0;33m󰁻\e[0m $PERCENT \e[0;32m]\e[0m\e[0;32m[\e[0m\e[0;31m  \e[0m\e[0;32m \e[0m\e[0;33m \e[0m\e[0;34m \e[0m\e[0;35m \e[0m\e[0;36m \e[0m\e[0;37m \e[0m\e[0;32m]\e[0m\e[0;32m[\e[0m $(date +%r) \e[0;32m]\e[0m"
     }
     tput sc; batteryprompt; tput rc
-elif [[ $PERCENT ]]
+elif [[ $PERCENT -le 4 ]]
 then
     batteryprompt()
     {
@@ -162,11 +161,11 @@ then
     exit 0
 elif [[ $OPTIONMAIN = 10 ]]
 then
-    ~/Command-Center/help_scripts/help.sh
-    exit 0
-elif [[ $OPTIONMAIN = 11 ]]
-then
     ~/Command-Center/misc_scripts/misc.sh
+    exit 0
+elif [[ $OPTIONMAIN = h ]] || [[ $OPTIONMAIN = H ]]
+then
+    ~/Command-Center/help_scripts/help.sh
 elif [[ $OPTIONMAIN = Q ]] || [[ $OPTIONMAIN = q ]]
 then
     clear

@@ -69,10 +69,10 @@ then
     ./editbash.sh
 elif [[ $OPTIONBASH = q ]] || [[ $OPTIONBASH = Q ]]
 then
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep .5
-    ./editbash.sh
+    ~/Command-Center/editbash.sh
 fi

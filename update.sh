@@ -32,7 +32,7 @@ then
     echo -e "\e[1;32mGoing back to Command Center...\e[0m"
     sleep 2
 
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
 elif [[ $OS = Pretty-Ubuntu || PRETTY_Debian ]]
 then
     sudo apt update && sudo apt upgrade
@@ -41,7 +41,7 @@ then
     clear
     echo -e "\e[1;32mGoing back to Command Center...\e[0m"
     sleep 2
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
 elif [[ $OS = Arch ]]
 then
     sudo pcaman -Syu
@@ -50,7 +50,7 @@ then
     clear
     echo -e "\e[1;32mGoing back to Command Center...\e[0m"
     sleep 2
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
 elif [[ $OPTION = openSUSE ]]
 then
     sudo zypper update
@@ -59,7 +59,7 @@ then
     clear
     echo -e "\e[1;32mGoing back to Command Center...\e[0m"
     sleep 2
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
 elif [[ $OPTION = Alpine ]]
 then
     doas apk update
@@ -68,9 +68,9 @@ then
     clear
     echo -e "\e[1;32mGoing back to Command Center...\e[0m"
     sleep 2
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
 else
     echo "\e[1;31mYour System is no supported...\e[0m"
     sleep 2
-    ./command-center.sh
+    ~/Command-Center/command-center.sh
 fi

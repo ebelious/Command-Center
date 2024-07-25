@@ -7,7 +7,7 @@
 #
 # https://github.com/ebelious/Command-Center
 #
-# [4] Users and Groups
+# Users and Groups
 # This is used to generate user accounts and identify users and groups
 #
 
@@ -131,7 +131,7 @@ then
     echo
     echo -e "\e[1;31mThis Screen will expire in 30 Seconds\e[0m"
     sleep 30
-    ./users-groups.sh
+    ~/Command-Center/users-groups.sh
 elif [[ $OPTIONUSER = q ]] || [[ $OPTIONUSER = Q ]]
 then
     ~/Command-Center/command-center.sh

@@ -13,5 +13,5 @@
 
 # Launches htop to view process and other info
 htop
-./command-center.sh
+~/Command-Center/command-center.sh
 exit 0

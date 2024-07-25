@@ -11,8 +11,7 @@
 # This is used for testing, and changing networking information
 #
 clear
-echo -e "\e[1;32mEnter Hash here\e[0m     \e[3;33mctl+x to exit\e[0m"
-read -p ': ' HASHID
+read -p 'Enter hash here: ' HASHID
 hashid $HASHID
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
