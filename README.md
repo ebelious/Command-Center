@@ -3,7 +3,7 @@
 This is a collection of bash scripts that consolidate some administrative tasks with a simple interface. <br />
 ** Note This is still a work in progress
 
-![cc](https://github.com/ebelious/Command-Center/blob/main/Screenshot%20from%202024-07-22%2020-56-26.png)
+![cc](https://github.com/ebelious/Command-Center/blob/main/Screenshot%20from%202024-07-25%2016-27-31.png)
 
 ## Usage
 Just use `ccenter`(alias) and easily navigate using numbers and letters that are listed next to the options. This uses `vim` and `less`, there are basic instructions below.
