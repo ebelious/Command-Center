@@ -22,7 +22,8 @@ echo -e "\e[1;32m[\e[1;36m4\e[1;32m]\e[0m Hash ID"
 echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m Hashcat"
 echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m John"
 echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m SQLMap"
-echo -e "\e[1;32m[\e[1;36m8\e[1;32m]\e[0m "
+echo -e "\e[1;32m[\e[1;36m8\e[1;32m]\e[0m IP Intelligence"
+echo -e "\e[1;32m[\e[1;36m9\e[1;32m]\e[0m Hash Intelligence"
 echo
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 printf '=%.0s' {1..30} ; printf '=\n'
@@ -135,8 +136,13 @@ elif [[ $OPTIONNET = 7 ]]
 then
     ~/Command-Center/security_scripts/sqlmap.sh
     exit 0
-
-elif [[ $OPTIONNET = q ]] || [[ $OPTIONNET = Q ]]
+elif [[ $OPTIONNET = 8 ]]
+then
+    ~/Command-Center/security_scripts/virustotal.sh
+elif [[ $OPTIONNET = 9 ]]
+then
+    ~/Command-Center/security_scripts/vt_hash.sh
+    elif [[ $OPTIONNET = q ]] || [[ $OPTIONNET = Q ]]
 then
     ~/Command-Center/command-center.sh
     exit 0

@@ -119,6 +119,8 @@ then
     exit 0
 elif [[ $OPTIONMISC = 4 ]]
 then
+    echo
+    echo 'Press ctl+c to save yourself from the beast'
     ~/Command-Center/misc_scripts/oneko.sh
     exit 0
 elif [[ $OPTIONMISC = q ]] || [[ $OPTIONMISC = Q ]]

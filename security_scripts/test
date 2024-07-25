@@ -1,0 +1,1327 @@
+- _id: "7c7bbbc8710970b1e9c228c9519a265429536b4e0ad988daae33b266303ba592"
+  _type: "file"
+  authentihash: "833456e6050c69641d42781f8c1cc886f23524bf24eb77a9607229bb0108f26b"
+  creation_date: 1340869965  # 2012-06-28 03:52:45 -0400 EDT
+  detectiteasy: 
+    filetype: "PE32"
+    values: 
+    - info: "EXE32"
+      name: "EP:Microsoft Visual C/C++"
+      type: "Compiler"
+      version: "2008-2010"
+    - info: "libcmt,wWinMain"
+      name: "Microsoft Visual C/C++"
+      type: "Compiler"
+      version: "2008"
+    - info: "GUI32,signed"
+      name: "Microsoft Linker"
+      type: "Linker"
+      version: "9.0"
+  first_seen_itw_date: 1361277262  # 2013-02-19 07:34:22 -0500 EST
+  first_submission_date: 1340927622  # 2012-06-28 19:53:42 -0400 EDT
+  last_analysis_date: 1669593877  # 2022-11-27 19:04:37 -0500 EST
+  last_analysis_results: 
+    ALYac: 
+      category: "undetected"
+      engine_name: "ALYac"
+      engine_update: "20221127"
+      engine_version: "1.1.3.1"
+      method: "blacklist"
+      result: null
+    APEX: 
+      category: "undetected"
+      engine_name: "APEX"
+      engine_update: "20221125"
+      engine_version: "6.359"
+      method: "blacklist"
+      result: null
+    AVG: 
+      category: "undetected"
+      engine_name: "AVG"
+      engine_update: "20221127"
+      engine_version: "22.11.7701.0"
+      method: "blacklist"
+      result: null
+    Acronis: 
+      category: "undetected"
+      engine_name: "Acronis"
+      engine_update: "20221114"
+      engine_version: "1.2.0.113"
+      method: "blacklist"
+      result: null
+    Ad-Aware: 
+      category: "undetected"
+      engine_name: "Ad-Aware"
+      engine_update: "20221127"
+      engine_version: "3.0.21.193"
+      method: "blacklist"
+      result: null
+    AhnLab-V3: 
+      category: "undetected"
+      engine_name: "AhnLab-V3"
+      engine_update: "20221127"
+      engine_version: "3.22.2.10299"
+      method: "blacklist"
+      result: null
+    Alibaba: 
+      category: "undetected"
+      engine_name: "Alibaba"
+      engine_update: "20190527"
+      engine_version: "0.3.0.5"
+      method: "blacklist"
+      result: null
+    Antiy-AVL: 
+      category: "undetected"
+      engine_name: "Antiy-AVL"
+      engine_update: "20221127"
+      engine_version: "3.0"
+      method: "blacklist"
+      result: null
+    Arcabit: 
+      category: "undetected"
+      engine_name: "Arcabit"
+      engine_update: "20221127"
+      engine_version: "2022.0.0.18"
+      method: "blacklist"
+      result: null
+    Avast: 
+      category: "undetected"
+      engine_name: "Avast"
+      engine_update: "20221127"
+      engine_version: "22.11.7701.0"
+      method: "blacklist"
+      result: null
+    Avast-Mobile: 
+      category: "type-unsupported"
+      engine_name: "Avast-Mobile"
+      engine_update: "20221127"
+      engine_version: "221127-02"
+      method: "blacklist"
+      result: null
+    Avira: 
+      category: "undetected"
+      engine_name: "Avira"
+      engine_update: "20221127"
+      engine_version: "8.3.3.16"
+      method: "blacklist"
+      result: null
+    Baidu: 
+      category: "undetected"
+      engine_name: "Baidu"
+      engine_update: "20190318"
+      engine_version: "1.0.0.2"
+      method: "blacklist"
+      result: null
+    BitDefender: 
+      category: "undetected"
+      engine_name: "BitDefender"
+      engine_update: "20221127"
+      engine_version: "7.2"
+      method: "blacklist"
+      result: null
+    BitDefenderFalx: 
+      category: "type-unsupported"
+      engine_name: "BitDefenderFalx"
+      engine_update: "20220103"
+      engine_version: "2.0.936"
+      method: "blacklist"
+      result: null
+    BitDefenderTheta: 
+      category: "undetected"
+      engine_name: "BitDefenderTheta"
+      engine_update: "20221115"
+      engine_version: "7.2.37796.0"
+      method: "blacklist"
+      result: null
+    Bkav: 
+      category: "undetected"
+      engine_name: "Bkav"
+      engine_update: "20221127"
+      engine_version: "1.3.0.9899"
+      method: "blacklist"
+      result: null
+    CAT-QuickHeal: 
+      category: "undetected"
+      engine_name: "CAT-QuickHeal"
+      engine_update: "20221126"
+      engine_version: "22.00"
+      method: "blacklist"
+      result: null
+    CMC: 
+      category: "undetected"
+      engine_name: "CMC"
+      engine_update: "20221127"
+      engine_version: "2.4.2022.1"
+      method: "blacklist"
+      result: null
+    ClamAV: 
+      category: "malicious"
+      engine_name: "ClamAV"
+      engine_update: "20221127"
+      engine_version: "0.105.1.0"
+      method: "blacklist"
+      result: "Win.Trojan.Zbot-9836811-0"
+    Comodo: 
+      category: "undetected"
+      engine_name: "Comodo"
+      engine_update: "20221126"
+      engine_version: "35191"
+      method: "blacklist"
+      result: null
+    Cybereason: 
+      category: "undetected"
+      engine_name: "Cybereason"
+      engine_update: "20210330"
+      engine_version: "1.2.449"
+      method: "blacklist"
+      result: null
+    Cylance: 
+      category: "undetected"
+      engine_name: "Cylance"
+      engine_update: "20221128"
+      engine_version: "2.3.1.101"
+      method: "blacklist"
+      result: null
+    Cynet: 
+      category: "undetected"
+      engine_name: "Cynet"
+      engine_update: "20221127"
+      engine_version: "4.0.0.27"
+      method: "blacklist"
+      result: null
+    Cyren: 
+      category: "undetected"
+      engine_name: "Cyren"
+      engine_update: "20221127"
+      engine_version: "6.5.1.2"
+      method: "blacklist"
+      result: null
+    DrWeb: 
+      category: "undetected"
+      engine_name: "DrWeb"
+      engine_update: "20221127"
+      engine_version: "7.0.58.8230"
+      method: "blacklist"
+      result: null
+    ESET-NOD32: 
+      category: "undetected"
+      engine_name: "ESET-NOD32"
+      engine_update: "20221127"
+      engine_version: "26326"
+      method: "blacklist"
+      result: null
+    Elastic: 
+      category: "undetected"
+      engine_name: "Elastic"
+      engine_update: "20221122"
+      engine_version: "4.0.59"
+      method: "blacklist"
+      result: null
+    Emsisoft: 
+      category: "undetected"
+      engine_name: "Emsisoft"
+      engine_update: "20221127"
+      engine_version: "2022.6.0.32461"
+      method: "blacklist"
+      result: null
+    F-Secure: 
+      category: "undetected"
+      engine_name: "F-Secure"
+      engine_update: "20221127"
+      engine_version: "18.10.1137.128"
+      method: "blacklist"
+      result: null
+    FireEye: 
+      category: "undetected"
+      engine_name: "FireEye"
+      engine_update: "20221127"
+      engine_version: "35.24.1.0"
+      method: "blacklist"
+      result: null
+    Fortinet: 
+      category: "undetected"
+      engine_name: "Fortinet"
+      engine_update: "20221127"
+      engine_version: "6.4.258.0"
+      method: "blacklist"
+      result: null
+    GData: 
+      category: "undetected"
+      engine_name: "GData"
+      engine_update: "20221127"
+      engine_version: "A:25.34606B:27.29697"
+      method: "blacklist"
+      result: null
+    Google: 
+      category: "malicious"
+      engine_name: "Google"
+      engine_update: "20221128"
+      engine_version: "1669590043"
+      method: "blacklist"
+      result: "Detected"
+    Gridinsoft: 
+      category: "undetected"
+      engine_name: "Gridinsoft"
+      engine_update: "20221127"
+      engine_version: "1.0.101.174"
+      method: "blacklist"
+      result: null
+    Ikarus: 
+      category: "undetected"
+      engine_name: "Ikarus"
+      engine_update: "20221127"
+      engine_version: "6.0.33.0"
+      method: "blacklist"
+      result: null
+    Jiangmin: 
+      category: "undetected"
+      engine_name: "Jiangmin"
+      engine_update: "20221127"
+      engine_version: "16.0.100"
+      method: "blacklist"
+      result: null
+    K7AntiVirus: 
+      category: "undetected"
+      engine_name: "K7AntiVirus"
+      engine_update: "20221127"
+      engine_version: "12.52.45546"
+      method: "blacklist"
+      result: null
+    K7GW: 
+      category: "undetected"
+      engine_name: "K7GW"
+      engine_update: "20221127"
+      engine_version: "12.52.45545"
+      method: "blacklist"
+      result: null
+    Kaspersky: 
+      category: "undetected"
+      engine_name: "Kaspersky"
+      engine_update: "20221127"
+      engine_version: "21.0.1.45"
+      method: "blacklist"
+      result: null
+    Kingsoft: 
+      category: "undetected"
+      engine_name: "Kingsoft"
+      engine_update: "20221128"
+      engine_version: "2017.9.26.565"
+      method: "blacklist"
+      result: null
+    Lionic: 
+      category: "undetected"
+      engine_name: "Lionic"
+      engine_update: "20221127"
+      engine_version: "7.5"
+      method: "blacklist"
+      result: null
+    MAX: 
+      category: "undetected"
+      engine_name: "MAX"
+      engine_update: "20221128"
+      engine_version: "2019.9.16.1"
+      method: "blacklist"
+      result: null
+    Malwarebytes: 
+      category: "undetected"
+      engine_name: "Malwarebytes"
+      engine_update: "20221127"
+      engine_version: "4.3.3.37"
+      method: "blacklist"
+      result: null
+    MaxSecure: 
+      category: "undetected"
+      engine_name: "MaxSecure"
+      engine_update: "20221126"
+      engine_version: "1.0.0.1"
+      method: "blacklist"
+      result: null
+    McAfee: 
+      category: "undetected"
+      engine_name: "McAfee"
+      engine_update: "20221127"
+      engine_version: "6.0.6.653"
+      method: "blacklist"
+      result: null
+    McAfee-GW-Edition: 
+      category: "undetected"
+      engine_name: "McAfee-GW-Edition"
+      engine_update: "20221127"
+      engine_version: "v2019.1.2+3728"
+      method: "blacklist"
+      result: null
+    MicroWorld-eScan: 
+      category: "undetected"
+      engine_name: "MicroWorld-eScan"
+      engine_update: "20221127"
+      engine_version: "14.0.409.0"
+      method: "blacklist"
+      result: null
+    Microsoft: 
+      category: "undetected"
+      engine_name: "Microsoft"
+      engine_update: "20221127"
+      engine_version: "1.1.19800.4"
+      method: "blacklist"
+      result: null
+    NANO-Antivirus: 
+      category: "undetected"
+      engine_name: "NANO-Antivirus"
+      engine_update: "20221127"
+      engine_version: "1.0.146.25648"
+      method: "blacklist"
+      result: null
+    Paloalto: 
+      category: "undetected"
+      engine_name: "Paloalto"
+      engine_update: "20221128"
+      engine_version: "0.9.0.1003"
+      method: "blacklist"
+      result: null
+    Panda: 
+      category: "undetected"
+      engine_name: "Panda"
+      engine_update: "20221127"
+      engine_version: "4.6.4.2"
+      method: "blacklist"
+      result: null
+    Rising: 
+      category: "undetected"
+      engine_name: "Rising"
+      engine_update: "20221127"
+      engine_version: "25.0.0.27"
+      method: "blacklist"
+      result: null
+    SUPERAntiSpyware: 
+      category: "undetected"
+      engine_name: "SUPERAntiSpyware"
+      engine_update: "20221126"
+      engine_version: "5.6.0.1032"
+      method: "blacklist"
+      result: null
+    Sangfor: 
+      category: "undetected"
+      engine_name: "Sangfor"
+      engine_update: "20221110"
+      engine_version: "2.23.0.0"
+      method: "blacklist"
+      result: null
+    SentinelOne: 
+      category: "undetected"
+      engine_name: "SentinelOne"
+      engine_update: "20221003"
+      engine_version: "22.3.2.9"
+      method: "blacklist"
+      result: null
+    Sophos: 
+      category: "undetected"
+      engine_name: "Sophos"
+      engine_update: "20221127"
+      engine_version: "1.4.1.0"
+      method: "blacklist"
+      result: null
+    Symantec: 
+      category: "undetected"
+      engine_name: "Symantec"
+      engine_update: "20221127"
+      engine_version: "1.19.0.0"
+      method: "blacklist"
+      result: null
+    SymantecMobileInsight: 
+      category: "type-unsupported"
+      engine_name: "SymantecMobileInsight"
+      engine_update: "20220208"
+      engine_version: "2.0"
+      method: "blacklist"
+      result: null
+    TACHYON: 
+      category: "undetected"
+      engine_name: "TACHYON"
+      engine_update: "20221127"
+      engine_version: "2022-11-27.02"
+      method: "blacklist"
+      result: null
+    Tencent: 
+      category: "undetected"
+      engine_name: "Tencent"
+      engine_update: "20221128"
+      engine_version: "1.0.0.1"
+      method: "blacklist"
+      result: null
+    Trapmine: 
+      category: "undetected"
+      engine_name: "Trapmine"
+      engine_update: "20220907"
+      engine_version: "4.0.1.119"
+      method: "blacklist"
+      result: null
+    TrendMicro: 
+      category: "undetected"
+      engine_name: "TrendMicro"
+      engine_update: "20221127"
+      engine_version: "11.0.0.1006"
+      method: "blacklist"
+      result: null
+    TrendMicro-HouseCall: 
+      category: "undetected"
+      engine_name: "TrendMicro-HouseCall"
+      engine_update: "20221127"
+      engine_version: "10.0.0.1040"
+      method: "blacklist"
+      result: null
+    Trustlook: 
+      category: "type-unsupported"
+      engine_name: "Trustlook"
+      engine_update: "20221128"
+      engine_version: "1.0"
+      method: "blacklist"
+      result: null
+    VBA32: 
+      category: "undetected"
+      engine_name: "VBA32"
+      engine_update: "20221125"
+      engine_version: "5.0.0"
+      method: "blacklist"
+      result: null
+    VIPRE: 
+      category: "undetected"
+      engine_name: "VIPRE"
+      engine_update: "20221127"
+      engine_version: "6.0.0.35"
+      method: "blacklist"
+      result: null
+    ViRobot: 
+      category: "undetected"
+      engine_name: "ViRobot"
+      engine_update: "20221127"
+      engine_version: "2014.3.20.0"
+      method: "blacklist"
+      result: null
+    VirIT: 
+      category: "undetected"
+      engine_name: "VirIT"
+      engine_update: "20221125"
+      engine_version: "9.5.333"
+      method: "blacklist"
+      result: null
+    Webroot: 
+      category: "undetected"
+      engine_name: "Webroot"
+      engine_update: "20221128"
+      engine_version: "1.0.0.403"
+      method: "blacklist"
+      result: null
+    Yandex: 
+      category: "undetected"
+      engine_name: "Yandex"
+      engine_update: "20221127"
+      engine_version: "5.5.2.24"
+      method: "blacklist"
+      result: null
+    Zillya: 
+      category: "undetected"
+      engine_name: "Zillya"
+      engine_update: "20221125"
+      engine_version: "2.0.0.4758"
+      method: "blacklist"
+      result: null
+    ZoneAlarm: 
+      category: "undetected"
+      engine_name: "ZoneAlarm"
+      engine_update: "20221127"
+      engine_version: "1.0"
+      method: "blacklist"
+      result: null
+    Zoner: 
+      category: "undetected"
+      engine_name: "Zoner"
+      engine_update: "20221127"
+      engine_version: "2.2.2.0"
+      method: "blacklist"
+      result: null
+    tehtris: 
+      category: "undetected"
+      engine_name: "tehtris"
+      engine_update: "20221128"
+      engine_version: "v0.1.4"
+      method: "blacklist"
+      result: null
+  last_analysis_stats: 
+    confirmed-timeout: 0
+    failure: 0
+    harmless: 0
+    malicious: 2
+    suspicious: 0
+    timeout: 0
+    type-unsupported: 4
+    undetected: 69
+  last_modification_date: 1719570764  # 2024-06-28 06:32:44 -0400 EDT
+  last_submission_date: 1669593877  # 2022-11-27 19:04:37 -0500 EST
+  magic: "PE32 executable for MS Windows (GUI) Intel 80386 32-bit"
+  md5: "e75717a75f2a35130bf7f7aee09dcb7d"
+  meaningful_name: "chrome.exe"
+  names: 
+  - "A"
+  - "chrome_exe"
+  - "chrome.exe"
+  - "BC24D71D180765E214B2136B77A6F7002A7F8D71.exe"
+  - "09ce859a-3ec9-43a2-976b-fb146d2ce51a"
+  - "302abecd-47ae-4c0d-8516-e8b59a49767b.exe"
+  - "8bd866f2-94ba-45c4-a77b-25009cd103a9"
+  - "7a2bbc4a-e460-4822-8e55-08da7116e133"
+  - "74c3bfe6-5edd-4dca-bf28-0b9001105079"
+  - "0e94738a-2c1d-49fb-b21f-80b3fc0dad07"
+  - "394f0d57-ef52-4fe8-8ba6-664c29495168.exe"
+  - "2dade02f-8aef-40d1-8c72-a406e653d43b"
+  - "b69a5002-5f2f-4445-992c-b4fd6037bccd"
+  - "file-4168626_exe"
+  - "83a1f634-2082-4b38-a9d0-b29052e857fa"
+  - "old_chrome.exe"
+  - "da28656d-ec51-43da-9725-1a00b357a4d1"
+  - "b6698e9a-1152-48a1-9d7f-669e38f829e7"
+  - "e59ff1cb-89c6-434f-b7ed-269730caea7f"
+  - "023e730a-6982-4eb2-9e69-d7ebd5831cd7"
+  - "c75ab33f-3930-4710-a218-ff8f77cb1bda"
+  - "d2d1a558-d66d-4c05-b9df-fc2a2d7cecf6"
+  - "e75717a75f2a35130bf7f7aee09dcb7d"
+  - "0b6817e6-3fdc-4900-992f-912c55e5fd28"
+  - "a100b1db-feaf-4a90-8973-638e5087b558"
+  - "c8c1de50-1f1f-4abb-8362-b2bc20fde298"
+  - "39e2898e-6923-406c-8f61-f3d4a89c18f2"
+  - "6e75fff3-b96b-4562-9baf-632f75c2b0d0"
+  - "b35be764-169f-465a-aba7-799bddeeabc0"
+  - "cb64a8a5-e5d5-4133-b994-bd310bb5dad0"
+  - "48bf68af-6b92-41ad-a0ad-7b1accd8fafe"
+  - "chromes.exe"
+  pe_info: 
+    compiler_product_versions: 
+    - "[ASM] VS2008 SP1 build 30729 count=47"
+    - "[C++] VS2008 build 21022 count=3"
+    - "id: 138, version: 30729 count=90"
+    - "[ C ] VS2008 SP1 build 30729 count=253"
+    - "[IMP] VS2008 SP1 build 30729 count=19"
+    - "[---] Unmarked objects count=344"
+    - "[C++] VS2008 SP1 build 30729 count=255"
+    - "[EXP] VS2008 SP1 build 30729 count=1"
+    - "[RES] VS2008 build 21022 count=1"
+    - "id: 151, version: 0 count=1"
+    - "[LNK] VS2008 SP1 build 30729 count=1"
+    entry_point: 292788
+    exports: 
+    - "CrashForException"
+    - "DumpProcess"
+    - "DumpProcessWithoutCrash"
+    - "SetActiveURL"
+    - "SetClientId"
+    - "SetCommandLine"
+    - "SetExperimentList"
+    - "SetExtensionID"
+    - "SetGpuInfo"
+    - "SetNumberOfExtensions"
+    - "SetNumberOfViews"
+    - "SetPrinterInfo"
+    imphash: "5b13ed4634c850a756a68062b1ccc0da"
+    import_list: 
+    - imported_functions: 
+      - "GetFileVersionInfoSizeW"
+      - "GetFileVersionInfoW"
+      - "VerQueryValueW"
+      library_name: "VERSION.dll"
+    - imported_functions: 
+      - "timeGetTime"
+      library_name: "WINMM.dll"
+    - imported_functions: 
+      - "AssignProcessToJobObject"
+      - "CloseHandle"
+      - "CompareStringA"
+      - "CompareStringW"
+      - "CreateEventW"
+      - "CreateFileA"
+      - "CreateFileMappingW"
+      - "CreateFileW"
+      - "CreateIoCompletionPort"
+      - "CreateJobObjectW"
+      - "CreateMutexW"
+      - "CreateNamedPipeW"
+      - "CreateProcessW"
+      - "CreateSemaphoreW"
+      - "CreateThread"
+      - "DebugBreak"
+      - "DeleteCriticalSection"
+      - "DuplicateHandle"
+      - "EnterCriticalSection"
+      - "EnumSystemLocalesA"
+      - "ExitProcess"
+      - "ExpandEnvironmentStringsW"
+      - "FindResourceW"
+      - "FlushFileBuffers"
+      - "FormatMessageA"
+      - "FreeEnvironmentStringsW"
+      - "FreeLibrary"
+      - "GetACP"
+      - "GetCommandLineW"
+      - "GetConsoleCP"
+      - "GetConsoleMode"
+      - "GetConsoleOutputCP"
+      - "GetCPInfo"
+      - "GetCurrentDirectoryW"
+      - "GetCurrentProcess"
+      - "GetCurrentProcessId"
+      - "GetCurrentThreadId"
+      - "GetEnvironmentStringsW"
+      - "GetEnvironmentVariableA"
+      - "GetEnvironmentVariableW"
+      - "GetExitCodeProcess"
+      - "GetFileAttributesW"
+      - "GetFileTime"
+      - "GetFileType"
+      - "GetLastError"
+      - "GetLocaleInfoA"
+      - "GetLocaleInfoW"
+      - "GetLongPathNameW"
+      - "GetModuleFileNameA"
+      - "GetModuleFileNameW"
+      - "GetModuleHandleA"
+      - "GetModuleHandleW"
+      - "GetNativeSystemInfo"
+      - "GetOEMCP"
+      - "GetProcAddress"
+      - "GetProcessHandleCount"
+      - "GetProcessHeap"
+      - "GetProcessId"
+      - "GetQueuedCompletionStatus"
+      - "GetStartupInfoA"
+      - "GetStartupInfoW"
+      - "GetStdHandle"
+      - "GetStringTypeA"
+      - "GetStringTypeW"
+      - "GetSystemDirectoryW"
+      - "GetSystemInfo"
+      - "GetSystemTimeAsFileTime"
+      - "GetTempPathW"
+      - "GetThreadContext"
+      - "GetThreadLocale"
+      - "GetTickCount"
+      - "GetTimeZoneInformation"
+      - "GetUserDefaultLangID"
+      - "GetUserDefaultLCID"
+      - "GetUserDefaultUILanguage"
+      - "GetVersionExW"
+      - "GetWindowsDirectoryW"
+      - "HeapAlloc"
+      - "HeapCreate"
+      - "HeapFree"
+      - "HeapReAlloc"
+      - "HeapSize"
+      - "InitializeCriticalSection"
+      - "InitializeCriticalSectionAndSpinCount"
+      - "InterlockedCompareExchange"
+      - "InterlockedDecrement"
+      - "InterlockedExchange"
+      - "InterlockedExchangeAdd"
+      - "InterlockedIncrement"
+      - "IsDebuggerPresent"
+      - "IsValidCodePage"
+      - "IsValidLocale"
+      - "LCMapStringA"
+      - "LCMapStringW"
+      - "LeaveCriticalSection"
+      - "LoadLibraryA"
+      - "LoadLibraryExW"
+      - "LoadLibraryW"
+      - "LoadResource"
+      - "LocalAlloc"
+      - "LocalFree"
+      - "LockResource"
+      - "lstrlenW"
+      - "MapViewOfFile"
+      - "MultiByteToWideChar"
+      - "OpenEventW"
+      - "OpenProcess"
+      - "PostQueuedCompletionStatus"
+      - "QueryDosDeviceW"
+      - "QueryPerformanceCounter"
+      - "QueryPerformanceFrequency"
+      - "RaiseException"
+      - "ReadFile"
+      - "ReadProcessMemory"
+      - "RegisterWaitForSingleObject"
+      - "ReleaseMutex"
+      - "ReleaseSemaphore"
+      - "ResetEvent"
+      - "ResumeThread"
+      - "RtlCaptureContext"
+      - "RtlCaptureStackBackTrace"
+      - "RtlUnwind"
+      - "SearchPathW"
+      - "SetCurrentDirectoryW"
+      - "SetEndOfFile"
+      - "SetEnvironmentVariableA"
+      - "SetEnvironmentVariableW"
+      - "SetEvent"
+      - "SetFilePointer"
+      - "SetHandleCount"
+      - "SetHandleInformation"
+      - "SetInformationJobObject"
+      - "SetLastError"
+      - "SetNamedPipeHandleState"
+      - "SetStdHandle"
+      - "SetUnhandledExceptionFilter"
+      - "SignalObjectAndWait"
+      - "SizeofResource"
+      - "Sleep"
+      - "SuspendThread"
+      - "SystemTimeToFileTime"
+      - "TerminateJobObject"
+      - "TerminateProcess"
+      - "TlsAlloc"
+      - "TlsFree"
+      - "TlsGetValue"
+      - "TlsSetValue"
+      - "TransactNamedPipe"
+      - "TzSpecificLocalTimeToSystemTime"
+      - "UnhandledExceptionFilter"
+      - "UnmapViewOfFile"
+      - "UnregisterWaitEx"
+      - "VirtualAlloc"
+      - "VirtualAllocEx"
+      - "VirtualFree"
+      - "VirtualFreeEx"
+      - "VirtualProtectEx"
+      - "VirtualQuery"
+      - "VirtualQueryEx"
+      - "WaitForMultipleObjects"
+      - "WaitForSingleObject"
+      - "WaitNamedPipeW"
+      - "WideCharToMultiByte"
+      - "WriteConsoleA"
+      - "WriteConsoleW"
+      - "WriteFile"
+      - "WriteProcessMemory"
+      - "WTSGetActiveConsoleSessionId"
+      library_name: "KERNEL32.dll"
+    - imported_functions: 
+      - "WTSQueryUserToken"
+      library_name: "WTSAPI32.dll"
+    - imported_functions: 
+      - "ConvertSecurityDescriptorToStringSecurityDescriptorW"
+      - "ConvertSidToStringSidW"
+      - "ConvertStringSecurityDescriptorToSecurityDescriptorW"
+      - "ConvertStringSidToSidW"
+      - "CopySid"
+      - "CreateProcessAsUserW"
+      - "CreateRestrictedToken"
+      - "CreateWellKnownSid"
+      - "DuplicateToken"
+      - "DuplicateTokenEx"
+      - "EqualSid"
+      - "GetFileSecurityW"
+      - "GetLengthSid"
+      - "GetSecurityInfo"
+      - "GetTokenInformation"
+      - "GetTraceEnableFlags"
+      - "GetTraceEnableLevel"
+      - "GetTraceLoggerHandle"
+      - "InitializeSecurityDescriptor"
+      - "LookupPrivilegeValueW"
+      - "OpenProcessToken"
+      - "RegCloseKey"
+      - "RegCreateKeyExW"
+      - "RegDeleteValueW"
+      - "RegDisablePredefinedCache"
+      - "RegEnumKeyExW"
+      - "RegisterTraceGuidsW"
+      - "RegOpenKeyExW"
+      - "RegQueryInfoKeyW"
+      - "RegQueryValueExW"
+      - "RegSetValueExW"
+      - "RevertToSelf"
+      - "SetEntriesInAclW"
+      - "SetFileSecurityW"
+      - "SetSecurityDescriptorDacl"
+      - "SetThreadToken"
+      - "SetTokenInformation"
+      - "TraceEvent"
+      - "UnregisterTraceGuids"
+      library_name: "ADVAPI32.dll"
+    - imported_functions: 
+      - "PathFileExistsW"
+      - "PathRemoveFileSpecW"
+      library_name: "SHLWAPI.dll"
+    - imported_functions: 
+      - "CharUpperW"
+      - "CloseDesktop"
+      - "CloseWindowStation"
+      - "CreateDesktopW"
+      - "CreateWindowStationW"
+      - "GetProcessWindowStation"
+      - "GetThreadDesktop"
+      - "GetUserObjectInformationW"
+      - "MessageBoxW"
+      - "SetProcessWindowStation"
+      library_name: "USER32.dll"
+    - imported_functions: 
+      - "CreateEnvironmentBlock"
+      - "DestroyEnvironmentBlock"
+      library_name: "USERENV.dll"
+    machine_type: 332
+    overlay: 
+      chi2: 9934.02
+      entropy: 7.291814804077148
+      filetype: "unknown"
+      md5: "71777a001bdb9e6ef2618c125ea7c778"
+      offset: 1244672
+      size: 5656
+    resource_details: 
+    - chi2: 139624.77
+      entropy: 5.340756893157959
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "ab042eb74191e7eeb357b05cb361056f818901e7e01074585dfa90af7323ad0d"
+      type: "RT_ICON"
+    - chi2: 61134.91
+      entropy: 5.937229633331299
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "62be1865a72090ee2ddd89d5d474a3aeaca5540b442e9e98696ce038fd304de1"
+      type: "RT_ICON"
+    - chi2: 115122.93
+      entropy: 4.147703647613525
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "e453a18b73a0cfe7e2e054ceae015e9c2b81c5c3a309e2905a2c3077a3d3a143"
+      type: "RT_ICON"
+    - chi2: 2520.85
+      entropy: 7.952009201049805
+      filetype: "PNG"
+      lang: "ENGLISH US"
+      sha256: "3b8746752695c63cde73b1797aca0b308dc333681448f9e4ad13da94554b7616"
+      type: "RT_ICON"
+    - chi2: 378046.84
+      entropy: 5.034282207489014
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "469b5ee25dcb86628a9d11fbdedfb27ac6364396e05d0cfda3120ad184e07319"
+      type: "RT_ICON"
+    - chi2: 143404.55
+      entropy: 5.274143695831299
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "7390ac045cf63c0411de0e6ac254c790b6b4c033473aa755568208c50bdaea9f"
+      type: "RT_ICON"
+    - chi2: 95367.53
+      entropy: 5.148591995239258
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "0d8cfcf648ef940e10a1d08d4c644e3877c1e3d453577221e8641e64735a74e4"
+      type: "RT_ICON"
+    - chi2: 45097.2
+      entropy: 4.902423858642578
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "26d7b1b9b3b4a9ebec85a3f7ca550d7d306056012e3eb1eaa7903847c78c1da3"
+      type: "RT_ICON"
+    - chi2: 44377.91
+      entropy: 5.8726019859313965
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "b7cbc2192ff7cc5d73dbc3774e9f84183ab585328073cddc674d8f4ce7ba069e"
+      type: "RT_ICON"
+    - chi2: 26908.37
+      entropy: 6.281996726989746
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "93c37b691fac2354794286a316e8f462f71563db7ecd8e54ee2056720f51d677"
+      type: "RT_ICON"
+    - chi2: 42435.57
+      entropy: 5.808206558227539
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "d374e1d20297fca1ccdc8849104dce9e1de6a07c774e0afaa6a588df4a19e4e1"
+      type: "RT_ICON"
+    - chi2: 196953.12
+      entropy: 5.318838119506836
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "8ca552ed25bfd5b9450f892159ea58459bd795bcf4cc590ca6c18a2e6ae84550"
+      type: "RT_ICON"
+    - chi2: 85472.53
+      entropy: 5.416736602783203
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "3facc1cc3c89d7eddd757af8cf91a771657244b05b6f8360e3bd0096ef3cf8a0"
+      type: "RT_ICON"
+    - chi2: 17840.51
+      entropy: 6.152309417724609
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "ac6e94aa67b8a455666f00990cff4a0f5d0e8b5da639dcbfcb104a4f16e6e86b"
+      type: "RT_ICON"
+    - chi2: 40228.83
+      entropy: 6.051615238189697
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "701e45895f624a3ee56354863496d2212811529ad53b9697cf092512aaaee9a2"
+      type: "RT_ICON"
+    - chi2: 24912.34
+      entropy: 6.385756492614746
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "69d44f8c8a563324a0e0bd2a96d01152362700f864ec12f381b37f9cee399053"
+      type: "RT_ICON"
+    - chi2: 39239.95
+      entropy: 5.675595283508301
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "a78aa1cf26c2b01a6c5ac4eeddf8c7ffd83718a27c5c6a8397f6f108e995213e"
+      type: "RT_ICON"
+    - chi2: 195340.0
+      entropy: 5.34339714050293
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "3bb4bc2d723850f3978259c444749a86ab3292929dd310aa1c96015f1e1f7bb0"
+      type: "RT_ICON"
+    - chi2: 82982.41
+      entropy: 5.385802268981934
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "f0af5c24251960c3fbc3b9e1663aa6c2c2eccd35b652f22c2614f0d75ffc41a7"
+      type: "RT_ICON"
+    - chi2: 26242.21
+      entropy: 5.188527584075928
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "fee27363bbb9ff9261fd8c92c365cfac4a136912ec31974cc9589d0ccaef046c"
+      type: "RT_ICON"
+    - chi2: 50437.46
+      entropy: 6.1011061668396
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "9bf27eb42b7186743dac3a15f7404ae7971f6a168b605d46ae5985c60da2b72c"
+      type: "RT_ICON"
+    - chi2: 30732.16
+      entropy: 6.4865570068359375
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "f2dbac19a46c4d13a8f14afddefa51ebf17c49b9d1dfc69fb84c1c4e4d5080ec"
+      type: "RT_ICON"
+    - chi2: 36768.02
+      entropy: 5.961225509643555
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "201a631b311b1d896fbd59d274e43309f24520b3f5963f23b758b5cf3ed41091"
+      type: "RT_ICON"
+    - chi2: 361140.16
+      entropy: 5.302337646484375
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "5b1f2525420971750b3e8be304a7eb0e3eeb50297018dfe6459772ad18ea3a21"
+      type: "RT_ICON"
+    - chi2: 111885.92
+      entropy: 5.756863594055176
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "390dfbf4b0fb4b87e5c3ccbc5dc4345ab20f273699ac42f811472d2a0fe9d226"
+      type: "RT_ICON"
+    - chi2: 26257.2
+      entropy: 5.592587947845459
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "8e434278f20562cbd90ca2bf1fc4693f52f21d38e4507fa603e2430b7ed671ab"
+      type: "RT_ICON"
+    - chi2: 235194.16
+      entropy: 3.9715805053710938
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "d59c518aae33d9a62c7b20de6ea95e18e33d44c12d3907c53ba3e52223242b91"
+      type: "RT_ICON"
+    - chi2: 170697.25
+      entropy: 3.8089547157287598
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "7210c17f0756f245e3018662de0790f7c19aa79ee69c5baccbeafe8d24e5006f"
+      type: "RT_ICON"
+    - chi2: 198284.62
+      entropy: 2.422149181365967
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "af0f5872b5f3140ddac7f4ebc1208b3baf7b33a548c55fbf609d20026471bd4c"
+      type: "RT_ICON"
+    - chi2: 1536.81
+      entropy: 7.956284523010254
+      filetype: "PNG"
+      lang: "ENGLISH US"
+      sha256: "6f61d8372adba642b686ba13db5fa1b14ac698969b8dad4cd3bf2c1fb1598f5a"
+      type: "RT_ICON"
+    - chi2: 541226.38
+      entropy: 4.048092842102051
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "5c1e67f81dfc5d481c124aff9ff16d6ce7d0e26743468fe6f66c9dff1c2ba764"
+      type: "RT_ICON"
+    - chi2: 205909.38
+      entropy: 4.315474033355713
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "38af6a884340fa4fb06f5478339393832b7cc60b19dc39ca620d226dceb5f928"
+      type: "RT_ICON"
+    - chi2: 124245.77
+      entropy: 4.288332462310791
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "277f5e5fb6d7ecc4f38103d4e44a7ceaef36ae7a860c57cf8faf75d0cc26f429"
+      type: "RT_ICON"
+    - chi2: 70983.17
+      entropy: 3.881077766418457
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "0ec862f883d820c48c51553e877088096e4ce9b6be6d7c7e1b04207a1af9bb6f"
+      type: "RT_ICON"
+    - chi2: 8872.38
+      entropy: 2.7976577281951904
+      filetype: "ICO"
+      lang: "ENGLISH US"
+      sha256: "e92cd3f88302025756d83022e60b153dc2a3aa1e772ddb93255a30b8ec8ec655"
+      type: "RT_GROUP_ICON"
+    - chi2: 6463.6
+      entropy: 2.7918925285339355
+      filetype: "ICO"
+      lang: "ENGLISH US"
+      sha256: "28531d00bee75de4e07529bdc31ddc1ed379ff009cfbaee8822d16fba4ec4c56"
+      type: "RT_GROUP_ICON"
+    - chi2: 6486.35
+      entropy: 2.770780086517334
+      filetype: "ICO"
+      lang: "ENGLISH US"
+      sha256: "fb8ed8fb56ab825dccda5286028c13e8aaeab8ea8d6f8ade3086355048e8b58e"
+      type: "RT_GROUP_ICON"
+    - chi2: 6457.91
+      entropy: 2.814114809036255
+      filetype: "ICO"
+      lang: "ENGLISH US"
+      sha256: "d535a129604c5111b886e975487f5d10d8309eaaa757564859f9ea2b85e6a8bb"
+      type: "RT_GROUP_ICON"
+    - chi2: 8842.01
+      entropy: 2.864607810974121
+      filetype: "ICO"
+      lang: "ENGLISH US"
+      sha256: "61a6d1c086f22df189836ce46fd9b7c5ff0ba90e8517125c7f2de39b686f3b13"
+      type: "RT_GROUP_ICON"
+    - chi2: 78863.17
+      entropy: 3.4533231258392334
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "2b05ddfef936288c227b948fcd44de3d666f7f0c652baad2dc68cf1d3a308cbf"
+      type: "RT_VERSION"
+    - chi2: 6712.3
+      entropy: 5.234147548675537
+      filetype: "unknown"
+      lang: "ENGLISH US"
+      sha256: "193ce5af496f31f38df1ef150c0a362a1a20275f60fc6deb50696557568586b3"
+      type: "RT_MANIFEST"
+    resource_langs: 
+      ENGLISH US: 41
+    resource_types: 
+      RT_GROUP_ICON: 5
+      RT_ICON: 34
+      RT_MANIFEST: 1
+      RT_VERSION: 1
+    rich_pe_header_hash: "a396180c54f24f00400272d7d16fccd7"
+    sections: 
+    - chi2: 2884881.5
+      entropy: 6.72
+      flags: "rx"
+      md5: "e2985e195a1a2651961fcb99c754cf6d"
+      name: ".text"
+      raw_size: 652288
+      virtual_address: 4096
+      virtual_size: 652169
+    - chi2: 17866224.0
+      entropy: 4.96
+      flags: "r"
+      md5: "f2533837a4a453d82e760fb0a5a9b20d"
+      name: ".rdata"
+      raw_size: 364544
+      virtual_address: 659456
+      virtual_size: 364331
+    - chi2: 725857.0
+      entropy: 4.28
+      flags: "rw"
+      md5: "cadc30c3d35f2912a3a92436006f2cde"
+      name: ".data"
+      raw_size: 10752
+      virtual_address: 1024000
+      virtual_size: 31772
+    - chi2: 130560.0
+      entropy: 0.0
+      flags: "rw"
+      md5: "bf619eac0cdf3f68d496ea9344137e8b"
+      name: ".tls"
+      raw_size: 512
+      virtual_address: 1056768
+      virtual_size: 2
+    - chi2: 1995413.12
+      entropy: 6.69
+      flags: "r"
+      md5: "7b97c41bbbf05d5a86e2339cee302862"
+      name: ".rsrc"
+      raw_size: 175616
+      virtual_address: 1060864
+      virtual_size: 175228
+    - chi2: 1298117.0
+      entropy: 5.22
+      flags: "r"
+      md5: "4b450eb0a759f68fa62fbb7fc97203b7"
+      name: ".reloc"
+      raw_size: 39936
+      virtual_address: 1236992
+      virtual_size: 39834
+    timestamp: 1340869965
+  reputation: 28
+  sandbox_verdicts: 
+    Zenbox: 
+      category: "harmless"
+      confidence: 2
+      malware_classification: 
+      - "CLEAN"
+      sandbox_name: "Zenbox"
+  sha1: "114c52257780067e3f8bfab4d2706be6debc0ace"
+  sha256: "7c7bbbc8710970b1e9c228c9519a265429536b4e0ad988daae33b266303ba592"
+  signature_info: 
+    copyright: "Copyright (C) 2006-2010 Google Inc. All Rights Reserved."
+    counter signers: "Symantec Time Stamping Services Signer - G3; VeriSign Time Stamping Services CA; Thawte Timestamping CA"
+    counter signers details: 
+    - algorithm: "sha1RSA"
+      cert issuer: "VeriSign Time Stamping Services CA"
+      name: "Symantec Time Stamping Services Signer - G3"
+      serial number: "79 A2 A5 85 F9 D1 15 42 13 D9 B8 3E F6 B6 8D ED"
+      status: "This certificate or one of the certificates in the certificate chain is not time valid., The revocation status of the certificate or one of the certificates in the certificate chain is unknown., Error 65536 (0x10000), The revocation status of the certificate or one of the certificates in the certificate chain is either offline or stale."
+      thumbprint: "8FD99D63FB3AFBD534A4F6E31DACD27F59504021"
+      valid from: "12:00 AM 05/01/2012"
+      valid to: "11:59 PM 12/31/2012"
+      valid usage: "Timestamp Signing"
+    - algorithm: "sha1RSA"
+      cert issuer: "Thawte Timestamping CA"
+      name: "VeriSign Time Stamping Services CA"
+      serial number: "47 BF 19 95 DF 8D 52 46 43 F7 DB 6D 48 0D 31 A4"
+      status: "This certificate or one of the certificates in the certificate chain is not time valid."
+      thumbprint: "F46AC0C6EFBB8C6A14F55F09E2D37DF4C0DE012D"
+      valid from: "12:00 AM 12/04/2003"
+      valid to: "11:59 PM 12/03/2013"
+      valid usage: "Timestamp Signing"
+    - algorithm: "md5RSA"
+      cert issuer: "Thawte Timestamping CA"
+      name: "Thawte Timestamping CA"
+      serial number: "00"
+      status: "This certificate or one of the certificates in the certificate chain is not time valid."
+      thumbprint: "BE36A4562FB2EE05DBB3D32323ADF445084ED656"
+      valid from: "12:00 AM 01/01/1997"
+      valid to: "11:59 PM 12/31/2020"
+      valid usage: "Timestamp Signing"
+    description: "Google Chrome"
+    file version: "20.0.1132.47"
+    internal name: "chrome_exe"
+    original name: "chrome.exe"
+    product: "Google Chrome"
+    signers: "Google Inc; VeriSign Class 3 Code Signing 2010 CA; VeriSign Class 3 Public Primary CA"
+    signers details: 
+    - algorithm: "sha1RSA"
+      cert issuer: "VeriSign Class 3 Code Signing 2010 CA"
+      name: "Google Inc"
+      serial number: "09 E2 8B 26 DB 59 3E C4 E7 32 86 B6 64 99 C3 70"
+      status: "This certificate or one of the certificates in the certificate chain is not time valid."
+      thumbprint: "06C92BEC3BBF32068CB9208563D004169448EE21"
+      valid from: "12:00 AM 11/14/2011"
+      valid to: "11:59 PM 11/13/2014"
+      valid usage: "Code Signing"
+    - algorithm: "sha1RSA"
+      cert issuer: "Class 3 Public Primary Certification Authority"
+      name: "VeriSign Class 3 Code Signing 2010 CA"
+      serial number: "4D 62 90 E5 8C 54 F0 F1 EB 17 34 1A 13 10 E6 A4"
+      status: "This certificate or one of the certificates in the certificate chain is not time valid., Trust for this certificate or one of the certificates in the certificate chain has been revoked., The certificate or certificate chain is based on an untrusted root., The certificate is explicitly distrusted."
+      thumbprint: "14FCF0BB187D563B568EEA5FC888A53D288698D6"
+      valid from: "12:00 AM 09/30/2010"
+      valid to: "11:59 PM 01/01/2014"
+      valid usage: "Client Auth, Code Signing"
+    - algorithm: "md2RSA"
+      cert issuer: "Class 3 Public Primary Certification Authority"
+      name: "VeriSign Class 3 Public Primary CA"
+      serial number: "70 BA E4 1D 10 D9 29 34 B6 38 CA 7B 03 CC BA BF"
+      status: "Trust for this certificate or one of the certificates in the certificate chain has been revoked., The certificate or certificate chain is based on an untrusted root., The certificate is explicitly distrusted."
+      thumbprint: "742C3192E607E424EB4549542BE1BBC53E6174E2"
+      valid from: "12:00 AM 01/29/1996"
+      valid to: "11:59 PM 08/01/2028"
+      valid usage: "Client Auth, Code Signing, Email Protection, Server Auth"
+    signing date: "09:28 AM 06/28/2012"
+    verified: "Signed"
+    x509: 
+    - algorithm: "sha1RSA"
+      cert issuer: "VeriSign Time Stamping Services CA"
+      name: "Symantec Time Stamping Services Signer - G3"
+      serial number: "79 A2 A5 85 F9 D1 15 42 13 D9 B8 3E F6 B6 8D ED"
+      thumbprint: "8FD99D63FB3AFBD534A4F6E31DACD27F59504021"
+      valid from: "2012-05-01 00:00:00"
+      valid to: "2012-12-31 23:59:59"
+      valid_usage: "ff"
+    - algorithm: "sha1RSA"
+      cert issuer: "Thawte Timestamping CA"
+      name: "VeriSign Time Stamping Services CA"
+      serial number: "47 BF 19 95 DF 8D 52 46 43 F7 DB 6D 48 0D 31 A4"
+      thumbprint: "F46AC0C6EFBB8C6A14F55F09E2D37DF4C0DE012D"
+      valid from: "2003-12-04 00:00:00"
+      valid to: "2013-12-03 23:59:59"
+      valid_usage: "Timestamp Signing"
+    - algorithm: "sha1RSA"
+      cert issuer: null
+      name: "VeriSign Class 3 Code Signing 2010 CA"
+      serial number: "4D 62 90 E5 8C 54 F0 F1 EB 17 34 1A 13 10 E6 A4"
+      thumbprint: "14FCF0BB187D563B568EEA5FC888A53D288698D6"
+      valid from: "2010-09-30 00:00:00"
+      valid to: "2014-01-01 23:59:59"
+      valid_usage: "Client Auth, Code Signing"
+    - algorithm: "sha1RSA"
+      cert issuer: "VeriSign Class 3 Code Signing 2010 CA"
+      name: "Google Inc"
+      serial number: "09 E2 8B 26 DB 59 3E C4 E7 32 86 B6 64 99 C3 70"
+      thumbprint: "06C92BEC3BBF32068CB9208563D004169448EE21"
+      valid from: "2011-11-14 00:00:00"
+      valid to: "2014-11-13 23:59:59"
+      valid_usage: "Code Signing"
+  size: 1250328
+  ssdeep: "24576:hbCADccwEqVmdn35GbU/sQVwehEttfKujdnKPlq:tDccwEqVUnpCU/sQVw1tnjdnKPI"
+  tags: 
+  - "peexe"
+  - "overlay"
+  - "revoked-cert"
+  - "runtime-modules"
+  - "signed"
+  - "direct-cpu-clock-access"
+  - "invalid-signature"
+  - "idle"
+  times_submitted: 159
+  tlsh: "T1A0459E52F8438033C46B43B989769F385A7E6C209F2208DF66DC3D2D6EB16D156393A7"
+  total_votes: 
+    harmless: 11
+    malicious: 7
+  trid: 
+  - file_type: "Win32 Executable MS Visual C++ (generic)"
+    probability: 47.3
+  - file_type: "Win64 Executable (generic)"
+    probability: 15.9
+  - file_type: "Win32 Dynamic Link Library (generic)"
+    probability: 9.9
+  - file_type: "Win16 NE executable (generic)"
+    probability: 7.6
+  - file_type: "Win32 Executable (generic)"
+    probability: 6.8
+  type_description: "Win32 EXE"
+  type_extension: "exe"
+  type_tag: "peexe"
+  type_tags: 
+  - "executable"
+  - "windows"
+  - "win32"
+  - "pe"
+  - "peexe"
+  unique_sources: 113
+  vhash: "016066655d1d05655278za8jz21za031z18zc"

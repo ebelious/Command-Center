@@ -1,0 +1,621 @@
+- _id: "9.9.9.9"
+  _type: "ip_address"
+  as_owner: "QUAD9-AS-1"
+  asn: 19281
+  continent: "NA"
+  country: "US"
+  crowdsourced_context: 
+  - details: |
+      VirusTotal Link: https://www.virustotal.com/gui/ip-address/9.9.9.9/detection
+      
+      Abuse IPDB Link: https://www.abuseipdb.com/check/9.9.9.9
+      
+      This IP resolves to 193 domains.
+    severity: "low"
+    source: "ArcSight Threat Intelligence"
+    timestamp: 1693471042
+    title: "Ransomware - Understand. Prevent. Recover."
+  jarm: "40d40d40d00040d00042d42d0000005a3e96c1dfa4bdb24b8b3c04cae18cc3"
+  last_analysis_date: 1721881589  # 2024-07-25 00:26:29 -0400 EDT
+  last_analysis_results: 
+    "0xSI_f33d": 
+      category: "undetected"
+      engine_name: "0xSI_f33d"
+      method: "blacklist"
+      result: "unrated"
+    ADMINUSLabs: 
+      category: "harmless"
+      engine_name: "ADMINUSLabs"
+      method: "blacklist"
+      result: "clean"
+    AILabs (MONITORAPP): 
+      category: "harmless"
+      engine_name: "AILabs (MONITORAPP)"
+      method: "blacklist"
+      result: "clean"
+    Abusix: 
+      category: "harmless"
+      engine_name: "Abusix"
+      method: "blacklist"
+      result: "clean"
+    Acronis: 
+      category: "harmless"
+      engine_name: "Acronis"
+      method: "blacklist"
+      result: "clean"
+    AlienVault: 
+      category: "harmless"
+      engine_name: "AlienVault"
+      method: "blacklist"
+      result: "clean"
+    AlphaSOC: 
+      category: "undetected"
+      engine_name: "AlphaSOC"
+      method: "blacklist"
+      result: "unrated"
+    Antiy-AVL: 
+      category: "harmless"
+      engine_name: "Antiy-AVL"
+      method: "blacklist"
+      result: "clean"
+    ArcSight Threat Intelligence: 
+      category: "undetected"
+      engine_name: "ArcSight Threat Intelligence"
+      method: "blacklist"
+      result: "unrated"
+    AutoShun: 
+      category: "undetected"
+      engine_name: "AutoShun"
+      method: "blacklist"
+      result: "unrated"
+    Bfore.Ai PreCrime: 
+      category: "undetected"
+      engine_name: "Bfore.Ai PreCrime"
+      method: "blacklist"
+      result: "unrated"
+    BitDefender: 
+      category: "harmless"
+      engine_name: "BitDefender"
+      method: "blacklist"
+      result: "clean"
+    Bkav: 
+      category: "undetected"
+      engine_name: "Bkav"
+      method: "blacklist"
+      result: "unrated"
+    Blueliv: 
+      category: "harmless"
+      engine_name: "Blueliv"
+      method: "blacklist"
+      result: "clean"
+    CINS Army: 
+      category: "harmless"
+      engine_name: "CINS Army"
+      method: "blacklist"
+      result: "clean"
+    CMC Threat Intelligence: 
+      category: "harmless"
+      engine_name: "CMC Threat Intelligence"
+      method: "blacklist"
+      result: "clean"
+    CRDF: 
+      category: "harmless"
+      engine_name: "CRDF"
+      method: "blacklist"
+      result: "clean"
+    CSIS Security Group: 
+      category: "undetected"
+      engine_name: "CSIS Security Group"
+      method: "blacklist"
+      result: "unrated"
+    Certego: 
+      category: "harmless"
+      engine_name: "Certego"
+      method: "blacklist"
+      result: "clean"
+    Chong Lua Dao: 
+      category: "harmless"
+      engine_name: "Chong Lua Dao"
+      method: "blacklist"
+      result: "clean"
+    Cluster25: 
+      category: "undetected"
+      engine_name: "Cluster25"
+      method: "blacklist"
+      result: "unrated"
+    Criminal IP: 
+      category: "harmless"
+      engine_name: "Criminal IP"
+      method: "blacklist"
+      result: "clean"
+    CyRadar: 
+      category: "harmless"
+      engine_name: "CyRadar"
+      method: "blacklist"
+      result: "clean"
+    Cyan: 
+      category: "undetected"
+      engine_name: "Cyan"
+      method: "blacklist"
+      result: "unrated"
+    Cyble: 
+      category: "harmless"
+      engine_name: "Cyble"
+      method: "blacklist"
+      result: "clean"
+    DNS8: 
+      category: "harmless"
+      engine_name: "DNS8"
+      method: "blacklist"
+      result: "clean"
+    Dr.Web: 
+      category: "harmless"
+      engine_name: "Dr.Web"
+      method: "blacklist"
+      result: "clean"
+    ESET: 
+      category: "harmless"
+      engine_name: "ESET"
+      method: "blacklist"
+      result: "clean"
+    ESTsecurity: 
+      category: "harmless"
+      engine_name: "ESTsecurity"
+      method: "blacklist"
+      result: "clean"
+    EmergingThreats: 
+      category: "harmless"
+      engine_name: "EmergingThreats"
+      method: "blacklist"
+      result: "clean"
+    Emsisoft: 
+      category: "harmless"
+      engine_name: "Emsisoft"
+      method: "blacklist"
+      result: "clean"
+    Ermes: 
+      category: "undetected"
+      engine_name: "Ermes"
+      method: "blacklist"
+      result: "unrated"
+    Forcepoint ThreatSeeker: 
+      category: "undetected"
+      engine_name: "Forcepoint ThreatSeeker"
+      method: "blacklist"
+      result: "unrated"
+    Fortinet: 
+      category: "harmless"
+      engine_name: "Fortinet"
+      method: "blacklist"
+      result: "clean"
+    G-Data: 
+      category: "harmless"
+      engine_name: "G-Data"
+      method: "blacklist"
+      result: "clean"
+    Google Safebrowsing: 
+      category: "harmless"
+      engine_name: "Google Safebrowsing"
+      method: "blacklist"
+      result: "clean"
+    GreenSnow: 
+      category: "harmless"
+      engine_name: "GreenSnow"
+      method: "blacklist"
+      result: "clean"
+    Gridinsoft: 
+      category: "undetected"
+      engine_name: "Gridinsoft"
+      method: "blacklist"
+      result: "unrated"
+    Heimdal Security: 
+      category: "harmless"
+      engine_name: "Heimdal Security"
+      method: "blacklist"
+      result: "clean"
+    Hunt.io Intelligence: 
+      category: "undetected"
+      engine_name: "Hunt.io Intelligence"
+      method: "blacklist"
+      result: "unrated"
+    IPsum: 
+      category: "harmless"
+      engine_name: "IPsum"
+      method: "blacklist"
+      result: "clean"
+    Juniper Networks: 
+      category: "harmless"
+      engine_name: "Juniper Networks"
+      method: "blacklist"
+      result: "clean"
+    Kaspersky: 
+      category: "undetected"
+      engine_name: "Kaspersky"
+      method: "blacklist"
+      result: "unrated"
+    Lionic: 
+      category: "harmless"
+      engine_name: "Lionic"
+      method: "blacklist"
+      result: "clean"
+    Lumu: 
+      category: "undetected"
+      engine_name: "Lumu"
+      method: "blacklist"
+      result: "unrated"
+    MalwarePatrol: 
+      category: "harmless"
+      engine_name: "MalwarePatrol"
+      method: "blacklist"
+      result: "clean"
+    MalwareURL: 
+      category: "undetected"
+      engine_name: "MalwareURL"
+      method: "blacklist"
+      result: "unrated"
+    Malwared: 
+      category: "harmless"
+      engine_name: "Malwared"
+      method: "blacklist"
+      result: "clean"
+    Netcraft: 
+      category: "undetected"
+      engine_name: "Netcraft"
+      method: "blacklist"
+      result: "unrated"
+    OpenPhish: 
+      category: "harmless"
+      engine_name: "OpenPhish"
+      method: "blacklist"
+      result: "clean"
+    PREBYTES: 
+      category: "harmless"
+      engine_name: "PREBYTES"
+      method: "blacklist"
+      result: "clean"
+    PhishFort: 
+      category: "undetected"
+      engine_name: "PhishFort"
+      method: "blacklist"
+      result: "unrated"
+    PhishLabs: 
+      category: "undetected"
+      engine_name: "PhishLabs"
+      method: "blacklist"
+      result: "unrated"
+    Phishing Database: 
+      category: "harmless"
+      engine_name: "Phishing Database"
+      method: "blacklist"
+      result: "clean"
+    Phishtank: 
+      category: "harmless"
+      engine_name: "Phishtank"
+      method: "blacklist"
+      result: "clean"
+    PrecisionSec: 
+      category: "undetected"
+      engine_name: "PrecisionSec"
+      method: "blacklist"
+      result: "unrated"
+    Quick Heal: 
+      category: "harmless"
+      engine_name: "Quick Heal"
+      method: "blacklist"
+      result: "clean"
+    Quttera: 
+      category: "harmless"
+      engine_name: "Quttera"
+      method: "blacklist"
+      result: "clean"
+    SCUMWARE.org: 
+      category: "harmless"
+      engine_name: "SCUMWARE.org"
+      method: "blacklist"
+      result: "clean"
+    SOCRadar: 
+      category: "undetected"
+      engine_name: "SOCRadar"
+      method: "blacklist"
+      result: "unrated"
+    SafeToOpen: 
+      category: "undetected"
+      engine_name: "SafeToOpen"
+      method: "blacklist"
+      result: "unrated"
+    Sansec eComscan: 
+      category: "undetected"
+      engine_name: "Sansec eComscan"
+      method: "blacklist"
+      result: "unrated"
+    Scantitan: 
+      category: "harmless"
+      engine_name: "Scantitan"
+      method: "blacklist"
+      result: "clean"
+    Seclookup: 
+      category: "harmless"
+      engine_name: "Seclookup"
+      method: "blacklist"
+      result: "clean"
+    SecureBrain: 
+      category: "harmless"
+      engine_name: "SecureBrain"
+      method: "blacklist"
+      result: "clean"
+    Segasec: 
+      category: "undetected"
+      engine_name: "Segasec"
+      method: "blacklist"
+      result: "unrated"
+    Snort IP sample list: 
+      category: "harmless"
+      engine_name: "Snort IP sample list"
+      method: "blacklist"
+      result: "clean"
+    Sophos: 
+      category: "harmless"
+      engine_name: "Sophos"
+      method: "blacklist"
+      result: "clean"
+    Spam404: 
+      category: "harmless"
+      engine_name: "Spam404"
+      method: "blacklist"
+      result: "clean"
+    StopForumSpam: 
+      category: "harmless"
+      engine_name: "StopForumSpam"
+      method: "blacklist"
+      result: "clean"
+    Sucuri SiteCheck: 
+      category: "harmless"
+      engine_name: "Sucuri SiteCheck"
+      method: "blacklist"
+      result: "clean"
+    ThreatHive: 
+      category: "harmless"
+      engine_name: "ThreatHive"
+      method: "blacklist"
+      result: "clean"
+    Threatsourcing: 
+      category: "harmless"
+      engine_name: "Threatsourcing"
+      method: "blacklist"
+      result: "clean"
+    Trustwave: 
+      category: "harmless"
+      engine_name: "Trustwave"
+      method: "blacklist"
+      result: "clean"
+    URLQuery: 
+      category: "undetected"
+      engine_name: "URLQuery"
+      method: "blacklist"
+      result: "unrated"
+    URLhaus: 
+      category: "harmless"
+      engine_name: "URLhaus"
+      method: "blacklist"
+      result: "clean"
+    Underworld: 
+      category: "undetected"
+      engine_name: "Underworld"
+      method: "blacklist"
+      result: "unrated"
+    VIPRE: 
+      category: "undetected"
+      engine_name: "VIPRE"
+      method: "blacklist"
+      result: "unrated"
+    VX Vault: 
+      category: "harmless"
+      engine_name: "VX Vault"
+      method: "blacklist"
+      result: "clean"
+    Viettel Threat Intelligence: 
+      category: "harmless"
+      engine_name: "Viettel Threat Intelligence"
+      method: "blacklist"
+      result: "clean"
+    ViriBack: 
+      category: "harmless"
+      engine_name: "ViriBack"
+      method: "blacklist"
+      result: "clean"
+    Webroot: 
+      category: "harmless"
+      engine_name: "Webroot"
+      method: "blacklist"
+      result: "clean"
+    Xcitium Verdict Cloud: 
+      category: "undetected"
+      engine_name: "Xcitium Verdict Cloud"
+      method: "blacklist"
+      result: "unrated"
+    Yandex Safebrowsing: 
+      category: "harmless"
+      engine_name: "Yandex Safebrowsing"
+      method: "blacklist"
+      result: "clean"
+    ZeroCERT: 
+      category: "harmless"
+      engine_name: "ZeroCERT"
+      method: "blacklist"
+      result: "clean"
+    ZeroFox: 
+      category: "undetected"
+      engine_name: "ZeroFox"
+      method: "blacklist"
+      result: "unrated"
+    alphaMountain.ai: 
+      category: "harmless"
+      engine_name: "alphaMountain.ai"
+      method: "blacklist"
+      result: "clean"
+    benkow.cc: 
+      category: "harmless"
+      engine_name: "benkow.cc"
+      method: "blacklist"
+      result: "clean"
+    desenmascara.me: 
+      category: "harmless"
+      engine_name: "desenmascara.me"
+      method: "blacklist"
+      result: "clean"
+    malwares.com URL checker: 
+      category: "harmless"
+      engine_name: "malwares.com URL checker"
+      method: "blacklist"
+      result: "clean"
+    securolytics: 
+      category: "harmless"
+      engine_name: "securolytics"
+      method: "blacklist"
+      result: "clean"
+    zvelo: 
+      category: "undetected"
+      engine_name: "zvelo"
+      method: "blacklist"
+      result: "unrated"
+  last_analysis_stats: 
+    harmless: 62
+    malicious: 0
+    suspicious: 0
+    timeout: 0
+    undetected: 30
+  last_https_certificate: 
+    cert_signature: 
+      signature: "3065023038eb11ae636a83ad42413547ffa23a5b564a6fee5e7c96698192d58428aba5acbb9728ae3720b542417a8df4c087e9c6023100a1148da82e2963fd46509df28048d23a450a9459e95d2c58231273f72278df3d397da17fb8bfa6ae9015f465e2d9ca6d"
+      signature_algorithm: "1.2.840.10045.4.3.3"
+    extensions: 
+      "1.3.6.1.4.1.11129.2.4.2": "0482016a0168007600eecdd064d5db1acec55cb79db4cd13a23287467cbcecde"
+      CA: false
+      authority_key_identifier: 
+        keyid: "0abc0829178ca5396d7a0ece33c72eb3edfbc37a"
+      ca_information_access: 
+        CA Issuers: "http://cacerts.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crt"
+        OCSP: "http://ocsp.digicert.com"
+      certificate_policies: 
+      - "2.23.140.1.2.2"
+      crl_distribution_points: 
+      - "http://crl3.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crl"
+      - "http://crl4.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crl"
+      extended_key_usage: 
+      - "serverAuth"
+      - "clientAuth"
+      key_usage: 
+      - "digitalSignature"
+      subject_alternative_name: 
+      - "*.quad9.net"
+      - "quad9.net"
+      - "9.9.9.9"
+      - "9.9.9.10"
+      - "9.9.9.11"
+      - "9.9.9.12"
+      - "9.9.9.13"
+      - "9.9.9.14"
+      - "9.9.9.15"
+      - "149.112.112.9"
+      - "149.112.112.10"
+      - "149.112.112.11"
+      - "149.112.112.12"
+      - "149.112.112.13"
+      - "149.112.112.14"
+      - "149.112.112.15"
+      - "149.112.112.112"
+      - "2620:fe::9"
+      - "2620:fe::10"
+      - "2620:fe::11"
+      - "2620:fe::12"
+      - "2620:fe::13"
+      - "2620:fe::14"
+      - "2620:fe::15"
+      - "2620:fe::fe"
+      - "2620:fe::fe:9"
+      - "2620:fe::fe:10"
+      - "2620:fe::fe:11"
+      - "2620:fe::fe:12"
+      - "2620:fe::fe:13"
+      - "2620:fe::fe:14"
+      - "2620:fe::fe:15"
+      subject_key_identifier: "7fa912a5d7c68b4802c73d2a456e401e4060f497"
+    issuer: 
+      C: "US"
+      CN: "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+      O: "DigiCert Inc"
+    public_key: 
+      algorithm: "EC"
+      ec: 
+        oid: "secp256r1"
+        pub: "3059301306072a8648ce3d020106082a8648ce3d030107034200047d8bd71d03850d1825b3341c29a127d4ac0125488aa0f1ea02b9d8512c086aac7256ecfa3da6a09f4909558eacfeb973175c02fb78cc2491946f4323890e1d66"
+    serial_number: "d0b21f18549fb9ae5d88fd9d22e0c97"
+    size: 1740
+    subject: 
+      C: "US"
+      CN: "*.quad9.net"
+      L: "Berkeley"
+      O: "Quad9"
+      ST: "California"
+    thumbprint: "3d5fd92d53fe1482e40c5b25d92c6b896c97cd37"
+    thumbprint_sha256: "db79914451ccf7c4425a0c24aee928e41f7386dcf1a80208ca2088b7f78ae62a"
+    validity: 
+      not_after: "2024-08-06 23:59:59"
+      not_before: "2023-07-31 00:00:00"
+    version: "V3"
+  last_https_certificate_date: 1721881890  # 2024-07-25 00:31:30 -0400 EDT
+  last_modification_date: 1721882017  # 2024-07-25 00:33:37 -0400 EDT
+  network: "9.9.9.0/24"
+  regional_internet_registry: "ARIN"
+  reputation: 12
+  tags: []
+  total_votes: 
+    harmless: 13
+    malicious: 1
+  whois: |
+    NetRange: 9.9.9.0 - 9.9.9.255
+    CIDR: 9.9.9.0/24
+    NetName: CLEAN-97
+    NetHandle: NET-9-9-9-0-1
+    Parent: NET9 (NET-9-0-0-0-0)
+    NetType: Direct Allocation
+    OriginAS: AS19281
+    Organization: Quad9 (CLEAN-97)
+    RegDate: 2017-09-13
+    Updated: 2021-12-14
+    Ref: https://rdap.arin.net/registry/ip/9.9.9.0
+    OrgName: Quad9
+    OrgId: CLEAN-97
+    Address: c/o SWITCH
+    Address: Werdstrasse 2
+    City: Zurich
+    StateProv: 
+    PostalCode: 8004
+    Country: CH
+    RegDate: 2017-09-07
+    Updated: 2023-04-24
+    Comment: https://quad9.net/
+    Comment: Global Public Recursive DNS Resolver Service
+    Ref: https://rdap.arin.net/registry/entity/CLEAN-97
+    OrgTechHandle: QNO5-ARIN
+    OrgTechName: Quad9 Network Operations
+    OrgTechPhone: +1-415-831-3129 
+    OrgTechEmail: noc@quad9.net
+    OrgTechRef: https://rdap.arin.net/registry/entity/QNO5-ARIN
+    OrgAbuseHandle: QUADA1-ARIN
+    OrgAbuseName: Quad9 Abuse
+    OrgAbusePhone: +1-415-831-3129 
+    OrgAbuseEmail: abuse@quad9.net
+    OrgAbuseRef: https://rdap.arin.net/registry/entity/QUADA1-ARIN
+    OrgNOCHandle: QNO5-ARIN
+    OrgNOCName: Quad9 Network Operations
+    OrgNOCPhone: +1-415-831-3129 
+    OrgNOCEmail: noc@quad9.net
+    OrgNOCRef: https://rdap.arin.net/registry/entity/QNO5-ARIN
+    OrgTechHandle: SHRES60-ARIN
+    OrgTechName: Shrestha, Kabindra 
+    OrgTechPhone: +1-415-831-3111 
+    OrgTechEmail: kabindra@pch.net
+    OrgTechRef: https://rdap.arin.net/registry/entity/SHRES60-ARIN
+    
+  whois_date: 1721483470  # 2024-07-20 09:51:10 -0400 EDT

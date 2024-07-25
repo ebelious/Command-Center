@@ -67,12 +67,13 @@ then
     # Install Virust Total CLI
     clear
     echo -e "\e[1;32mInstalling virustotal-cli...\e[0m"
-    cd ~/Command-Center/
     git clone https://github.com/VirusTotal/vt-cli.git
     cd vt-cli
     make install
     export GOBIN=`go env GOPATH`/bin
     export PATH=$PATH:$GOBIN
+    clear
+    vt init
     clear
 # Install oui lookup
     cd ~/Command-Center/
