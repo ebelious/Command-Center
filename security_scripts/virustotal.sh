@@ -18,11 +18,10 @@ echo
 read -p 'Enter the IP: ' TARGET
 SCAN=$(vt ip $TARGET > ~/Command-Center/security_scripts/scan.tmp)
 MALICIOUS=$(cat ~/Command-Center/security_scripts/scan.tmp | grep 'malicious' | tr -d '"'> ~/Command-Center/security_scripts/malicious.tmp && wc -l ~/Command-Center/security_scripts/malicious.tmp | awk '{print $1}')
-CLEAN=$(cat ~/Command-Center/security_scripts/scan.tmp | grep 'malicious' | tr -d '"'> ~/Command-Center/security_scripts/clean.tmp && wc -l ~/Command-Center/security_scripts/clean.tmp | awk '{print $1}')
+CLEAN=$(cat ~/Command-Center/security_scripts/scan.tmp | grep 'clean' | tr -d '"'> ~/Command-Center/security_scripts/clean.tmp && wc -l ~/Command-Center/security_scripts/clean.tmp | awk '{print $1}')
 UNRATED=$(cat ~/Command-Center/security_scripts/scan.tmp | grep 'unrated' | tr -d '"'> ~/Command-Center/security_scripts/unrated.tmp && wc -l ~/Command-Center/security_scripts/unrated.tmp | awk '{print $1}')
 COMMENTS=$(vt ip related_comments $TARGET | grep 'text:' > ~/Command-Center/security_scripts/comments.tmp)
 RESOLUTIONS=$(vt ip resolutions $TARGET  > ~/Command-Center/security_scripts/resolutions.tmp )
-SSL=$( vt ip historical_ssl_certificates $TARGET > ssl.tmp)
 TOTAL=$(($CLEAN + $MALICIOUS + $UNRATED))
 clear
 figlet VirusTotal
@@ -38,8 +37,8 @@ echo
 echo -e "\e[1;36mResolutions:\e[0m"
 echo $RESOLUTIONS && cat ~/Command-Center/security_scripts/resolutions.tmp | grep 'host_name:' |  tr -d '"' | sed 's/host_name:/ \\/g'
 echo
-echo -e "\e[1;36mMost Recent SSL:\e[0m"
-echo $SSL && grc head -64 ssl.tmp
+echo -e "\e[1;36mLatest SSL Certificate:\e[0m"
+cat ~/Command-Center/security_scripts/scan.tmp | tr -d '"' | awk '/last_https_certificate:/,/last_modification_date: /'
 echo
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
