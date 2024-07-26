@@ -40,6 +40,8 @@ echo
 echo -e "\e[1;36mLatest SSL Certificate:\e[0m"
 cat ~/Command-Center/security_scripts/scan.tmp | tr -d '"' | awk '/last_https_certificate:/,/last_modification_date: /'
 echo
+echo -e "\e[1;36mwhois:\e[0m"
+cat ~/Command-Center/security_scripts/scan.tmp | tr -d '"' | awk '/whois:/,/whois_date: /'
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
