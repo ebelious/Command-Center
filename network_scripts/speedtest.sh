@@ -5,7 +5,7 @@
 # |  __/ |_) |  __/ | | (_) | |_| \__ \
 #  \___|_.__/ \___|_|_|\___/ \__,_|___/
 #
-# https://github.com/ebelious/Command-Center
+# https://github.com/ebelious/Command-Centerhttps://github.com/ebelious/Command-Center/tree/main/network_scripts
 #
 # Network - speedtest
 # This is used for speedtest option in network
@@ -16,7 +16,12 @@
 clear
 echo -e "\e[1;32mRunning Speed Test\e[0m"
 echo
-grc speedtest-cli | grep Mbit/s
+SPEEDTEST=$(speedtest-cli > ~/Command-Center/network_scripts/speedtest.tmp)
+DOWNLOAD=$(cat ~/Command-Center/network_scripts/speedtest.tmp | grep Download)
+UPLOAD=$(cat ~/Command-Center/network_scripts/speedtest.tmp | grep Upload)
+echo
+echo -e "\e[1;32mDownload\[0m: \e[0;32m$DOWNLOAD\e[0m | tr -d 'Download:' "
+echo -e "\e[1;35mDownload\[0m: \e[0;35m$UPLOAD\e[0m | tr -d ''Upload: '"
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
