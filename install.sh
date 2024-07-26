@@ -97,11 +97,8 @@ then
     clear
     echo
     echo -e "\n\e[0;32mThe installation has completed.\n\n\e[0mTo avoid issues with the icons we reccommend setting the terminal font to one of the Nerd Fonts that have been installed. You can see these in \e[1;35m~/.local/share/icons/NerdFonts\e[0m \n \nRun \e[0;32mccenter\e[0m to lanch Command Center\n"
-    sleep5  
+    sleep 5  
     $SHELL 
-    clear
-# Command Center post installation Info
-    echo -e "\n\e[0;32mThe installation has completed.\n\n\e[0mTo avoid issues with the icons we reccommend setting the terminal font to one of the Nerd Fonts that have been installed. You can see these in \e[1;35m~/.local/share/icons/NerdFonts\e[0m \n \nRun \e[0;32mccenter\e[0m to lanch Command Center\n"
 #
 #Debian/Ubuntu
 elif [[ $OS = PRETTY_Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]] || [[ $OS = Debian ]]
@@ -148,7 +145,7 @@ then
     tar -xf zellij-x86_64-unknown-linux-musl.tar.gz
     cp zellij ~/.local/bin/
     clear
-    # Install Virust Total CLI
+# Install Virust Total CLI
     clear
     echo -e "\e[1;32mInstalling virustotal-cli...\e[0m"
     cd ~/Command-Center/
@@ -163,7 +160,7 @@ then
     echo -e "\e[1;32mInstalling npm oui...\e[0m"
     sudo npm i -g oui
     clear
-    # Installing Responder
+# Installing Responder
     echo -e "\e[1;32mInstalling responder...\e[0m"
     git clone https://github.com/SpiderLabs/Responder.git
     echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.bashrc
@@ -176,10 +173,10 @@ then
     echo "alias ttyper='$HOME/.cargo/bin/ttyper'" >> $HOME/.bashrc
     echo "alias ttyper='$HOME/.cargo/bin/ttyper'" >> $HOME/.zshrc
     clear
-    $SHELL
-# Command Center post installation Info
+    echo
     echo -e "\n\e[0;32mThe installation has completed.\n\n\e[0mTo avoid issues with the icons we reccommend setting the terminal font to one of the Nerd Fonts that have been installed. You can see these in \e[1;35m~/.local/share/icons/NerdFonts\e[0m \n \nRun \e[0;32mccenter\e[0m to lanch Command Center\n"
-#
+    sleep 5  
+    $SHELL 
 #
 # Arch
 elif [[ $OS = Arch ]] || [[ $OS = Manjaro ]]
