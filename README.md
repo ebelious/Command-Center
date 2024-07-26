@@ -70,6 +70,7 @@ sudo dnf copr enable pennbauman/ports
 sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf bat curl npm hashid john hashcat nmap wget cargo lsd python2.7 sipcalc shippy go
 ```
 
+Added alias options for both bash and zsh
 ```
 # Adding comment to bash and zsh for added aliases
     cd ~/Command-Center/
@@ -140,7 +141,7 @@ sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf
     cargo install ttyper
     echo "alias ttyper='$HOME/.cargo/bin/ttyper'" >> $HOME/.bashrc
     echo "alias ttyper='$HOME/.cargo/bin/ttyper'" >> $HOME/.zshrc
+    $SHELL
     clear
-
 ```
     
