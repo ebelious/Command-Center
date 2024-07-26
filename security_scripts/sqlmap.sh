@@ -11,5 +11,5 @@
 # This is sql map utility
 
 clear
-sqlmap --wizard
+python ~/Command-Center/sqlmap-dev/sqlmap.py --wizard
 ~/Command-Center/security_scripts/security.sh
