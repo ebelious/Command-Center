@@ -22,7 +22,7 @@ read -p ': ' OPTIONPASS
 
 if [[ $OPTIONPASS = r ]] || [[ $OPTIONPASS = R ]]
 then
-    ~/Command-Center/network_scripts/passw_gen.sh
+    ~/Command-Center/passw_gen.sh
     exit 0
 elif [[ $OPTIONPASS = q ]] || [[ $OPTIONPASS = Q ]]
 then
