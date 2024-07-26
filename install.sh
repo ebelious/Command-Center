@@ -23,7 +23,7 @@ OS=$(head -1 /etc/os-release | sed 's/NAME="//'| awk '{print $1}')
 if [[ $OS = Fedora ]] || [[ $OS = RedHat ]]
 then
     sudo dnf copr enable pennbauman/ports # for lf terminal file manager
-    sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf bat curl npm hashid john hashcat nmap wget cargo lsd python2.7 sipcalc shippy go
+    sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf bat curl npm hashid john hashcat nmap wget cargo lsd python2.7 sipcalc shippy go oneko
     clear
 # Adding comment to bash and zsh for added aliases
     cd ~/Command-Center/
@@ -103,7 +103,7 @@ then
 #Debian/Ubuntu
 elif [[ $OS = PRETTY_Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]] || [[ $OS = Debian ]]
 then
-    sudo apt install figlet htop lm-sensors htop vim grc dmidecode docker.io git lf fzf bat curl hashid hashcat john nmap ninvaders sipcalc npm cargo python2.7 apropos lsd go 
+    sudo apt install figlet htop lm-sensors htop vim grc dmidecode docker.io git lf fzf bat curl hashid hashcat john nmap ninvaders sipcalc npm cargo python2.7 apropos lsd go oneko
     clear
  sleep5  # Adding comment to bash and zsh for added aliases    echo -e "\n\e[0;32mThe installation has completed.\n\n\e[0mTo avoid issues with the icons we reccommend setting the terminal font to one of the Nerd Fonts that have been installed. You can see these in \e[1;35m~/.local/share/icons/NerdFonts\e[0m \n \nRun \e[0;32mccenter\e[0m to lanch Command Center\n"
 
