@@ -15,6 +15,7 @@ export GOBIN=`go env GOPATH`/bin
 export PATH=$PATH:$GOBIN
 clear
 echo
+# Test unknown hash dd1faca950d1a8c3d169adf2df4c3644ebb62f8aac04c401f2393e521395d613
 # Test Hash 67EB9077AB29C8A45578C6636D68014E60AEB0F77FBFA5C48FB93EE5E0D85E41
 read -p 'Enter the hash: ' HASH
 SCAN=$(vt file $HASH > ~/Command-Center/security_scripts/hash-scan.tmp)
