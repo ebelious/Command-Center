@@ -12,5 +12,5 @@
 #
 
 clear
-ttyper
+$HOME/.cargo/bin/ttyper
 ~/Command-Center/misc_scripts/misc.sh
