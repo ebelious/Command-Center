@@ -22,15 +22,22 @@ MALICIOUS=$(cat ~/Command-Center/security_scripts/hash-scan.tmp | grep 'maliciou
 CLEAN=$(cat ~/Command-Center/security_scripts/hash-scan.tmp | grep 'malicious' | tr -d '"'> ~/Command-Center/security_scripts/clean-hash.tmp && wc -l ~/Command-Center/security_scripts/clean-hash.tmp | awk '{print $1}')
 UNRATED=$(cat ~/Command-Center/security_scripts/hash-scan.tmp | grep 'undetected' | tr -d '"'> ~/Command-Center/security_scripts/unrated-hash.tmp && wc -l ~/Command-Center/security_scripts/unrated-hash.tmp | awk '{print $1}')
 TOTAL=$(($CLEAN + $MALICIOUS + $UNRATED))
+NOTFOUND=$(wc -l ~/Command-Center/security_scripts/hash-scan.tmp | wc -l)
 clear
 figlet VirusTotal
 echo -e "\e[3;33mYou can see the full scan results at ~/Command-Center/security_scripts/hash-scan.tmp \nThese results are overwritten with every scan.\e[0m"
 echo
 echo -e "\e[1;32mResults\e[0m"
+
 echo
 echo -e "\e[1;36mVerdicts:\e[0m \e[1;31m$MALICIOUS\e[0m | \e[1;32m$CLEAN\e[0m | \e[1;37m$UNRATED\e[0m / $TOTAL"
 echo
-cat ~/Command-Center/security_scripts/hash-scan.tmp | awk '/- _id:/,/last_analysis_date:/'
+if [[ $NOTFOUND = 0 ]]
+then 
+    echo -e "No Results Found"
+else
+    cat ~/Command-Center/security_scripts/hash-scan.tmp | awk '/- _id:/,/last_analysis_date:/'
+fi
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
