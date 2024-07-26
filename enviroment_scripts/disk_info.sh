@@ -33,10 +33,10 @@ echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
 echo
 read -p ': ' OPTIONDISK
 
-# This sill alow the user to output info to a file oe exit back to command-center menu
+# This will alow the user to output info to a file oe exit back to command-center menu
 if [[ $OPTIONDISK = q ]] || [[ $OPTIONDISK = Q ]]
 then
-    ~/Command-Center/command-center.sh
+    ~/Command-Center/enviroment_scripts/enviromet.sh
     exit 0
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
