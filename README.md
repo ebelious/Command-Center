@@ -67,7 +67,7 @@ sudo dnf copr enable pennbauman/ports
 
 ### Fedora
 ```
-figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf bat curl npm hashid john hashcat nmap wget apropos cargo lsd python2.7 sipcalc shippy
+sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf bat curl npm hashid john hashcat nmap wget cargo lsd python2.7 sipcalc shippy go
 ```
 
 ```
