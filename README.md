@@ -68,12 +68,12 @@ sudo dnf copr enable pennbauman/ports
 ### Fedora
 ```
 sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf bat curl npm hashid hashcat john nmap wget cargo lsd python2.7 sipcalc go
-# Optional shippy - adds game to Miscellenious menu
+# Optional shippy - adds game to miscellaneous menu
 ```
 ### Ubuntu/Debian
 ```
 sudo apt install figlet htop lm-sensors htop vim dmidecode docker.io git lf fzf bat curl npm hashid hashcat john nmap wget cargo lsd python2.7 sipcalc go
-# Optional ninvaders - adds game to Miscellenious menu
+# Optional ninvaders - adds game to miscellaneous menu
 ```
 
 Added alias options for both bash and zsh
