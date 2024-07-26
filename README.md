@@ -59,24 +59,24 @@ chmod +x install.sh
 
 ### Manual Install
 
+### Repository Apps
 Install through package manager
 *Note: Fedora needs to add copr repo for lf*
 ```
 sudo dnf copr enable pennbauman/ports
 ```
-## Repository Apps
-### Fedora
+#### Fedora
 ```
 sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf bat curl npm hashid hashcat john nmap wget cargo lsd python2.7 sipcalc go
 # Optional shippy - adds game to miscellaneous menu
 ```
-### Ubuntu/Debian
+#### Ubuntu/Debian
 ```
 sudo apt install figlet htop lm-sensors htop vim dmidecode docker.io git lf fzf bat curl npm hashid hashcat john nmap wget cargo lsd python2.7 sipcalc go
 # Optional ninvaders - adds game to miscellaneous menu
 ```
 
-## Non Repository Apps
+### Non Repository Apps
 Added alias options for both bash and zsh
 
 ```
