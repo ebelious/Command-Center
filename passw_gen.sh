@@ -12,7 +12,7 @@
 
 clear
 echo
-password=$(tr -dc 'A-Za-z0-9!?%=' < /dev/urandom | head -c 16)
+password=$(tr -dc 'A-Za-z0-9!?%=' < /dev/urandom | head -c 32)
 echo "$password"
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
