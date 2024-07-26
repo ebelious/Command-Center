@@ -27,7 +27,7 @@ CN=$(cat ~/Command-Center/security_scripts/scan.tmp | tr -d '"' | awk '/subject:
 COUNTRY=$(cat ~/Command-Center/security_scripts/scan.tmp | awk '/- _id:/,/last_analysis_date:/' | grep country | tr -d 'country:' | tr -d '"' | tr -d ' ' )
 CONTINENT=$(cat ~/Command-Center/security_scripts/scan.tmp | awk '/- _id:/,/last_analysis_date:/' | grep continent | tr -d 'continent:' | tr -d '"' | tr -d ' ')
 ASN=$(cat ~/Command-Center/security_scripts/scan.tmp | awk '/- _id:/,/last_analysis_date:/' | grep asn | tr -d 'asn:' | tr -d ' ')
-NETN=$(cat ~/Command-Center/security_scripts/scan.tmp | awk '/- _id:/,/last_analysis_date:/' | grep netname | tr -d 'netname:' | tr -d ' ')
+ASOWNER=$(cat ~/Command-Center/security_scripts/scan.tmp | awk '/- _id:/,/last_analysis_date:/' | grep as_owner | tr -d 'as_owner:' | tr -d ' "' | tr -d ' ')
 DST=$(cat ~/Command-Center/security_scripts/scan.tmp | awk '/- _id:/,/last_analysis_date:/' | grep '_id:' | awk '{print $3}' | tr -d '"')
 clear
 
@@ -36,7 +36,7 @@ echo -e "\e[3;33mYou can see the full scan results at ~/Command-Center/security_
 echo
 echo -e "\e[1;32mResults\e[0m"
 printf '=%.0s' {1..30} ; printf '=\n'
-echo -e "The IP \e[1;32m$DST\e[0m belongs to - $NETN - ASN:$ASN - $COUNTRY/$CONTINENT"
+39 echo -e "The IP \e[4;35m$DST\e[0m belongs to - $ASOWNER - ASN:$ASN - $COUNTRY/$CONTINENT"
 echo
 echo -e "\e[1;36mVerdicts:\e[0m \e[1;31m$MALICIOUS\e[0m | \e[1;32m$CLEAN\e[0m | \e[1;37m$UNRATED\e[0m / $TOTAL"
 echo
