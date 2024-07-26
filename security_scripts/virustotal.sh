@@ -23,12 +23,13 @@ UNRATED=$(cat ~/Command-Center/security_scripts/scan.tmp | grep 'unrated' | tr -
 COMMENTS=$(vt ip related_comments $TARGET | grep 'text:' > ~/Command-Center/security_scripts/comments.tmp)
 RESOLUTIONS=$(vt ip resolutions $TARGET  > ~/Command-Center/security_scripts/resolutions.tmp )
 TOTAL=$(($CLEAN + $MALICIOUS + $UNRATED))
+CN=$(cat ~/Command-Center/security_scripts/scan.tmp | tr -d '"' | awk '/subject: /,/thumbprint:/' | grep CN: | tr -d 'CN:' | tr -d ' ')
 clear
 figlet VirusTotal
 echo -e "\e[3;33mYou can see the full scan results at ~/Command-Center/security_scripts/scan.tmp \nThese results are overwritten with every scan.\e[0m"
 echo
 echo -e "\e[1;32mResults\e[0m"
-echo
+printf '=%.0s' {1..30} ; printf '=\n'
 echo -e "\e[1;36mVerdicts:\e[0m \e[1;31m$MALICIOUS\e[0m | \e[1;32m$CLEAN\e[0m | \e[1;37m$UNRATED\e[0m / $TOTAL"
 echo
 echo -e "\e[1;36mComments:\e[0m"
@@ -37,7 +38,7 @@ echo
 echo -e "\e[1;36mResolutions:\e[0m"
 echo $RESOLUTIONS && cat ~/Command-Center/security_scripts/resolutions.tmp | grep 'host_name:' |  tr -d '"' | sed 's/host_name:/ \\/g'
 echo
-echo -e "\e[1;36mLatest SSL Certificate:\e[0m"
+echo -e "\e[1;36mLatest SSL Certificate:\e[0m  \e[1;32m$CN\e[0m"
 cat ~/Command-Center/security_scripts/scan.tmp | tr -d '"' | awk '/last_https_certificate:/,/last_modification_date: /'
 echo
 echo -e "\e[1;36mwhois:\e[0m"
