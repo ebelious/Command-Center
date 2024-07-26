@@ -17,7 +17,7 @@ printf '=%.0s' {1..30} ; printf '=\n'
 echo -e "\e[1;32m[\e[1;36m0\e[1;32m]\e[0m Nmap"
 echo -e "\e[1;32m[\e[1;36m1\e[1;32m]\e[0m Metasploit"
 echo -e "\e[1;32m[\e[1;36m2\e[1;32m]\e[0m Whois"
-echo -e "\e[1;32m[\e[1;36m3\e[1;32m]\e[0m recon-ng"
+echo -e "\e[1;32m[\e[1;36m3\e[1;32m]\e[0m Recon-ng"
 echo -e "\e[1;32m[\e[1;36m4\e[1;32m]\e[0m Hash ID"
 echo -e "\e[1;32m[\e[1;36m5\e[1;32m]\e[0m Hashcat"
 echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m John"
