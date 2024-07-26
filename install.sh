@@ -88,6 +88,12 @@ then
     echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.bashrc
     echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.zshrc
     clear
+# Installing Nerd Fonts
+    echo -e "\e[1;32mInstalling nerd fonts...\e[0m"
+    git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+    cd nerd-fonts
+    ./install.sh
+    clear
 # Installing Ttype
     echo -e "\e[1;32mInstalling ttyper...\e[0m"
     cd ~/Command-Center/
@@ -165,6 +171,12 @@ then
     git clone https://github.com/SpiderLabs/Responder.git
     echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.bashrc
     echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.zshrc
+    clear
+# Installing Nerd Fonts
+    echo -e "\e[1;32mInstalling nerd fonts...\e[0m"
+    git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+    cd nerd-fonts
+    ./install.sh
     clear
 # Installing Ttype
     echo -e "\e[1;32mInstalling ttyper...\e[0m"
