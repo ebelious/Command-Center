@@ -26,6 +26,8 @@ SSL=$( vt ip historical_ssl_certificates $TARGET > ssl.tmp)
 TOTAL=$(($CLEAN + $MALICIOUS + $UNRATED))
 clear
 figlet VirusTotal
+echo -e "\e[3;33mYou can see the full scan results at ~/Command-Center/security_scripts/scan.tmp \n These results are overwritten with every scan.\e[0m"
+echo
 echo -e "\e[1;32mResults\e[0m"
 echo
 echo -e "\e[1;36mVotes:\e[0m \e[1;31m$MALICIOUS\e[0m | \e[1;32m$CLEAN\e[0m | \e[1;37m$UNRATED\e[0m / $TOTAL"
