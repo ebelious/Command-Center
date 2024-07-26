@@ -40,7 +40,8 @@ echo -e "\e[1;32m[\e[1;36m6\e[1;32m]\e[0m (.) Files"
 echo -e "\e[1;32m[\e[1;36m7\e[1;32m]\e[0m Docker"
 echo -e "\e[1;32m[\e[1;36m8\e[1;32m]\e[0m Browse Files"
 echo -e "\e[1;32m[\e[1;36m9\e[1;32m]\e[0m File Search"
-echo -e "\e[1;32m[\e[1;36m10\e[1;32m]\e[0m Miscellaneous"
+echo -e "\e[1;32m[\e[1;36m10\e[1;32m]\e[0m Password Generator"
+echo -e "\e[1;32m[\e[1;36m11\e[1;32m]\e[0m Miscellaneous"
 echo
 echo -e "\e[1;32m[\e[1;36mH\e[1;32m]\e[0m Help"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
@@ -161,6 +162,10 @@ then
     exit 0
 elif [[ $OPTIONMAIN = 10 ]]
 then
+    ~/Command-Center/passw_gen.sh
+    exit 0
+elif [[ $OPTIONMAIN = 11 ]]
+then 
     ~/Command-Center/misc_scripts/misc.sh
     exit 0
 elif [[ $OPTIONMAIN = h ]] || [[ $OPTIONMAIN = H ]]
