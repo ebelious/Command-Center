@@ -94,7 +94,11 @@ then
     cargo install ttyper
     echo "alias ttyper='$HOME/.cargo/bin/ttyper'" >> $HOME/.bashrc
     echo "alias ttyper='$HOME/.cargo/bin/ttyper'" >> $HOME/.zshrc
-    $SHELL
+    clear
+    echo
+    echo -e "\n\e[0;32mThe installation has completed.\n\n\e[0mTo avoid issues with the icons we reccommend setting the terminal font to one of the Nerd Fonts that have been installed. You can see these in \e[1;35m~/.local/share/icons/NerdFonts\e[0m \n \nRun \e[0;32mccenter\e[0m to lanch Command Center\n"
+    sleep5  
+    $SHELL 
     clear
 # Command Center post installation Info
     echo -e "\n\e[0;32mThe installation has completed.\n\n\e[0mTo avoid issues with the icons we reccommend setting the terminal font to one of the Nerd Fonts that have been installed. You can see these in \e[1;35m~/.local/share/icons/NerdFonts\e[0m \n \nRun \e[0;32mccenter\e[0m to lanch Command Center\n"
@@ -104,7 +108,8 @@ elif [[ $OS = PRETTY_Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]]
 then
     sudo apt install figlet htop lm-sensors htop vim grc dmidecode docker.io git lf fzf bat curl hashid hashcat john nmap ninvaders sipcalc npm cargo python2.7 apropos lsd go 
     clear
-# Adding comment to bash and zsh for added aliases
+ sleep5  # Adding comment to bash and zsh for added aliases    echo -e "\n\e[0;32mThe installation has completed.\n\n\e[0mTo avoid issues with the icons we reccommend setting the terminal font to one of the Nerd Fonts that have been installed. You can see these in \e[1;35m~/.local/share/icons/NerdFonts\e[0m \n \nRun \e[0;32mccenter\e[0m to lanch Command Center\n"
+
     cd ~/Command-Center/
     echo "# These are the Command-Center aliases" >> $HOME/.bashrc
     echo "# These are the Command-Center aliases" >> $HOME/.zshrc
@@ -150,7 +155,7 @@ then
     git clone https://github.com/VirusTotal/vt-cli.git
     cd vt-cli
     make install
-    export GOBIN=`go env GOPATH`/bin
+    export GOBIN=`go env GOPATH`/bin sleep5  
     export PATH=$PATH:$GOBIN
     clear
 # Install oui lookup
