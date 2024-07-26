@@ -44,8 +44,8 @@ then
 # Getting sqlmap
     echo -e "\e[1;32mInstalling sqlmap...\e[0m"
     git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-    echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py' " >> $HOME/.bashrc
-    echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py' " >> $HOME/.zshrc
+    echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py'" >> $HOME/.bashrc
+    echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py'" >> $HOME/.zshrc
     clear
 # Getting recon-ng
     echo -e "\e[1;32mInstalling recon-ng...\e[0m"
@@ -66,7 +66,7 @@ then
     tar -xf zellij-x86_64-unknown-linux-musl.tar.gz
     cp zellij ~/.local/bin/
     clear
-    # Install Virust Total CLI
+# Install Virust Total CLI
     clear
     echo -e "\e[1;32mInstalling virustotal-cli...\e[0m"
     git clone https://github.com/VirusTotal/vt-cli.git
