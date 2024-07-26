@@ -64,7 +64,7 @@ Install through package manager
 ```
 sudo dnf copr enable pennbauman/ports
 ```
-
+## Repository Apps
 ### Fedora
 ```
 sudo dnf install figlet htop lm_sensors htop vim dmidecode docker git grc lf fzf bat curl npm hashid hashcat john nmap wget cargo lsd python2.7 sipcalc go
@@ -76,17 +76,23 @@ sudo apt install figlet htop lm-sensors htop vim dmidecode docker.io git lf fzf 
 # Optional ninvaders - adds game to miscellaneous menu
 ```
 
+## Non Repository Apps
 Added alias options for both bash and zsh
+
 ```
 # Adding comment to bash and zsh for added aliases
     cd ~/Command-Center/
     echo "# These are the Command-Center aliases" >> $HOME/.bashrc
     echo "# These are the Command-Center aliases" >> $HOME/.zshrc
+```
+```
 # Getting lazy docker git repo
     echo -e "\e[1;32mInstalling lazydocker...\e[0m"
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
     sleep 3
     clear
+```
+```
 # Getting metasploit
     echo -e "\e[1;32mInstalling metasploit...\e[0m"
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
@@ -94,12 +100,16 @@ Added alias options for both bash and zsh
     ./msfinstall
     sleep 3
     clear
+```
+```
 # Getting sqlmap
     echo -e "\e[1;32mInstalling sqlmap...\e[0m"
     git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
     echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py' " >> $HOME/.bashrc
     echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py' " >> $HOME/.zshrc
     clear
+```
+```
 # Getting recon-ng
     echo -e "\e[1;32mInstalling recon-ng...\e[0m"
     git clone https://github.com/lanmaster53/recon-ng.git
@@ -108,10 +118,14 @@ Added alias options for both bash and zsh
     echo "alias ccenter='~/Command-Center/command-center.sh'" >> $HOME/.bashrc
     echo "alias ccenter='~/Command-Center/command-center.sh'" >> $HOME/.zshrc
     clear
+```
+```
 # Installing Seclists
     echo -e "\e[1;32mInstalling seclists...\e[0m"
     git clone https://github.com/danielmiessler/SecLists.git
     clear
+```
+```
 # Installing Zellij
     echo -e "\e[1;32mInstalling zellij...\e[0m"
     cd ~/Command-Center/
@@ -119,7 +133,12 @@ Added alias options for both bash and zsh
     tar -xf zellij-x86_64-unknown-linux-musl.tar.gz
     cp zellij ~/.local/bin/
     clear
-    # Install Virust Total CLI
+```
+
+Note: With VirusTotal you need an API key which you get from thier website. You need to set the API key using `vt init [KEY]` <br />
+This key is writtent to `/home/$USER/.vt.toml`
+```
+# Install Virust Total CLI
     clear
     echo -e "\e[1;32mInstalling virustotal-cli...\e[0m"
     git clone https://github.com/VirusTotal/vt-cli.git
@@ -127,9 +146,10 @@ Added alias options for both bash and zsh
     make install
     export GOBIN=`go env GOPATH`/bin
     export PATH=$PATH:$GOBIN
-    clear
     vt init
     clear
+```
+```
 # Install oui lookup
     cd ~/Command-Center/
     echo -e "\e[1;32mInstalling npm oui...\e[0m"
@@ -141,6 +161,8 @@ Added alias options for both bash and zsh
     echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.bashrc
     echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.zshrc
     clear
+```
+```
 # Installing Ttype
     echo -e "\e[1;32mInstalling ttyper...\e[0m"
     cd ~/Command-Center/
