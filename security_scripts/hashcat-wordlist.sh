@@ -19,11 +19,13 @@ echo -e "\e[3;33muse the full filepath\e[0m"
 read -p 'What is the hash mode: ' HASHMODE
 clear
 echo -e "\e[3;33muse the full filepath\e[0m"
+ls ~/Command-Center/security_scripts/SecLists/Passwords 
+echo
 read -p 'What is the dictonary: ' DICTIONARY
 clear
 echo -e "\e[1;32mCracking in progress\e[0m"
 echo
-grc hashcat -a 0 -m $HASHMODE $HASHFILE $DICTIONARY
+grc hashcat -a 0 -m $HASHMODE $HASHFILE ~/Command-Center/security_scripts/SecLists/Passwords/$DICTIONARY
 echo
 echo
 echo
