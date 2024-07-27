@@ -32,14 +32,12 @@ then
 # Getting lazy docker git repo
     echo -e "\e[1;32mInstalling lazydocker...\e[0m"
     curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
-    sleep 3
     clear
 # Getting metasploit
     echo -e "\e[1;32mInstalling metasploit...\e[0m"
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
     chmod 755 msfinstall && \
     ./msfinstall
-    sleep 3
     clear
 # Getting sqlmap
     echo -e "\e[1;32mInstalling sqlmap...\e[0m"
@@ -56,6 +54,7 @@ then
     echo "alias ccenter='~/Command-Center/command-center.sh'" >> $HOME/.zshrc
     clear
 # Installing Seclists
+    cd ~/Command-Center/
     echo -e "\e[1;32mInstalling seclists...\e[0m"
     git clone https://github.com/danielmiessler/SecLists.git
     clear
@@ -141,6 +140,7 @@ then
     echo "alias ccenter='~/Command-Center/command-center.sh'" >> $HOME/.zshrc
     clear
 # Installing Seclists
+    cd ~/Command-Center/
     echo -e "\e[1;32mInstalling seclists...\e[0m"
     git clone https://github.com/danielmiessler/SecLists.git
     clear
