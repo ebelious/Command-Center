@@ -17,11 +17,11 @@ clear
 echo -e "\e[1;32mRunning Speed Test\e[0m"
 echo
 SPEEDTEST=$(speedtest-cli > ~/Command-Center/network_scripts/speedtest.tmp)
-DOWNLOAD=$(cat ~/Command-Center/network_scripts/speedtest.tmp | grep Download)
-UPLOAD=$(cat ~/Command-Center/network_scripts/speedtest.tmp | grep Upload)
+DOWNLOAD=$(cat ~/Command-Center/network_scripts/speedtest.tmp | grep Download | tr -d 'Upload: ')
+UPLOAD=$(cat ~/Command-Center/network_scripts/speedtest.tmp | grep Upload | tr -d 'Upload: ')
 echo
-echo -e "\e[1;32mDownload\e[0m: \e[0;32m$DOWNLOAD\e[0m | tr -d 'Download: '"
-echo -e "\e[1;35mDownload\e[0m: \e[0;35m$UPLOAD\e[0m | tr -d 'Upload: '"
+echo -e "\e[1;32mDownload\e[0m: \e[0;32m$DOWNLOAD\e[0m"
+echo -e "\e[1;35mDownload\e[0m: \e[0;35m$UPLOAD\e[0m"
 echo
 echo -e "\e[1;32m[\e[1;36mR\e[1;32m]\e[0m Re-Run"
 echo -e "\e[1;32m[\e[1;31mQ\e[1;32m]\e[0m Quit"
