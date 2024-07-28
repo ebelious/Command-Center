@@ -41,5 +41,5 @@ then
 else
     echo -e "\e[1;31mInvalid Option\e[0m"
     sleep .5
-    ~/Command-Center/help_scripts/disk_info.sh
+    ~/Command-Center/enviroment_scripts/disk_info.sh
 fi
