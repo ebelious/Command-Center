@@ -31,5 +31,5 @@ clear
 echo -e "\e[1;32mDisks Dev By ...\e[0m"
 echo
 ls -l --color=auto /dev/disk/by-* | less --use-color
-./enviroment.sh
+~/Command-Center/enrviroment_scripts/enviroment.sh
 exit 0
