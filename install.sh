@@ -25,6 +25,10 @@ then
     sudo dnf copr enable pennbauman/ports # for lf terminal file manager
     sudo dnf install figlet htop lm_sensors htop vim dmidecode docker grc lf fzf bat curl npm hashid john hashcat nmap wget cargo lsd python2.7 sipcalc shippy go oneko
     clear
+# Starting and enabling docker
+sudo systemctl enable docker
+sudo systemctl start docker
+
 # Adding comment to bash and zsh for added aliases
     cd ~/Command-Center/
     echo "# These are the Command-Center aliases" >> $HOME/.bashrc
