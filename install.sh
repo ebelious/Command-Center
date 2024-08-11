@@ -26,9 +26,8 @@ then
     sudo dnf install figlet htop lm_sensors htop vim dmidecode docker grc lf fzf bat curl npm hashid john hashcat nmap wget cargo lsd python2.7 sipcalc shippy go oneko
     clear
 # Starting and enabling docker
-sudo systemctl enable docker
-sudo systemctl start docker
-
+    sudo systemctl enable docker
+    sudo systemctl start docker
 # Adding comment to bash and zsh for added aliases
     cd ~/Command-Center/
     echo "# These are the Command-Center aliases" >> $HOME/.bashrc
@@ -114,8 +113,10 @@ elif [[ $OS = PRETTY_Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]]
 then
     sudo apt install figlet htop lm-sensors htop vim grc dmidecode docker.io lf fzf bat curl hashid hashcat john nmap ninvaders sipcalc npm cargo lsd golang-go oneko
     clear
- sleep5  # Adding comment to bash and zsh for added aliases    echo -e "\n\e[0;32mThe installation has completed.\n\n\e[0mTo avoid issues with the icons we reccommend setting the terminal font to one of the Nerd Fonts that have been installed. You can see these in \e[1;35m~/.local/share/icons/NerdFonts\e[0m \n \nRun \e[0;32mccenter\e[0m to lanch Command Center\n"
-
+# Starting and enabling docker
+    sudo systemctl enable docker
+    sudo systemctl start docker
+# Adding comment to bash and zsh for added aliases
     cd ~/Command-Center/
     echo "# These are the Command-Center aliases" >> $HOME/.bashrc
     echo "# These are the Command-Center aliases" >> $HOME/.zshrc
@@ -132,8 +133,8 @@ then
 # Getting sqlmap
     echo -e "\e[1;32mInstalling sqlmap...\e[0m"
     git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-    echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py' " >> $HOME/.bashrc
-    echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py' " >> $HOME/.zshrc
+    echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py'" >> $HOME/.bashrc
+    echo "alias sqlmap='python ~/Command-Center/sqlmap-dev/sqlmap.py'" >> $HOME/.zshrc
     clear
 # Getting recon-ng
     echo -e "\e[1;32mInstalling recon-ng...\e[0m"
@@ -158,19 +159,20 @@ then
 # Install Virust Total CLI
     clear
     echo -e "\e[1;32mInstalling virustotal-cli...\e[0m"
-    cd ~/Command-Center/
     git clone https://github.com/VirusTotal/vt-cli.git
     cd vt-cli
     make install
-    export GOBIN=`go env GOPATH`/bin sleep5  
+    export GOBIN=`go env GOPATH`/bin
     export PATH=$PATH:$GOBIN
+    clear
+    vt init
     clear
 # Install oui lookup
     cd ~/Command-Center/
     echo -e "\e[1;32mInstalling npm oui...\e[0m"
     sudo npm i -g oui
     clear
-# Installing Responder
+    # Installing Responder
     echo -e "\e[1;32mInstalling responder...\e[0m"
     git clone https://github.com/SpiderLabs/Responder.git
     echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.bashrc
