@@ -23,7 +23,7 @@ OS=$(head -1 /etc/os-release | sed 's/NAME="//'| awk '{print $1}')
 if [[ $OS = Fedora ]] || [[ $OS = RedHat ]]
 then
     sudo dnf copr enable pennbauman/ports # for lf terminal file manager
-    sudo dnf install figlet htop lm_sensors htop vim dmidecode docker grc lf fzf bat curl npm hashid john hashcat nmap wget cargo lsd python2.7 sipcalc shippy go oneko
+    sudo dnf install speedtest-cli figlet htop lm_sensors htop vim dmidecode docker grc lf fzf bat curl npm hashid john hashcat nmap wget cargo lsd python2.7 sipcalc shippy go oneko
     clear
 # Starting and enabling docker
     sudo systemctl enable docker
@@ -111,7 +111,7 @@ then
 # Debian/Ubuntu
 elif [[ $OS = PRETTY_Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]] || [[ $OS = Debian ]]
 then
-    sudo apt install figlet htop lm-sensors htop vim grc dmidecode docker.io lf fzf bat curl hashid hashcat john nmap ninvaders sipcalc npm cargo lsd golang-go oneko
+    sudo apt install speedtest-cli figlet htop lm-sensors htop vim grc dmidecode docker.io lf fzf bat curl hashid hashcat john nmap ninvaders sipcalc npm cargo lsd golang-go oneko
     clear
 # Starting and enabling docker
     sudo systemctl enable docker
