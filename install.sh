@@ -84,7 +84,7 @@ then
     echo -e "\e[1;32mInstalling npm oui...\e[0m"
     sudo npm i -g oui
     clear
-    # Installing Responder
+# Installing Responder
     echo -e "\e[1;32mInstalling responder...\e[0m"
     git clone https://github.com/SpiderLabs/Responder.git
     echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.bashrc
@@ -172,7 +172,7 @@ then
     echo -e "\e[1;32mInstalling npm oui...\e[0m"
     sudo npm i -g oui
     clear
-    # Installing Responder
+# Installing Responder
     echo -e "\e[1;32mInstalling responder...\e[0m"
     git clone https://github.com/SpiderLabs/Responder.git
     echo "alias responder='python2.7 ~/Command-Center/Responder/Responder.py'" >> $HOME/.bashrc
