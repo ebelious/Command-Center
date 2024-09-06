@@ -59,7 +59,7 @@ chmod +x install.sh
 
 ### Manual Install
 
-### Repository Apps
+#### Repository Apps
 Install through package manager
 *Note: Fedora needs to add copr repo for lf*
 ```
