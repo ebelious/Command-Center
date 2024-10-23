@@ -109,9 +109,9 @@ then
     $SHELL 
 #
 # Debian/Ubuntu
-elif [[ $OS = PRETTY_Ubuntu ]] ||[[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]] || [[ $OS = Debian ]]
+elif [[ $OS = PRETTY_Ubuntu ]] || [[ $OS = PRETTY_Debian ]] || [[ $OS = Ubuntu ]] || [[ $OS = Debian ]]
 then
-    sudo apt install speedtest-cli figlet htop lm-sensors htop vim grc dmidecode docker.io lf fzf bat curl hashid hashcat john nmap ninvaders sipcalc npm cargo lsd golang-go oneko
+    sudo apt install speedtest-cli figlet htop lm-sensors htop vim grc dmidecode docker.io fzf bat curl hashid hashcat john nmap ninvaders sipcalc npm cargo golang oneko
     clear
 # Starting and enabling docker
     sudo systemctl enable docker
